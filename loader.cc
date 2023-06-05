@@ -353,9 +353,9 @@ int load_sections_bfd(bfd *bfd_h, Binary *bin)
       continue;
     }
 
-    vma = bfd_section_vma(bfd_h, bfd_sec);
-    size = bfd_section_size(bfd_h, bfd_sec);
-    secname = bfd_section_name(bfd_h, bfd_sec);
+    vma = bfd_section_vma(bfd_sec);
+    size = bfd_section_size(bfd_sec);
+    secname = bfd_section_name(bfd_sec);
     if (!secname)
       secname = "<unnamed>";
 
