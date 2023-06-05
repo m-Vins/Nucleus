@@ -181,6 +181,30 @@ cleanup:
   return ret;
 }
 
+/**
+ * @brief This is an utility function to retrieve the section
+ *        of the binary starting from the vma.
+ *        The vma is passed as a uint64_t.
+ *
+ *        TODO: This function is temporary, we should find a better solution!
+ *
+ * @param bfd_h
+ * @param vma
+ * @return asection*
+ */
+asection *get_section_by_vma(const bfd *bfd_h, const uint64_t vma)
+{
+  // TODO check this code
+  for (asection *bfd_sec = bfd_h->sections; bfd_sec->next != bfd_h->section_last->next; bfd_sec = bfd_sec->next)
+  {
+    if (bfd_sec->vma <= vma && bfd_sec->vma + bfd_sec->size > vma)
+      return bfd_sec;
+  }
+
+  // section not found!
+  return nullptr;
+}
+
 int load_dynrelocs_bfd(bfd *bfd_h, Binary *bin)
 {
   int ret;
@@ -189,10 +213,11 @@ int load_dynrelocs_bfd(bfd *bfd_h, Binary *bin)
   asymbol **bfd_symtab = nullptr;
   arelent **bfd_relocs = nullptr;
   reloc_howto_type *bfd_howto;
-  asection *bfd_sec;
 
   bfd_symtab = nullptr;
   bfd_relocs = nullptr;
+
+  // Determine the upper bound size of dynamic relocations
   relsize = bfd_get_dynamic_reloc_upper_bound(bfd_h);
   if (relsize == 0)
   {
@@ -203,6 +228,8 @@ int load_dynrelocs_bfd(bfd *bfd_h, Binary *bin)
     print_err("failed to read dynamic relocations size (%s)", bfd_errmsg(bfd_get_error()));
     goto fail;
   }
+
+  // Read the symbol table from the bfd object
   nsyms = bfd_read_minisymbols(bfd_h, TRUE, (void **)&bfd_symtab, &symsize);
   if (nsyms < 0)
   {
@@ -210,31 +237,40 @@ int load_dynrelocs_bfd(bfd *bfd_h, Binary *bin)
     goto fail;
   }
 
+  // Allocate memory to hold the dynamic relocations
   bfd_relocs = (arelent **)malloc(relsize);
+
+  // Read and convert the dynamic relocations into a canonical format
   nrels = bfd_canonicalize_dynamic_reloc(bfd_h, bfd_relocs, bfd_symtab);
   if (nrels < 0)
   {
     print_err("failed to read dynamic relocations (%s)", bfd_errmsg(bfd_get_error()));
     goto fail;
   }
-  /* Apply relocations */
+
+  // Apply relocations
   for (i = 0; i < nrels; i++)
   {
+    // Retrieve relocation and symbol information
     arelent *bfd_reloc = bfd_relocs[i];
     asymbol *bfd_symbol = *(bfd_reloc->sym_ptr_ptr);
     bfd_howto = bfd_reloc->howto;
 
+    // Iterate over the sections of the binary
     for (const auto &sec : bin->sections)
     {
-      /* Apply relocation to data of any executable section within range */
+      // Apply relocation to data of any executable section within range
       size_t bytesize = (bfd_howto->bitsize / 8);
+
+      // relocation to skip (?)
       if (bfd_reloc->address < sec.vma ||
           bfd_reloc->address > sec.vma + sec.size - bytesize ||
           sec.type != Section::SEC_TYPE_CODE)
       {
         continue;
       }
-      /* Compute relocation value */
+
+      // Compute relocation value
       bfd_vma relocation = 0;
       if (bfd_is_com_section(bfd_symbol->section))
       {
@@ -248,9 +284,12 @@ int load_dynrelocs_bfd(bfd *bfd_h, Binary *bin)
 #define APPLY_RELOC(x) \
   ((x & ~bfd_howto->dst_mask) | (((x & bfd_howto->src_mask) + relocation) & bfd_howto->dst_mask))
 
-      bfd_vma data_offset = bfd_reloc->address * bfd_octets_per_byte(bfd_h);
+      // Calculate the offset of the data within the section and retrieve a pointer to the data
+      asection *bfd_sec = get_section_by_vma(bfd_h, sec.vma);
+      bfd_vma data_offset = bfd_reloc->address * bfd_octets_per_byte(bfd_h, bfd_sec);
       bfd_byte *data = sec.bytes + (data_offset - sec.vma);
 
+      // Apply the relocation based on the relocation size
       switch (bfd_howto->size)
       {
       case 0:
