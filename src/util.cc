@@ -8,28 +8,28 @@
 #include <string>
 #include <random>
 
-
 /*******************************************************************************
  **                                string utils                               **
  ******************************************************************************/
 std::string
 str_realpath(std::string s)
 {
-  char real[PATH_MAX+1];
+  char real[PATH_MAX + 1];
 
-  if(!realpath(s.c_str(), real)) {
+  if (!realpath(s.c_str(), real))
+  {
     return "";
   }
   return std::string(real);
 }
 
-
 std::string
 str_realpath_dir(std::string s)
 {
-  char real[PATH_MAX+1], *dir;
+  char real[PATH_MAX + 1], *dir;
 
-  if(!realpath(s.c_str(), real)) {
+  if (!realpath(s.c_str(), real))
+  {
     return "";
   }
 
@@ -37,20 +37,19 @@ str_realpath_dir(std::string s)
   return std::string(dir);
 }
 
-
 std::string
 str_realpath_base(std::string s)
 {
-  char real[PATH_MAX+1], *base;
+  char real[PATH_MAX + 1], *base;
 
-  if(!realpath(s.c_str(), real)) {
+  if (!realpath(s.c_str(), real))
+  {
     return "";
   }
 
   base = basename(real);
   return std::string(base);
 }
-
 
 std::string
 str_getenv(std::string env)
@@ -70,10 +69,9 @@ rand64()
   std::random_device rd;
   std::mt19937 gen(rd());
   std::uniform_int_distribution<unsigned long long> dis(0, 0xffffffffffffffff);
- 
+
   return dis(gen);
 }
-
 
 uint64_t
 xorshift128plus()
@@ -82,7 +80,8 @@ xorshift128plus()
   static uint64_t s[2];
   static int inited = 0;
 
-  if(!inited) {
+  if (!inited)
+  {
     s[0] = rand64();
     s[1] = rand64();
     inited = 1;
@@ -98,10 +97,8 @@ xorshift128plus()
   return s[1] + y;
 }
 
-
 uint64_t
 fast_rand64()
 {
   return xorshift128plus();
 }
-

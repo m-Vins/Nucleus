@@ -3,7 +3,8 @@
 
 #include <stdint.h>
 
-class DataRegion {
+class DataRegion
+{
 public:
   DataRegion() : start(0), end(0) {}
   DataRegion(const DataRegion &d) : start(d.start), end(d.end) {}
@@ -13,4 +14,3 @@ public:
 };
 
 #endif /* NUCLEUS_DATAREGION_H */
-

@@ -4,4 +4,3 @@
 void set_exception_handlers();
 
 #endif /* NUCLEUS_EXCEPTION_H */
-

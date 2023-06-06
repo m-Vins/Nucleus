@@ -6,13 +6,12 @@
 
 #define ERROUT stderr
 
-
-void
-verbose(int level, char const *fmt, ...)
+void verbose(int level, char const *fmt, ...)
 {
   va_list args;
 
-  if(options.verbosity >= level) {
+  if (options.verbosity >= level)
+  {
     va_start(args, fmt);
     vprintf(fmt, args);
     printf("\n");
@@ -20,13 +19,12 @@ verbose(int level, char const *fmt, ...)
   }
 }
 
-
-void
-print_warn(char const *fmt, ...)
+void print_warn(char const *fmt, ...)
 {
   va_list args;
 
-  if(options.warnings) {
+  if (options.warnings)
+  {
     va_start(args, fmt);
     fprintf(ERROUT, "WARNING: ");
     vfprintf(ERROUT, fmt, args);
@@ -35,9 +33,7 @@ print_warn(char const *fmt, ...)
   }
 }
 
-
-void
-print_err(char const *fmt, ...)
+void print_err(char const *fmt, ...)
 {
   va_list args;
 
@@ -47,4 +43,3 @@ print_err(char const *fmt, ...)
   fprintf(ERROUT, "\n");
   va_end(args);
 }
-
