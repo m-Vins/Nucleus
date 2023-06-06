@@ -6,7 +6,7 @@ SRC=$(wildcard src/*.cc)
 OBJ=$(patsubst src/%.cc, obj/%.o, $(SRC))
 BIN=nucleus
 
-.PHONY: all clean setup test
+.PHONY: all clean setup build_test
 
 all: $(BIN)
 
