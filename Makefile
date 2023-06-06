@@ -1,12 +1,12 @@
 CXX=g++
-CXXFLAGS=-Wall -std=c++11 -O2 -DNDEBUG -fpermissive
+CXXFLAGS=-Wall -std=c++11 -O2 -DNDEBUG -fpermissive -I./include
 LDFLAGS=-lcapstone -lbfd-multiarch
 
-SRC=$(wildcard *.cc)
-OBJ=$(patsubst %.cc, obj/%.o, $(SRC))
+SRC=$(wildcard src/*.cc)
+OBJ=$(patsubst src/%.cc, obj/%.o, $(SRC))
 BIN=nucleus
 
-.PHONY: all clean setup
+.PHONY: all clean setup test
 
 all: $(BIN)
 
@@ -15,7 +15,7 @@ $(OBJ): | obj
 obj:
 	@mkdir -p $@
 
-obj/%.o: %.cc %.h
+obj/%.o: src/%.cc ./include/%.h
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
 $(BIN): $(OBJ)
@@ -24,8 +24,12 @@ $(BIN): $(OBJ)
 setup:
 	sudo apt install binutils-multiarch-dev libcapstone-dev
 
+build_test:
+	$(MAKE) -C test
+
 clean:
 	rm -f $(OBJ)
 	rm -Rf obj
 	rm -f $(BIN)
+	# clean test dir
 
