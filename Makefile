@@ -31,5 +31,5 @@ clean:
 	rm -f $(OBJ)
 	rm -Rf obj
 	rm -f $(BIN)
-	# clean test dir
+	$(MAKE) -C test clean
 
