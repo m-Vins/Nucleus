@@ -1,5 +1,5 @@
 - [x] Fix warnings
 - [] Improve output
-- [] Create test by comparing nucleus output with nm output (Python)
+- [x] Create test by comparing nucleus output with nm output (Python)
 - [] cfc.cc line 1203, after the script test is ready
 - [] check if the fix of get_octet is correct

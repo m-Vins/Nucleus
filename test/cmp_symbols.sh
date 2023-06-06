@@ -15,7 +15,7 @@ BASE_DIR=$(readlink -f "${_source_dir_}/..")
 
 # check if the file is stripped
 file_info=$(file -L $elf_name)
-is_stripped=$(echo "$file_info" | grep -v "not stripped")
+is_stripped=$(echo "$file_info" | { grep -v "not stripped" || true; })
 if [[ -n "$is_stripped" ]]; then
     echo -e "\033[1;31m[error]\033[0m File is stripped!"
     exit 1
