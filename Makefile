@@ -22,10 +22,13 @@ $(BIN): $(OBJ)
 	$(CXX) $(CXXFLAGS) -o $(BIN) $(OBJ) $(LDFLAGS)
 
 setup:
-	sudo apt install binutils-multiarch-dev libcapstone-dev
+	sudo apt install binutils-multiarch-dev libcapstone-dev file
 
 build_test:
 	$(MAKE) -C test
+
+test: build_test $(BIN)
+	$(MAKE) -C test test
 
 clean:
 	rm -f $(OBJ)
