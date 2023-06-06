@@ -14,7 +14,7 @@
 #include "cfg.h"
 #include "log.h"
 #include "options.h"
-#include "endian.h"
+#include "local_endian.h"
 
 
 void

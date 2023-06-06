@@ -1,4 +1,4 @@
-#include "endian.h"
+#include "local_endian.h"
 
 /* Detect host endianness */
 #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
