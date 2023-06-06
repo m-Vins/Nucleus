@@ -286,6 +286,11 @@ int load_dynrelocs_bfd(bfd *bfd_h, Binary *bin)
 
       // Calculate the offset of the data within the section and retrieve a pointer to the data
       asection *bfd_sec = get_section_by_vma(bfd_h, sec.vma);
+      if (bfd_sec == NULL)
+      {
+        print_err("failed to get section from vma");
+        goto fail;
+      }
       bfd_vma data_offset = bfd_reloc->address * bfd_octets_per_byte(bfd_h, bfd_sec);
       bfd_byte *data = sec.bytes + (data_offset - sec.vma);
 
