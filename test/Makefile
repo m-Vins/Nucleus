@@ -9,14 +9,16 @@ all: $(BIN)
 
 bin/% : %.c 
 	mkdir -p bin
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $< -o $@
 
 clean:
 	rm -f bin/*
 
 test: $(BIN)
-	for bin_file in $(BIN); do \
+	@for bin_file in $(BIN); do \
+		echo =============== $$bin_file ===============; \
 		bash cmp_symbols.sh ./"$$bin_file"; \
+		echo; \
 	done 
 
 .PHONY:
