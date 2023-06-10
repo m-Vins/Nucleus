@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
   Binary bin;
   Section *sec;
   Symbol *sym;
+  // this will contain the disassembled code
   std::list<DisasmSection> disasm;
   CFG cfg;
 
@@ -38,6 +39,13 @@ int main(int argc, char *argv[])
           bin.filename.c_str(),
           bin.type_str.c_str(), bin.arch_str.c_str(),
           bin.bits, bin.entry);
+  // when the file is raw, we only have one section, marked as code:
+  // bin->sections.push_back(Section());
+  // sec = &bin->sections.back();
+  // sec->binary = bin;
+  // sec->name = std::string("raw");
+  // sec->type = Section::SEC_TYPE_CODE;
+  sec->vma = options.binary.base_vma;
   for (i = 0; i < bin.sections.size(); i++)
   {
     sec = &bin.sections[i];
@@ -45,6 +53,7 @@ int main(int argc, char *argv[])
             sec->vma, sec->size, sec->name.c_str(),
             sec->type == Section::SEC_TYPE_CODE ? "CODE" : "DATA");
   }
+  // for raw files, this will be false (skip) 
   if (bin.symbols.size() > 0)
   {
     verbose(1, "scanned symbol tables");

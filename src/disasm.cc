@@ -208,6 +208,7 @@ nucleus_disasm_section(Binary *bin, DisasmSection *dis)
   unsigned i, n;
   uint64_t vma;
   double s;
+  // basic block
   BB *mutants;
   std::queue<BB *> Q;
 
@@ -224,36 +225,60 @@ nucleus_disasm_section(Binary *bin, DisasmSection *dis)
   Q.push(NULL);
   while (!Q.empty())
   {
+    // if we are running with linear disassembly, this function will actually be
+    // (void *)bb_mutate_linear
+    // if the previous BB is null, it starts disassembly from the beginning of the raw file
+    // otherwise, if the end of the previous BB is still included in the VMA of the raw file, 
+    // the next BB is set after the end of the parent one
+    // otherwise, BB is set to 0,0
+
+    //n is either 0 or 1
     n = bb_mutate(dis, Q.front(), &mutants);
+    // remove the parent we have just processed
     Q.pop();
     for (i = 0; i < n; i++)
     {
+      // this function returns -1 when it fails booting the disassembler
+      // overall, the disassembler simply linearly sweeps the instructions, until it finds an invalid one
+      // OR a control flow instruction
       if (nucleus_disasm_bb(bin, dis, &mutants[i]) < 0)
       {
         goto fail;
       }
+      // if we are running with linear disassembly, this function will actually be
+      // (void *)bb_score_linear
+      // always sets score to 1
       if ((s = bb_score(dis, &mutants[i])) < 0)
       {
         goto fail;
       }
     }
+    // if we are running with linear disassembly, this function will actually be
+    // (void *)bb_select_linear
+    // this sets everyone to alive
     if ((n = bb_select(dis, mutants, n)) < 0)
     {
       goto fail;
     }
     for (i = 0; i < n; i++)
     {
+      // always true
       if (mutants[i].alive)
       {
+        // say that in that address a new BB is starting
         dis->addrmap.add_addr_flag(mutants[i].start, AddressMap::DISASM_REGION_BB_START);
+        // for each decoded instruction
         for (auto &ins : mutants[i].insns)
         {
+          // say that in that address a new instruction is starting
           dis->addrmap.add_addr_flag(ins.start, AddressMap::DISASM_REGION_INS_START);
         }
         for (vma = mutants[i].start; vma < mutants[i].end; vma++)
         {
+          // mark the region as disassembled
           dis->addrmap.add_addr_flag(vma, AddressMap::DISASM_REGION_CODE);
         }
+        // add the basic block to the list
         dis->BBs.push_back(BB(mutants[i]));
         Q.push(&dis->BBs.back());
       }

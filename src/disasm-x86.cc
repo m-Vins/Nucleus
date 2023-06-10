@@ -279,21 +279,25 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
   pc_addr = bb->start;
   bb->end = bb->start;
   bb->section = dis->section;
+  // the number of instructions we have disassembled
   ndisassembled = 0;
   only_nop = 0;
   while (cs_disasm_iter(cs_dis, &pc, &n, &pc_addr, cs_ins))
+  // cs_ins -> the disassembled instruction 
   {
+    // if the instruction is invalid, we are done
     if (cs_ins->id == X86_INS_INVALID)
     {
       bb->invalid = 1;
       bb->end += 1;
       break;
     }
+    // if the instruction has size 0, we are also done
     if (!cs_ins->size)
     {
       break;
     }
-
+    // classify the instruction
     trap = is_cs_trap_ins(cs_ins);
     nop = is_cs_nop_ins(cs_ins)
           /* Visual Studio sometimes places semantic nops at the function start */
@@ -316,6 +320,7 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
 
     ndisassembled++;
 
+    // now we know the BB size is the instruction size bigger
     bb->end += cs_ins->size;
     bb->insns.push_back(Instruction());
     if (priv)
@@ -331,6 +336,7 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
       bb->trap = true;
     }
 
+    // classify the instruction
     ins = &bb->insns.back();
     ins->start = cs_ins->address;
     ins->size = cs_ins->size;

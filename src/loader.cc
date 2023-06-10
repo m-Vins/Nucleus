@@ -138,7 +138,7 @@ int load_dynsym_bfd(bfd *bfd_h, Binary *bin)
   n = bfd_get_dynamic_symtab_upper_bound(bfd_h);
   if (n < 0)
   {
-    print_err("failed to read dynamic symtab (%s)", bfd_errmsg(bfd_get_error()));
+    print_err("ad dynamic symtab (%s)", bfd_errmsg(bfd_get_error()));
     goto fail;
   }
   else if (n)
