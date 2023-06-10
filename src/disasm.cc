@@ -143,6 +143,11 @@ void AddressMap::erase_unmapped(uint64_t addr)
 /*******************************************************************************
  **                            Disassembly engine                             **
  ******************************************************************************/
+/**
+ * This function loop over the sections of the file skipping the ones that
+ * are not needed to be disassembled, and initializes the fields of the
+ * added sections
+ */
 static int
 init_disasm(Binary *bin, std::list<DisasmSection> *disasm)
 {
@@ -151,10 +156,15 @@ init_disasm(Binary *bin, std::list<DisasmSection> *disasm)
   Section *sec;
   DisasmSection *dis;
 
+  // clear the list
   disasm->clear();
   for (i = 0; i < bin->sections.size(); i++)
   {
+    // extract the currenct section
     sec = &bin->sections[i];
+
+    // Check if the section is not a code section and,
+    // if not restricted to code sections, it is also not a data section.
     if ((sec->type != Section::SEC_TYPE_CODE) && !(!options.only_code_sections && (sec->type == Section::SEC_TYPE_DATA)))
       continue;
 
@@ -214,6 +224,7 @@ nucleus_disasm_section(Binary *bin, DisasmSection *dis)
 
   mutants = NULL;
 
+  // skipping non code section if only_code_section is true
   if ((dis->section->type != Section::SEC_TYPE_CODE) && options.only_code_sections)
   {
     print_warn("skipping non-code section '%s'", dis->section->name.c_str());

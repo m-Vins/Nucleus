@@ -569,6 +569,8 @@ int load_binary_raw(std::string &fname, Binary *bin, Binary::BinaryType type)
     }
   }
 
+  // since here we are dealing with a raw file, we add
+  // only one section of code
   bin->sections.push_back(Section());
   sec = &bin->sections.back();
 
@@ -584,6 +586,8 @@ int load_binary_raw(std::string &fname, Binary *bin, Binary::BinaryType type)
     goto fail;
   }
 
+  // set the position to the end of the file, and then get the position
+  // to retrieve the file size
   fseek(f, 0L, SEEK_END);
   fsize = ftell(f);
   if (fsize <= 0)
@@ -593,6 +597,7 @@ int load_binary_raw(std::string &fname, Binary *bin, Binary::BinaryType type)
   }
 
   sec->size = (uint64_t)fsize;
+  // allocate the memory to load the file
   sec->bytes = (uint8_t *)malloc(fsize);
   if (!sec->bytes)
   {
@@ -601,6 +606,7 @@ int load_binary_raw(std::string &fname, Binary *bin, Binary::BinaryType type)
   }
 
   fseek(f, 0L, SEEK_SET);
+  // load the file all at once
   if (fread(sec->bytes, 1, fsize, f) != (size_t)fsize)
   {
     print_err("failed to read binary '%s'", fname.c_str());

@@ -1353,23 +1353,37 @@ int CFG::make_cfg(Binary *bin, std::list<DisasmSection> *disasm)
 
   this->binary = bin;
 
+  // Loop over all the sections of the file.
+  // if the file is raw, there is only one section
   for (auto &dis : (*disasm))
   {
+    // Loop over the basic block of the section
     for (auto &bb : dis.BBs)
     {
       if (bb.invalid)
       {
+        // if the current basic block is invalid
+        // add it to the list of the invalid BBs
         this->bad_bbs[bb.start] = &bb;
         continue;
       }
       if (bb.start == bin->entry)
       {
+        // If the start of the basic block is the same
+        // of the entrypoint of the binary
         this->entry.push_back(&bb);
       }
       if (this->start2bb.count(bb.start) > 0)
       {
+        // check if there are more basic blocks that
+        // start at the same address
         print_warn("conflicting BBs at 0x%016jx", bb.start);
       }
+
+      // add the start address of the bb in a map
+      // std::map<uint64_t, BB *>, it is used to
+      // retrieve the bb from the start address
+      // when we need to link basic blocks
       this->start2bb[bb.start] = &bb;
     }
   }
@@ -1379,7 +1393,10 @@ int CFG::make_cfg(Binary *bin, std::list<DisasmSection> *disasm)
   {
     for (auto &bb : dis.BBs)
     {
+      // take the last instruction of the basic block
       flags = bb.insns.back().flags;
+
+      // Check if the instruction is a jmp or a call
       if ((flags & Instruction::INS_FLAG_CALL) || (flags & Instruction::INS_FLAG_JMP))
       {
         if (!(flags & Instruction::INS_FLAG_INDIRECT))
