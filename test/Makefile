@@ -6,7 +6,6 @@ SRCS = $(wildcard *.c)
 BIN=$(patsubst %.c, bin/%, $(SRCS))
 
 all: $(BIN) 
-	# @file bin/test
 
 bin/% : %.c 
 	mkdir -p bin
