@@ -6,7 +6,7 @@ SRC=$(wildcard src/*.cc)
 OBJ=$(patsubst src/%.cc, obj/%.o, $(SRC))
 BIN=nucleus
 
-.PHONY: all clean setup build_test
+.PHONY: all clean setup build_test test
 
 all: $(BIN)
 
@@ -27,8 +27,13 @@ setup:
 build_test:
 	$(MAKE) -C test
 
-test: build_test $(BIN)
-	$(MAKE) -C test test
+test: $(BIN) build_test
+	@for bin_file in $$(ls ./test/bin); do \
+		echo =============== $$bin_file ===============; \
+		bash ./utilities/cmp_symbols.sh ./test/bin/"$$bin_file"; \
+		echo; \
+	done 
+
 
 clean:
 	rm -f $(OBJ)
