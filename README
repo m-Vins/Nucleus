@@ -14,3 +14,45 @@ Suggested usage:
   make
   ./nucleus -e /bin/ls -d linear -i idainfo.py
   (idainfo.py can be run in IDA Pro to import the functions found by nucleus)
+
+USAGE
+```
+nucleus disassembler v0.65
+Copyright (C) 2016, 2017 Dennis Andriesse, Vrije Universiteit Amsterdam
+
+./nucleus [-vwhtafbDpgi] -e <binary> -d <strategy>
+  -e <binary>
+     : target binary
+  -d <strategy>
+     : select disassembly strategy
+         linear       Linear disassembly
+         recursive    Recursive disassembly (incomplete implementation, not recommended)
+  -t <binary format>
+     : hint on binary format (may be ignored)
+         auto         Try to automatically determine binary format (default)
+         raw          Raw binary (memory dump, ROM, network capture, ...)
+         elf          Unix ELF
+         pe           Windows PE
+  -a <arch>
+     : disassemble as specified instruction architecture (only for raw binaries)
+         auto         Try to automatically determine architecture (default)
+         aarch64      aarch64 (experimental)
+         arm          arm (experimental)
+         mips         mips (experimental)
+         ppc          ppc: Specify ppc-32 or ppc-64 (default ppc-64, experimental)
+         x86          x86: Specify x86-16, x86-32 or x86-64 (default x86-64)
+  -f : produce list of function entry points and sizes
+  -b <vma>
+     : binary base vma (only for raw binaries)
+  -D : disassemble data sections as code
+  -p : allow privileged instructions
+  -g <file>
+     : export CFG to graphviz dot file
+  -i <file>
+     : export binary info to IDA Pro script
+  -n <file>
+     : export binary info to Binary Ninja script
+  -v : verbose
+  -w : disable warnings
+  -h : help
+  ```
