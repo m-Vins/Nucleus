@@ -17,7 +17,7 @@ clean:
 test: $(BIN)
 	@for bin_file in $(BIN); do \
 		echo =============== $$bin_file ===============; \
-		bash cmp_symbols.sh ./"$$bin_file"; \
+		bash ../utilities/cmp_symbols.sh ./"$$bin_file"; \
 		echo; \
 	done 
 

@@ -2,10 +2,15 @@
 set -e  # Stop if there is a failure
 
 # Check if the user has provided an argument
-if [ $# -ne 1 ]; then
-    echo -e "\n\033[1;35m\tbash cmp_symbols.sh <ELF file, not stripped>\033[0m"
-    echo -e "Compares the output of nucleus (run on the stripped file) with the output of nm, adding symbol names to functions.\n"
+if [ $# -eq 0 ]; then
+    echo -e "\n\033[1;35m\tbash cmp_symbols.sh <ELF file, not stripped> [raw]\033[0m"
+    echo -e "Compares the output of nucleus (run on the stripped file) with the output of nm, adding symbol names to functions."
+    echo -e "If the raw option is specified, the ELF file is interpreted as raw.\n"
     exit
+fi
+
+if [ $# -eq 2 ] && [ $2 == "raw" ]; then
+    extra="-t raw -a x86"
 fi
 
 elf_name=$1
@@ -39,6 +44,6 @@ while IFS= read -r line; do
     else
         echo -e "$line\t-->\033[1;32m $function_name \033[0m"
     fi
-done < <("${BASE_DIR}/nucleus" -e $elf_stripped -d linear | grep function)
+done < <("${BASE_DIR}/nucleus" -e $elf_stripped -d linear $extra | grep function)
 
 rm $elf_stripped
