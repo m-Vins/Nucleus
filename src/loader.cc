@@ -565,6 +565,7 @@ int load_binary_raw(std::string &fname, Binary *bin, Binary::BinaryType type)
       bin->bits = 64;
       break;
     default:
+      // TODO: is it ok?
       break;
     }
   }
@@ -577,6 +578,8 @@ int load_binary_raw(std::string &fname, Binary *bin, Binary::BinaryType type)
   sec->binary = bin;
   sec->name = std::string("raw");
   sec->type = Section::SEC_TYPE_CODE;
+
+  // it takes the starting offset from the command line
   sec->vma = options.binary.base_vma;
 
   f = fopen(fname.c_str(), "rb");

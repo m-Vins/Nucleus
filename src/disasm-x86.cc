@@ -2,6 +2,9 @@
 
 #include "disasm-x86.h"
 #include "log.h"
+#include <iostream>
+
+#define DBG 1
 
 static int
 is_cs_nop_ins(cs_insn *ins)
@@ -221,6 +224,9 @@ cs_to_nucleus_op_type(x86_op_type op)
 
 int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
 {
+#if DBG
+  std::cout << "[DBG]\tcalled nucleus_disasm_bb_x86" << std::endl;
+#endif
   int init, ret, jmp, cflow, cond, call, nop, only_nop, priv, trap, ndisassembled;
   csh cs_dis;
   cs_mode cs_mode;
@@ -282,12 +288,17 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
   // the number of instructions we have disassembled
   ndisassembled = 0;
   only_nop = 0;
+
   while (cs_disasm_iter(cs_dis, &pc, &n, &pc_addr, cs_ins))
-  // cs_ins -> the disassembled instruction 
+  // cs_ins -> the disassembled instruction
   {
-    // if the instruction is invalid, we are done
+    // TODO : this if is useless since invalid instruction
+    // trigger cs_disasm_iter to return false
     if (cs_ins->id == X86_INS_INVALID)
     {
+#if DBG
+      std::cout << "[DBG]\tinvalid instruction, disasm loop break" << std::endl;
+#endif
       bb->invalid = 1;
       bb->end += 1;
       break;
@@ -295,6 +306,9 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
     // if the instruction has size 0, we are also done
     if (!cs_ins->size)
     {
+#if DBG
+      std::cout << "[DBG]\tinstruction of size 0, disasm loop break" << std::endl;
+#endif
       break;
     }
     // classify the instruction
@@ -310,6 +324,18 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
     cflow = is_cs_cflow_ins(cs_ins);
     call = is_cs_call_ins(cs_ins);
     priv = is_cs_privileged_ins(cs_ins);
+
+#if 1
+    // Printing the variable values
+    std::cout << "[DBG]\ttrap: " << trap << std::endl;
+    std::cout << "[DBG]\tnop: " << nop << std::endl;
+    std::cout << "[DBG]\tret: " << ret << std::endl;
+    std::cout << "[DBG]\tjmp: " << jmp << std::endl;
+    std::cout << "[DBG]\tcond: " << cond << std::endl;
+    std::cout << "[DBG]\tcflow: " << cflow << std::endl;
+    std::cout << "[DBG]\tcall: " << call << std::endl;
+    std::cout << "[DBG]\tpriv: " << priv << std::endl;
+#endif
 
     if (!ndisassembled && nop)
       only_nop = 1; /* group nop instructions together */
@@ -417,6 +443,9 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
     }
   }
 
+#if DBG
+  std::cout << "[DBG]\tndisassembled: " << ndisassembled << std::endl;
+#endif
   if (!ndisassembled)
   {
     bb->invalid = 1;
@@ -438,5 +467,9 @@ cleanup:
   {
     cs_close(&cs_dis);
   }
+
+#if DBG
+  std::cout << "[DBG]\tend of nucleus_disasm_bb_x86" << std::endl;
+#endif
   return ret;
 }

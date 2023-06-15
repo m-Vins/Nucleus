@@ -160,7 +160,7 @@ init_disasm(Binary *bin, std::list<DisasmSection> *disasm)
   disasm->clear();
   for (i = 0; i < bin->sections.size(); i++)
   {
-    // extract the currenct section
+    // extract the current section
     sec = &bin->sections[i];
 
     // Check if the section is not a code section and,
@@ -174,6 +174,7 @@ init_disasm(Binary *bin, std::list<DisasmSection> *disasm)
     dis->section = sec;
     for (vma = sec->vma; vma < (sec->vma + sec->size); vma++)
     {
+      // insert the addresses in the addrmap
       dis->addrmap.insert(vma);
     }
   }
@@ -239,11 +240,10 @@ nucleus_disasm_section(Binary *bin, DisasmSection *dis)
     // if we are running with linear disassembly, this function will actually be
     // (void *)bb_mutate_linear
     // if the previous BB is null, it starts disassembly from the beginning of the raw file
-    // otherwise, if the end of the previous BB is still included in the VMA of the raw file, 
+    // otherwise, if the end of the previous BB is still included in the VMA of the raw file,
     // the next BB is set after the end of the parent one
-    // otherwise, BB is set to 0,0
-
-    //n is either 0 or 1
+    // otherwise, BB is set to start=0 and end=0
+    // n is either 0 or 1
     n = bb_mutate(dis, Q.front(), &mutants);
     // remove the parent we have just processed
     Q.pop();
