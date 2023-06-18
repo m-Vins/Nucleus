@@ -258,7 +258,7 @@ nucleus_disasm_section(Binary *bin, DisasmSection *dis)
       // OR a control flow instruction
 
 #if DBG
-      std::cout << "[DBG]\tDisassembling BB starting at " << std::hex << mutants[i].start << std::endl;
+      std::cout << "[ DBG - nds   ]\tDisassembling BB starting at " << std::hex << mutants[i].start << std::endl;
 #endif
 
       if (nucleus_disasm_bb(bin, dis, &mutants[i]) < 0)
@@ -272,6 +272,11 @@ nucleus_disasm_section(Binary *bin, DisasmSection *dis)
       {
         goto fail;
       }
+#if DBG
+      std::cout << "[ DBG - nds   ]\t |-- End found at " << std::hex << mutants[i].end << std::endl;
+      mutants[i].is_invalid() ? std::cout << "[ DBG - nds   ]\t `-- Invalid" << std::endl
+                              : std::cout << "[ DBG - nds   ]\t `-- Valid" << std::endl;
+#endif
     }
     // if we are running with linear disassembly, this function will actually be
     // (void *)bb_select_linear
@@ -280,11 +285,6 @@ nucleus_disasm_section(Binary *bin, DisasmSection *dis)
     {
       goto fail;
     }
-
-#if DBG
-      std::cout << "[DBG]\t |-- End found at " << std::hex << mutants[i].end << std::endl;
-      mutants[i].is_invalid() ? std::cout << "[DBG]\t `-- Invalid" << std::endl : std::cout << "[DBG]\t  `-- Valid" << std::endl;
-#endif
 
     for (i = 0; i < n; i++)
     {

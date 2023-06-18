@@ -226,17 +226,18 @@ cs_to_nucleus_op_type(x86_op_type op)
 
 void printByteArray(const uint8_t *array, size_t size)
 {
+  std::cout << "[ ";
   for (size_t i = 0; i < size; ++i)
   {
     std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(array[i]) << " ";
   }
-  std::cout << std::endl;
+  std::cout << "]" << std::endl;
 }
 
 int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
 {
 #if DBG
-  std::cout << "[DBG]\tcalled nucleus_disasm_bb_x86" << std::endl;
+  std::cout << "[ DBG - ndb86 ]\tcalled nucleus_disasm_bb_x86" << std::endl;
 #endif
   int init, ret, jmp, cflow, cond, call, nop, only_nop, priv, trap, ndisassembled;
   csh cs_dis;
@@ -300,6 +301,9 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
   ndisassembled = 0;
   only_nop = 0;
 
+#if DBG
+  std::cout << "[ DBG - ndb86 ]\tdisasm loop start:" << std::endl;
+#endif
   while (cs_disasm_iter(cs_dis, &pc, &n, &pc_addr, cs_ins))
   // cs_ins -> the disassembled instruction
   {
@@ -308,7 +312,7 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
     if (cs_ins->id == X86_INS_INVALID)
     {
 #if DBG
-      std::cout << "[DBG]\tinvalid instruction, disasm loop break" << std::endl;
+      std::cout << "[ DBG - ndb86 ]\t\tinvalid instruction, disasm loop break" << std::endl;
 #endif
       bb->invalid = 1;
       bb->end += 1;
@@ -318,18 +322,19 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
     if (!cs_ins->size)
     {
 #if DBG
-      std::cout << "[DBG]\tinstruction of size 0, disasm loop break" << std::endl;
+      std::cout << "[ DBG - ndb86 ]\t\tinstruction of size 0, disasm loop break" << std::endl;
 #endif
       break;
     }
 
 #if DBG
+    std::cout << "[ DBG - ndb86 ]--------new instruction" << std::endl;
     // print the id of the instruction
-    std::cout << "[DBG]\tid: " << cs_ins->id << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\t\t|--> id: " << cs_ins->id << std::endl;
     // print the size of the instrucion
-    std::cout << "[DBG]\tsize: " << cs_ins->size << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\t\t|--> size: " << cs_ins->size << std::endl;
     // print the bytes of this instruction
-    std::cout << "[DBG]\tbytes: ";
+    std::cout << "[ DBG - ndb86 ]\t\t\t`--> bytes: ";
     printByteArray(cs_ins->bytes, cs_ins->size);
 
 #endif
@@ -348,36 +353,36 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
     call = is_cs_call_ins(cs_ins);
     priv = is_cs_privileged_ins(cs_ins);
 
-#if 1
+#if 0
     // Printing the variable values
-    std::cout << "[DBG]\t\ttrap: " << trap << std::endl;
-    std::cout << "[DBG]\t\tnop: " << nop << std::endl;
-    std::cout << "[DBG]\t\tret: " << ret << std::endl;
-    std::cout << "[DBG]\t\tjmp: " << jmp << std::endl;
-    std::cout << "[DBG]\t\tcond: " << cond << std::endl;
-    std::cout << "[DBG]\t\tcflow: " << cflow << std::endl;
-    std::cout << "[DBG]\t\tcall: " << call << std::endl;
-    std::cout << "[DBG]\t\tpriv: " << priv << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\t\t,--> isn trap: " << trap << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\t\t|--> isn nop: " << nop << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\t\t|--> isn ret: " << ret << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\t\t|--> isn jmp: " << jmp << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\t\t|--> isn cond: " << cond << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\t\t|--> isn cflow: " << cflow << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\t\t|--> isn call: " << call << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\t\t`--> isn priv: " << priv << std::endl;
 #endif
 
     if (!ndisassembled && nop)
     {
 #if DBG
-      std::cout << "[DBG]\tonly_nop -> group nop instruction together" << std::endl;
+      std::cout << "[ DBG - ndb86 ]\tonly_nop -> group nop instruction together" << std::endl;
 #endif
       only_nop = 1; /* group nop instructions together */
     }
     if (!only_nop && nop)
     {
 #if DBG
-      std::cout << "[DBG]\t!only_nop && nop -> break" << std::endl;
+      std::cout << "[ DBG - ndb86 ]\t!only_nop && nop -> break" << std::endl;
 #endif
       break;
     }
     if (only_nop && !nop)
     {
 #if DBG
-      std::cout << "[DBG]\tonly_nop && !nop -> break" << std::endl;
+      std::cout << "[ DBG - ndb86 ]\tonly_nop && !nop -> break" << std::endl;
 #endif
       break;
     }
@@ -386,12 +391,16 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
 
     // now we know the BB size is the instruction size bigger
 #if DBG
-    std::cout << "[DBG]\tbb->end: " << bb->end << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\tbb->end: " << bb->end << " -----> ";
 #endif
     bb->end += cs_ins->size;
+#if DBG
+    std::cout << "bb->end: " << bb->end << std::endl;
+#endif
+
     bb->insns.push_back(Instruction());
 #if DBG
-    std::cout << "[DBG]\tadding the ins in the BB" << std::endl;
+    std::cout << "[ DBG - ndb86 ]\t\tadding the ins in the BB" << std::endl;
 #endif
     if (priv)
     {
@@ -407,9 +416,6 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
     }
 
     // classify the instruction
-#if DBG
-    std::cout << "[DBG]\tclassifying the instruction" << std::endl;
-#endif
     ins = &bb->insns.back();
     ins->start = cs_ins->address;
     ins->size = cs_ins->size;
@@ -486,7 +492,7 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
     if (cflow)
     {
 #if DBG
-      std::cout << "[DBG]\tcflow -> break" << std::endl;
+      std::cout << "[ DBG - ndb86 ]\tcflow -> break disasm loop" << std::endl;
 #endif
       /* end of basic block */
       break;
@@ -494,12 +500,12 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
   }
 
 #if DBG
-  std::cout << "[DBG]\tndisassembled after while: " << ndisassembled << std::endl;
+  std::cout << "[ DBG - ndb86 ]\tdisasm loop end -> ndisassembled: " << ndisassembled << std::endl;
 #endif
   if (!ndisassembled)
   {
 #if DBG
-    std::cout << "[DBG]\tBB invalid! " << std::endl;
+    std::cout << "[ DBG - ndb86 ]\tBB invalid! " << std::endl;
 #endif
     bb->invalid = 1;
     bb->end += 1; /* ensure forward progress */
@@ -522,7 +528,7 @@ cleanup:
   }
 
 #if DBG
-  std::cout << "[DBG]\tend of nucleus_disasm_bb_x86" << std::endl;
+  std::cout << "[ DBG - ndb86 ]\tend of nucleus_disasm_bb_x86" << std::endl;
 #endif
   return ret;
 }
