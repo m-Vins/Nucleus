@@ -4,6 +4,8 @@
 #include "log.h"
 #include <iostream>
 
+#include <iomanip>
+
 #define DBG 1
 
 static int
@@ -222,6 +224,15 @@ cs_to_nucleus_op_type(x86_op_type op)
   }
 }
 
+void printByteArray(const uint8_t *array, size_t size)
+{
+  for (size_t i = 0; i < size; ++i)
+  {
+    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(array[i]) << " ";
+  }
+  std::cout << std::endl;
+}
+
 int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
 {
 #if DBG
@@ -311,6 +322,18 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
 #endif
       break;
     }
+
+#if DBG
+    // print the id of the instruction
+    std::cout << "[DBG]\tid: " << cs_ins->id << std::endl;
+    // print the size of the instrucion
+    std::cout << "[DBG]\tsize: " << cs_ins->size << std::endl;
+    // print the bytes of this instruction
+    std::cout << "[DBG]\tbytes: ";
+    printByteArray(cs_ins->bytes, cs_ins->size);
+
+#endif
+
     // classify the instruction
     trap = is_cs_trap_ins(cs_ins);
     nop = is_cs_nop_ins(cs_ins)
@@ -327,28 +350,49 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
 
 #if 1
     // Printing the variable values
-    std::cout << "[DBG]\ttrap: " << trap << std::endl;
-    std::cout << "[DBG]\tnop: " << nop << std::endl;
-    std::cout << "[DBG]\tret: " << ret << std::endl;
-    std::cout << "[DBG]\tjmp: " << jmp << std::endl;
-    std::cout << "[DBG]\tcond: " << cond << std::endl;
-    std::cout << "[DBG]\tcflow: " << cflow << std::endl;
-    std::cout << "[DBG]\tcall: " << call << std::endl;
-    std::cout << "[DBG]\tpriv: " << priv << std::endl;
+    std::cout << "[DBG]\t\ttrap: " << trap << std::endl;
+    std::cout << "[DBG]\t\tnop: " << nop << std::endl;
+    std::cout << "[DBG]\t\tret: " << ret << std::endl;
+    std::cout << "[DBG]\t\tjmp: " << jmp << std::endl;
+    std::cout << "[DBG]\t\tcond: " << cond << std::endl;
+    std::cout << "[DBG]\t\tcflow: " << cflow << std::endl;
+    std::cout << "[DBG]\t\tcall: " << call << std::endl;
+    std::cout << "[DBG]\t\tpriv: " << priv << std::endl;
 #endif
 
     if (!ndisassembled && nop)
+    {
+#if DBG
+      std::cout << "[DBG]\tonly_nop -> group nop instruction together" << std::endl;
+#endif
       only_nop = 1; /* group nop instructions together */
+    }
     if (!only_nop && nop)
+    {
+#if DBG
+      std::cout << "[DBG]\t!only_nop && nop -> break" << std::endl;
+#endif
       break;
+    }
     if (only_nop && !nop)
+    {
+#if DBG
+      std::cout << "[DBG]\tonly_nop && !nop -> break" << std::endl;
+#endif
       break;
+    }
 
     ndisassembled++;
 
     // now we know the BB size is the instruction size bigger
+#if DBG
+    std::cout << "[DBG]\tbb->end: " << bb->end << std::endl;
+#endif
     bb->end += cs_ins->size;
     bb->insns.push_back(Instruction());
+#if DBG
+    std::cout << "[DBG]\tadding the ins in the BB" << std::endl;
+#endif
     if (priv)
     {
       bb->privileged = true;
@@ -363,6 +407,9 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
     }
 
     // classify the instruction
+#if DBG
+    std::cout << "[DBG]\tclassifying the instruction" << std::endl;
+#endif
     ins = &bb->insns.back();
     ins->start = cs_ins->address;
     ins->size = cs_ins->size;
@@ -438,16 +485,22 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
 
     if (cflow)
     {
+#if DBG
+      std::cout << "[DBG]\tcflow -> break" << std::endl;
+#endif
       /* end of basic block */
       break;
     }
   }
 
 #if DBG
-  std::cout << "[DBG]\tndisassembled: " << ndisassembled << std::endl;
+  std::cout << "[DBG]\tndisassembled after while: " << ndisassembled << std::endl;
 #endif
   if (!ndisassembled)
   {
+#if DBG
+    std::cout << "[DBG]\tBB invalid! " << std::endl;
+#endif
     bb->invalid = 1;
     bb->end += 1; /* ensure forward progress */
   }
