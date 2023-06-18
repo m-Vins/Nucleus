@@ -24,6 +24,10 @@
 #include "disasm-ppc.h"
 #include "disasm-x86.h"
 
+#include <iostream>
+#include <iomanip>
+#define DBG 1
+
 /*******************************************************************************
  **                              DisasmSection                                **
  ******************************************************************************/
@@ -252,6 +256,11 @@ nucleus_disasm_section(Binary *bin, DisasmSection *dis)
       // this function returns -1 when it fails booting the disassembler
       // overall, the disassembler simply linearly sweeps the instructions, until it finds an invalid one
       // OR a control flow instruction
+
+#if DBG
+      std::cout << "[DBG]\tDisassembling BB starting at " << std::hex << mutants[i].start << std::endl;
+#endif
+
       if (nucleus_disasm_bb(bin, dis, &mutants[i]) < 0)
       {
         goto fail;
@@ -271,6 +280,12 @@ nucleus_disasm_section(Binary *bin, DisasmSection *dis)
     {
       goto fail;
     }
+
+#if DBG
+      std::cout << "[DBG]\t |-- End found at " << std::hex << mutants[i].end << std::endl;
+      mutants[i].is_invalid() ? std::cout << "[DBG]\t `-- Invalid" << std::endl : std::cout << "[DBG]\t  `-- Valid" << std::endl;
+#endif
+
     for (i = 0; i < n; i++)
     {
       // always true
