@@ -13,6 +13,17 @@
 #include "export.h"
 #include "log.h"
 
+void print_raw_function_score(std::map<uint64_t, uint64_t> functions_occurrences, uint32_t n)
+{
+  printf("start address\t\tscore\n");
+  printf("---------------------------------------\n");
+  for (const auto &pair : functions_occurrences)
+  {
+    float score = (float)pair.second / options.offs_n;
+    printf("0x%016jx\t%f\n", pair.first, score);
+  }
+}
+
 int main(int argc, char *argv[])
 {
   size_t i;
@@ -117,12 +128,7 @@ int main(int argc, char *argv[])
       disasm.clear();
     }
 
-    printf("start address\t\toccurrencies\n");
-    printf("---------------------------------------\n");
-    for (const auto &pair : functions_occurrences)
-    {
-      printf("0x%016jx\t%ld\n", pair.first, pair.second);
-    }
+    print_raw_function_score(functions_occurrences, options.offs_n);
 
     return 0;
   }
