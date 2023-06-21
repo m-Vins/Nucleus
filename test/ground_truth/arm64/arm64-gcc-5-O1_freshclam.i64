@@ -1,0 +1,9 @@
+cdiff_cmd_del 0x54798
+cdiff_cmd_xchg 0x54670
+dns_label 0x57758
+dnsquery 0x5d2b4
+mprintf 0x506b4
+msg_callback 0x5647c
+optfree 0x51874
+recvln 0x562d4
+wwwconnect 0x580f0

@@ -1,0 +1,3 @@
+afalg_chk_platform 0x21e0
+afalg_cipher_init 0x27a4
+bind_afalg 0x233c

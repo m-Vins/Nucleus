@@ -1,0 +1,5 @@
+cdiff_ctx_free 0x407990
+decodehex 0x40f230
+getdsig 0x40cf00
+testsigs 0x40bc40
+unpack 0x40b740

@@ -1,0 +1,14 @@
+cdiff_cmd_close 0x4284b0
+cdiff_cmd_del 0x428120
+countlines 0x4279ac
+dns_label 0x42b0fc
+download 0x42a3ac
+execute 0x4317a0
+get_hostid 0x42a7a4
+mirman_check 0x43245c
+mirman_list 0x432920
+msg_callback 0x42a360
+optaddarg 0x424d1c
+optadditem 0x425de4
+remote_cvdhead 0x42bcb4
+sighandler 0x42a5d8

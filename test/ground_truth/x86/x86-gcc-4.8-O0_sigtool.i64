@@ -1,0 +1,16 @@
+_getopt_internal 0x804c8cd
+cdiff_apply 0x80516ab
+cdiff_cmd_close 0x8050661
+cdiff_cmd_del 0x8050380
+cdiff_cmd_move 0x8050b85
+cdiff_cmd_open 0x80501a3
+daemonize 0x804fbdc
+decodehex 0x805c071
+decodehexstr 0x805b3dd
+decodesig 0x805d118
+decodesigmod 0x805c8ea
+matchsig 0x805af4d
+optget_i 0x804d1b7
+print_version 0x804f844
+unpack 0x80584c1
+verifydiff 0x805ab0c

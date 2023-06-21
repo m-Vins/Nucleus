@@ -1,0 +1,10 @@
+cdiff_cmd_add 0x40c350
+decodesigs 0x41afac
+diffdirs 0x41b2c0
+listdb 0x41609c
+listdir 0x415cc4
+maxlinelen 0x4172f0
+mdprintf 0x405168
+mprintf 0x406744
+optaddarg 0x408748
+sha256file 0x4120f0

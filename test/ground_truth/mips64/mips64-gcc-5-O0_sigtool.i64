@@ -1,0 +1,6 @@
+_getopt_internal 0x120031a5c
+cdiff_cmd_xchg 0x1200374a0
+getdsig 0x12003eca0
+listdb 0x120043be8
+logg_facility 0x1200310ec
+optadd 0x1200329e8

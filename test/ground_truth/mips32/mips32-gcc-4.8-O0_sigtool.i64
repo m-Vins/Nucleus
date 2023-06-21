@@ -1,0 +1,11 @@
+cdiff_cmd_close 0x42a804
+cdiff_cmd_move 0x42b1a0
+cdiff_cmd_xchg 0x42a598
+logg 0x423170
+logg_close 0x4230e0
+mprintf 0x423c14
+optaddarg 0x425c40
+optfree 0x426050
+tar_addfile 0x42db20
+unpack 0x436844
+verifydiff 0x43a5ac

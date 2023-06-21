@@ -1,0 +1,6 @@
+countlines 0x405d98
+daemonize 0x405a00
+freshdbdir 0x40522c
+match_regex 0x405c64
+optaddarg 0x4029ac
+optadditem 0x403fc0

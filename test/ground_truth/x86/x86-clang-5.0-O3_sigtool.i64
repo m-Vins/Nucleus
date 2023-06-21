@@ -1,0 +1,7 @@
+cdiff_cmd_open 0x80508d0
+cdiff_cmd_xchg 0x8050b40
+daemonize 0x804f9d0
+listdir 0x8057b50
+optadditem 0x804ee40
+sigtool_vba_scandir 0x8051de0
+verifydiff 0x8055780

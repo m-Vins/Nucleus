@@ -1,0 +1,9 @@
+_getopt_internal 0x404eb0
+cdiff_token 0x4081f0
+decodesig 0x40f870
+listdb 0x40f0f0
+logg 0x403bb0
+mprintf 0x4041a0
+optadditem 0x406990
+optget_i 0x4067a0
+print_version 0x407210

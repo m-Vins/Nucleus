@@ -1,0 +1,8 @@
+countlines 0x4069de
+filelist 0x406602
+getdest 0x405ddc
+is_valid_hostid 0x409cb2
+meta 0x407764
+mprintf 0x402c9e
+optadd 0x404403
+optget_i 0x4043a0

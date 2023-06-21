@@ -1,0 +1,14 @@
+cdiff_apply 0x429924
+cdiff_cmd_unlink 0x42836c
+comparesha 0x42e660
+convenience_ctx 0x42a620
+countlines 0x427f00
+daemonize 0x427b64
+decodehex 0x42ddf4
+decodesigmod 0x42b65c
+decodesigs 0x4305fc
+getdsig 0x430930
+match_regex 0x427dac
+mdprintf 0x423fe0
+optparse 0x426050
+verifydiff 0x42e9bc

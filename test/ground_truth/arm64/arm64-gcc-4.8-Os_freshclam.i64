@@ -1,0 +1,9 @@
+filelist 0x408f50
+get_hostid 0x40b348
+is_valid_hostid 0x40b2b0
+logg_facility 0x406dd0
+mdprintf 0x405e80
+mirman_check 0x410f34
+optparse 0x407240
+recvln 0x40aedc
+sighandler 0x40b1e4

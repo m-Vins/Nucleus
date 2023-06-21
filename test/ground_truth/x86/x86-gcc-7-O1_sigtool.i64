@@ -1,0 +1,7 @@
+compare 0x24658
+convenience_ctx 0x2363d
+decodehex 0x2693c
+listdb 0x25113
+match_regex 0x20efc
+mprintf 0x1d4b9
+testsigs 0x29492

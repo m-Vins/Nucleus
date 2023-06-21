@@ -1,0 +1,7 @@
+_getopt_internal 0xc250
+action_copy 0xe580
+actsetup 0xe7e0
+checkaccess 0xf8e0
+logg_close 0xaf60
+logg_facility 0xbcf0
+scanmanager 0x106d0

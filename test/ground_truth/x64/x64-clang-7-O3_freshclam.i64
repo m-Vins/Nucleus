@@ -1,0 +1,11 @@
+cdiff_apply 0x407710
+dnsquery 0x410350
+execute 0x4105e0
+mirman_check 0x410eb0
+mirman_list 0x4112a0
+optadditem 0x4057f0
+optget_i 0x405620
+print_version 0x407180
+recvln 0x4095d0
+remote_cvdhead 0x40ecc0
+updatedb 0x40bb60

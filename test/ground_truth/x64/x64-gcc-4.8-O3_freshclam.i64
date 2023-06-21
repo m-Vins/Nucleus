@@ -1,0 +1,8 @@
+cdiff_cmd_move 0x408a00
+daemonize 0x4080f0
+mirman_list 0x412010
+mirman_read 0x4119d0
+msg_callback 0x40a5f0
+recvln 0x40a400
+remote_cvdhead 0x40bb20
+test_database 0x40ae90

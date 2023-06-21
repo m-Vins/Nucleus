@@ -1,0 +1,8 @@
+cdiff_apply 0x407450
+cdiff_ctx_free 0x407c50
+cdiff_execute 0x407d20
+cdiff_token 0x407ea0
+download 0x40a210
+execute 0x4101e0
+mirman_check 0x410a70
+test_database_wrap 0x40cf40

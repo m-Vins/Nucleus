@@ -1,0 +1,11 @@
+cdiff_cmd_close 0x804f700
+cdiff_cmd_xchg 0x804f610
+cdiff_execute 0x804f150
+execute 0x80572d0
+filelist 0x804e3c0
+get_hostid 0x8051920
+logg 0x804b420
+mirman_read 0x80579b0
+mirman_update 0x8057d50
+recvln 0x8050600
+sendln 0x8050550

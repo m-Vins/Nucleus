@@ -1,0 +1,9 @@
+cdiff_cmd_del 0xff59
+compare 0x12c88
+daemonize 0xf70a
+decodesigmod 0x1298a
+diffdirs 0x1330d
+listdb 0x13630
+optaddarg 0xd71f
+unpack 0x17abe
+verifydiff 0x15553

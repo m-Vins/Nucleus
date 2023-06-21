@@ -1,0 +1,5 @@
+cdiff_cmd_move 0x17e04
+cdiff_cmd_unlink 0x17620
+optparse 0x1519c
+sighandler 0x19118
+test_database_wrap 0x19610

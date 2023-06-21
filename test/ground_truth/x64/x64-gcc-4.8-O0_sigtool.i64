@@ -1,0 +1,13 @@
+build 0x40fc4c
+cdiff_cmd_add 0x409237
+cdiff_cmd_move 0x409c07
+cdiff_execute 0x40a653
+compare 0x413797
+countlines 0x408db7
+decodesig 0x416bfd
+mprintf 0x40491a
+my_getopt 0x404eda
+optadditem 0x407d53
+sha256file 0x40ed53
+tar_addfile 0x40b6ec
+testsigs 0x417525

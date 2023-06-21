@@ -1,0 +1,2 @@
+print_version 0x120005a20
+tracehook 0x1200064e0

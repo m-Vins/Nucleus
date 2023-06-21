@@ -1,0 +1,9 @@
+cdiff_cmd_open 0x407dd4
+daemonize 0x4070c0
+decodehexstr 0x40f13f
+match_regex 0x407225
+my_getopt 0x404ab8
+print_version 0x406dee
+sigtool_scandir 0x409438
+testsigs 0x40bb57
+unpack 0x40b67c

@@ -1,0 +1,8 @@
+action_move 0x804f110
+actsetup 0x804ef90
+checkaccess 0x8055290
+freshdbdir 0x804f600
+get_hostid 0x8055100
+match_regex 0x8050040
+optfree 0x804c6b0
+scandirs 0x8053db0

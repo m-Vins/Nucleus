@@ -1,0 +1,6 @@
+_getopt_internal 0x403460
+logg 0x402490
+logg_close 0x402088
+logg_facility 0x402ef8
+mdprintf 0x401c90
+optadditem 0x405770

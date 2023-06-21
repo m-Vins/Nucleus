@@ -1,0 +1,8 @@
+cdiff_cmd_close 0x42ffa8
+cdiff_cmd_del 0x4314f0
+comparesha 0x424c48
+decodehexstr 0x4235c0
+logg_close 0x42ba28
+optadditem 0x42e9f0
+optget_i 0x42d688
+unpack 0x427134

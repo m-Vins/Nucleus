@@ -1,0 +1,3 @@
+afalg_chk_platform 0x1900
+afalg_do_cipher 0x1ee0
+bind_afalg 0x1a50

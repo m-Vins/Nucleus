@@ -1,0 +1,2 @@
+bind_engine 0x2d78
+dasync_cipher_ctrl_helper 0x16a0

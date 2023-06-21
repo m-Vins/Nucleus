@@ -1,0 +1,10 @@
+cdiff_apply 0x299c0
+cdiff_cmd_add 0x29450
+cdiff_cmd_del 0x294f0
+cdiff_cmd_unlink 0x29760
+cdiff_cmd_xchg 0x29620
+decodesigs 0x202b2
+logg_facility 0x251e0
+mdprintf 0x24270
+optget_i 0x25fc0
+sigtool_scandir 0x2adc0

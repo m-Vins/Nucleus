@@ -1,0 +1,9 @@
+cdiff_cmd_move 0x407e50
+execute 0x40f000
+logg_facility 0x404465
+my_getopt 0x405b34
+optadd 0x40541c
+optadditem 0x4056ef
+remote_cvdhead 0x40d7b7
+test_database_wrap 0x40c079
+wwwconnect 0x40c336

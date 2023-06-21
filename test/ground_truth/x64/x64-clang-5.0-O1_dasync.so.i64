@@ -1,0 +1,3 @@
+bind_dasync 0x25a0
+dasync_cipher_helper 0x3270
+dasync_digests 0x2c30

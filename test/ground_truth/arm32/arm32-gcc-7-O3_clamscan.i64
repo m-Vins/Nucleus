@@ -1,0 +1,4 @@
+get_hostid 0x192b0
+is_valid_hostid 0x1922c
+optadditem 0x14f88
+scanmanager 0x176cc

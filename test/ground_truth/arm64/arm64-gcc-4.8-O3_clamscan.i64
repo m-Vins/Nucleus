@@ -1,0 +1,6 @@
+action_copy 0x4063e8
+actsetup 0x4065b0
+checkaccess 0x4074f8
+logg_facility 0x40402c
+optadd 0x404b70
+scanfile 0x407748

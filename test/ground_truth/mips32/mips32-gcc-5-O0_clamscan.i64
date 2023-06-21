@@ -1,0 +1,5 @@
+_getopt_internal 0x4041bc
+action_copy 0x4086fc
+logg_facility 0x40388c
+my_getopt 0x403960
+scanmanager 0x40d610

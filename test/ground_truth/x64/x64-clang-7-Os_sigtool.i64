@@ -1,0 +1,12 @@
+_getopt_internal 0x4048eb
+cdiff_cmd_move 0x407b1c
+cdiff_ctx_free 0x40724c
+cdiff_token 0x4073c5
+comparesha 0x40fc0b
+daemonize 0x406851
+listdir 0x40d62e
+match_regex 0x4069a8
+my_getopt 0x4044a0
+optaddarg 0x405e55
+unpack 0x40ad18
+verifydiff 0x40bab0

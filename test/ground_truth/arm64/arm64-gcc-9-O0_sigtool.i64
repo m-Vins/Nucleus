@@ -1,0 +1,11 @@
+cdiff_apply 0x5b8e8
+cdiff_cmd_add 0x5a518
+cdiff_cmd_close 0x5a94c
+decodehex 0x65414
+decodesigmod 0x65dbc
+decodesigs 0x66f68
+getdsig 0x5f138
+optadd 0x570f0
+optfree 0x575f0
+optget_i 0x57060
+optparse 0x5774c

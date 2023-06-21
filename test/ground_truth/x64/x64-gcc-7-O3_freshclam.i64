@@ -1,0 +1,8 @@
+cdiff_apply 0x11a20
+cdiff_cmd_close 0x106a0
+cdiff_cmd_del 0x115b0
+cdiff_cmd_move 0x10c20
+execute 0x19970
+freshdbdir 0xfba0
+optadditem 0xe9c0
+test_database_wrap 0x136e0

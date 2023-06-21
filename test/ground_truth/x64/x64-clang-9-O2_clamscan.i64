@@ -1,0 +1,4 @@
+action_copy 0x405bd0
+action_move 0x405b00
+checkaccess 0x409010
+scanfile 0x408970

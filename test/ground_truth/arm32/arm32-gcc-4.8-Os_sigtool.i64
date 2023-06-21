@@ -1,0 +1,12 @@
+cdiff_apply 0x16b30
+cdiff_cmd_add 0x169e0
+cdiff_cmd_move 0x1622c
+cdiff_ctx_free 0x15b20
+compare 0xd434
+convenience_ctx 0x17560
+listdir 0x185c8
+logg 0x13068
+match_regex 0x15a00
+mprintf 0x12e40
+optadditem 0x14f6c
+sha256file 0xcf70

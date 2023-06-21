@@ -1,0 +1,4 @@
+afalg_chk_platform 0x10400
+afalg_do_cipher 0x11520
+afalg_fin_cipher_aio 0x12300
+afalg_setup_async_event_notification 0x12998

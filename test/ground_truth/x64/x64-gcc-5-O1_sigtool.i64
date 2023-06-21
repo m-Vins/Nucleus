@@ -1,0 +1,13 @@
+cdiff_cmd_move 0x105f2
+cdiff_cmd_open 0x10038
+cdiff_execute 0xfac2
+comparesha 0x15008
+daemonize 0xf63e
+decodehexstr 0x13fb1
+filelist 0xf491
+mdprintf 0xb8e0
+optfree 0xd8d5
+optparse 0xd99b
+sigtool_scandir 0x12262
+sigtool_vba_scandir 0x11ca2
+unpack 0x1779d

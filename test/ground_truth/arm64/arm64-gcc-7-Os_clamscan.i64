@@ -1,0 +1,3 @@
+action_move 0xdc34
+actsetup 0xdda4
+get_hostid 0x110c0

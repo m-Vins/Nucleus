@@ -1,0 +1,4 @@
+my_getopt 0x65f5
+optadditem 0x5ea8
+optparse 0x47f0
+print_version 0x769c

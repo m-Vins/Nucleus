@@ -1,0 +1,17 @@
+_getopt_internal 0x804dcc0
+cdiff_cmd_close 0x804faf0
+cdiff_cmd_move 0x8050000
+cdiff_cmd_open 0x804f760
+cdiff_cmd_unlink 0x80506d0
+execute 0x8057b50
+filelist 0x804e730
+get_hostid 0x8051e60
+mirman_check 0x8058400
+mirman_list 0x8058810
+mirman_update 0x8058610
+mirman_write 0x8058ae0
+nonblock_fcntl 0x8057cb0
+recvln 0x8050b30
+remote_cvdhead 0x80562c0
+tar_addfile 0x80507e0
+updatedb 0x8053320

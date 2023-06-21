@@ -1,0 +1,15 @@
+cdiff_apply 0x406bd0
+cdiff_cmd_close 0x407960
+cdiff_cmd_move 0x407d00
+cdiff_ctx_free 0x407390
+cdiff_execute 0x407450
+dnsquery 0x40eec0
+download 0x409660
+downloadmanager 0x409860
+match_regex 0x406a90
+mdprintf 0x403410
+mirman_read 0x40f860
+mprintf 0x403df0
+optaddarg 0x4053c0
+optparse 0x404400
+print_version 0x406670

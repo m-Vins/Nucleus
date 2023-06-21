@@ -1,0 +1,4 @@
+optadd 0x403b90
+optadditem 0x4041e0
+optparse 0x402270
+tracehook 0x407d20

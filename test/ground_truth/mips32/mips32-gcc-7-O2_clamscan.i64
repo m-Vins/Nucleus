@@ -1,0 +1,6 @@
+_getopt_internal 0x403c20
+checkaccess 0x407cac
+freshdbdir 0x4066fc
+get_hostid 0x40b160
+mprintf 0x402a30
+scanfile 0x407fb4

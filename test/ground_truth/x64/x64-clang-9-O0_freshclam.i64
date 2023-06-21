@@ -1,0 +1,12 @@
+cdiff_apply 0x409680
+cdiff_cmd_unlink 0x40c030
+cdiff_ctx_free 0x40a540
+cdiff_token 0x40a8a0
+dnsquery 0x417c10
+download 0x40e000
+mirman_check 0x418eb0
+mirman_list 0x419540
+mirman_update 0x4191f0
+nonblock_fcntl 0x418400
+optadd 0x406c50
+optparse 0x4055e0

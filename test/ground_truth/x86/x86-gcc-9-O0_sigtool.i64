@@ -1,0 +1,15 @@
+cdiff_cmd_close 0x239e7
+cdiff_cmd_del 0x236dd
+cdiff_cmd_unlink 0x2490a
+cdiff_ctx_free 0x2327e
+cdiff_execute 0x24a7b
+compare 0x2e10c
+comparesha 0x2dae8
+countlines 0x231bb
+daemonize 0x22e93
+decodehexspecial 0x2f714
+getdsig 0x28d55
+listdb 0x2cbb7
+logg_close 0x1e816
+optfree 0x20861
+tar_addfile 0x25be3

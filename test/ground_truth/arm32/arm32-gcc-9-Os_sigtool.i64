@@ -1,0 +1,8 @@
+cdiff_cmd_add 0x18140
+convenience_ctx 0x195e4
+decodehex 0x1bd30
+decodesigmod 0x1a0a0
+logg 0x14f6c
+my_getopt 0x15618
+optfree 0x16230
+tar_addfile 0x193b8

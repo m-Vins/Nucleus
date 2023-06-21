@@ -1,0 +1,7 @@
+_getopt_internal 0x120004808
+checkaccess 0x120008710
+logg_close 0x1200035a0
+meta 0x120009540
+optfree 0x120005470
+post 0x120009770
+scanmanager 0x120009880

@@ -1,0 +1,4 @@
+_getopt_internal 0x120004ce8
+action_copy 0x120009028
+action_move 0x120008dec
+optaddarg 0x120005f80

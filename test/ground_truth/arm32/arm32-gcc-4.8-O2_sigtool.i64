@@ -1,0 +1,9 @@
+cdiff_cmd_add 0x181cc
+cdiff_token 0x17594
+convenience_ctx 0x18f10
+countlines 0x17014
+getdsig 0xd0c4
+logg 0x13c90
+sigtool_scandir 0x19528
+sigtool_vba_scandir 0x1905c
+tar_addfile 0x18cb4

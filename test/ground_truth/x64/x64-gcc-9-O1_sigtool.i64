@@ -1,0 +1,14 @@
+build 0x17ad1
+cdiff_cmd_add 0x109a0
+cdiff_cmd_open 0x10a37
+cdiff_cmd_unlink 0xfe35
+compare 0x12c28
+comparesha 0x16d9b
+decodehex 0x150d7
+decodehexstr 0x144bb
+decodesigs 0x16ba7
+freshdbdir 0xed58
+listdir 0x14142
+logg_facility 0xc914
+tar_addfile 0x115b1
+unpack 0x1369a

@@ -1,0 +1,3 @@
+_getopt_internal 0x403e0c
+match_regex 0x404c14
+my_getopt 0x4039f0

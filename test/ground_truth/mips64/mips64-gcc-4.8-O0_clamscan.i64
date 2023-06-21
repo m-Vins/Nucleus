@@ -1,0 +1,4 @@
+daemonize 0x120009c70
+mdprintf 0x120002910
+optparse 0x1200063c8
+print_version 0x120009578

@@ -1,0 +1,15 @@
+cdiff_apply 0x80516ab
+cdiff_cmd_unlink 0x80513cb
+cdiff_execute 0x8051510
+cdiff_token 0x8050093
+countlines 0x804fedb
+daemonize 0x804fbdc
+dnsquery 0x805c695
+logg_facility 0x804c31b
+mirman_check 0x805d6ca
+mirman_list 0x805dbb8
+mirman_update 0x805d93a
+proxyauth 0x8054f8c
+sendln 0x8052a05
+sighandler 0x8052d8e
+updatedb 0x8058c82

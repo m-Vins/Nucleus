@@ -1,0 +1,5 @@
+_getopt_internal 0x66f2
+countlines 0x73b9
+freshdbdir 0x6be3
+optfree 0x50e2
+optparse 0x51b2

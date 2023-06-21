@@ -1,0 +1,12 @@
+cdiff_cmd_close 0x80524a0
+download 0x80555b0
+downloadmanager 0x8055920
+logg_close 0x804b610
+logg_facility 0x804c480
+mirman_check 0x80609a0
+mirman_write 0x8061350
+my_getopt 0x804ee00
+optadd 0x804dfd0
+optparse 0x804c910
+proxyauth 0x805c560
+test_database_wrap 0x805a3c0

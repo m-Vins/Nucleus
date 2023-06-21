@@ -1,0 +1,8 @@
+cdiff_apply 0x407650
+cdiff_cmd_move 0x4088e0
+cdiff_cmd_open 0x408100
+cdiff_ctx_free 0x407e60
+compare 0x40d330
+decodesig 0x40deb0
+listdir 0x410030
+optadditem 0x406950

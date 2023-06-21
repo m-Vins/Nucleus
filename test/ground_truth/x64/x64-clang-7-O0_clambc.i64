@@ -1,0 +1,4 @@
+_getopt_internal 0x404c90
+match_regex 0x406040
+optaddarg 0x403a40
+print_version 0x405920

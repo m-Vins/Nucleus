@@ -1,0 +1,6 @@
+_getopt_internal 0x42cc80
+compare 0x422934
+mdprintf 0x42b600
+optfree 0x42d8d4
+sha256file 0x422758
+tar_addfile 0x4325d0

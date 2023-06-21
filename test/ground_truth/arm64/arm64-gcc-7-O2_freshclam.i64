@@ -1,0 +1,7 @@
+cdiff_cmd_unlink 0x550c0
+countlines 0x54cf0
+freshdbdir 0x543a8
+logg 0x51910
+mdprintf 0x51000
+mprintf 0x51510
+optfree 0x525a8

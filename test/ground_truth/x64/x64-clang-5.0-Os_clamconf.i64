@@ -1,0 +1,4 @@
+filelist 0x403ebf
+match_regex 0x40412b
+my_getopt 0x403050
+optadd 0x402938

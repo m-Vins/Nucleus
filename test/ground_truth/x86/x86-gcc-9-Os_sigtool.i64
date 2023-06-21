@@ -1,0 +1,8 @@
+_getopt_internal 0x1f734
+cdiff_cmd_move 0x2204d
+cdiff_cmd_unlink 0x21f42
+daemonize 0x21610
+decodesigs 0x27c1b
+getdsig 0x244b1
+logg_close 0x1ea0d
+optfree 0x1ff5b

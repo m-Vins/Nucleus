@@ -1,0 +1,14 @@
+cdiff_apply 0x429b08
+cdiff_cmd_del 0x428254
+compare 0x42c818
+decodehex 0x42f714
+decodesigs 0x433390
+diffdirs 0x42d204
+freshdbdir 0x426bac
+match_regex 0x427780
+maxlinelen 0x42c120
+optadd 0x4248bc
+optaddarg 0x424af0
+optget_i 0x424820
+print_version 0x426f40
+verifydiff 0x43059c

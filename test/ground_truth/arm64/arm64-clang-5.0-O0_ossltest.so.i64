@@ -1,0 +1,4 @@
+bind_ossltest 0x10518
+digest_sha256 0x10d24
+ossltest_aes_128_cbc 0x113d4
+ossltest_ciphers 0x107c0

@@ -1,0 +1,2 @@
+ossltest_aes_128_cbc 0x2e10
+ossltest_digest_nids 0x2320

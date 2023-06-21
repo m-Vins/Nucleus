@@ -1,0 +1,13 @@
+cdiff_cmd_del 0x4071d2
+cdiff_cmd_move 0x407733
+cdiff_cmd_open 0x407087
+cdiff_cmd_xchg 0x4072c2
+cdiff_token 0x406fd1
+download 0x409019
+is_valid_hostid 0x40914a
+mdprintf 0x403404
+mirman_list 0x40f3a0
+nonblock_fcntl 0x40e9a2
+optparse 0x404278
+print_version 0x4061ca
+tar_addfile 0x407e68

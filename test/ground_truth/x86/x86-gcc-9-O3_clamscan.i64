@@ -1,0 +1,4 @@
+match_regex 0x90f0
+optadd 0x66b0
+optparse 0x6bc0
+scanfile 0x9ae0

@@ -1,0 +1,8 @@
+cdiff_cmd_close 0x28b70
+cdiff_ctx_free 0x282e0
+cdiff_token 0x283c0
+compare 0x1d313
+mprintf 0x24620
+optfree 0x26190
+sha256file 0x1d1be
+sigtool_vba_scandir 0x2a6b0

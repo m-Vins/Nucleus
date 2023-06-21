@@ -1,0 +1,7 @@
+cdiff_cmd_close 0x17b50
+downloadmanager 0x1f30c
+logg 0x13aa8
+mdprintf 0x13430
+mirman_list 0x21b34
+proxyauth 0x1ab9c
+recvln 0x1943c

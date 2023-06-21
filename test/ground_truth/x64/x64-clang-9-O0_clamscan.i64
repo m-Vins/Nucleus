@@ -1,0 +1,7 @@
+_getopt_internal 0x404d30
+freshdbdir 0x408380
+mdprintf 0x4026d0
+optadditem 0x407540
+optparse 0x405900
+post 0x40c330
+scandirs 0x40c440

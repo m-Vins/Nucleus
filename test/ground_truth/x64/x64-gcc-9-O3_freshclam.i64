@@ -1,0 +1,11 @@
+cdiff_cmd_move 0x10b50
+cdiff_cmd_open 0x11350
+daemonize 0x10190
+execute 0x19540
+is_valid_hostid 0x12a70
+logg_facility 0xd3d0
+mirman_update 0x1a100
+optaddarg 0xd640
+print_version 0xfd70
+sighandler 0x12990
+updatedb 0x15a10

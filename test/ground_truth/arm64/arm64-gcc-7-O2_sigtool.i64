@@ -1,0 +1,12 @@
+build 0x5387c
+cdiff_cmd_move 0x5b3f8
+cdiff_cmd_open 0x5ae28
+cdiff_cmd_unlink 0x5a9b0
+compare 0x50378
+filelist 0x5a130
+listdb 0x5d208
+maxlinelen 0x50000
+optadd 0x58550
+optadditem 0x59730
+optfree 0x588f8
+testsigs 0x5308c

@@ -1,0 +1,10 @@
+cdiff_cmd_del 0x217b0
+dns_label 0x23b80
+dnsquery 0x2a5d0
+downloadmanager 0x28d40
+execute 0x2a970
+mirman_update 0x2b660
+optadd 0x1e170
+optparse 0x1e690
+print_version 0x20a30
+test_database 0x240d0

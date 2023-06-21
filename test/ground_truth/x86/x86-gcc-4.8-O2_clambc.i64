@@ -1,0 +1,3 @@
+countlines 0x804d300
+match_regex 0x804d1d0
+optfree 0x804a780

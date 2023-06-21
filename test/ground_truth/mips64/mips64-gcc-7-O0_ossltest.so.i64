@@ -1,0 +1,2 @@
+ossltest_aes128_gcm_cipher 0x3a84
+ossltest_digest_nids 0x2164

@@ -1,0 +1,14 @@
+cdiff_cmd_add 0x408990
+cdiff_cmd_move 0x408fa0
+cdiff_cmd_xchg 0x408760
+daemonize 0x408070
+filelist 0x407ec0
+logg_close 0x4047c0
+mirman_list 0x411e70
+nonblock_fcntl 0x4112e0
+optadditem 0x4069c0
+optfree 0x4059f0
+recvln 0x40a300
+remote_cvdhead 0x40ba20
+sendln 0x40a260
+wwwconnect 0x40b220

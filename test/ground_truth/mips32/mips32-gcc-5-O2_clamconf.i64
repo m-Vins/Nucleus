@@ -1,0 +1,4 @@
+filelist 0x405b40
+match_regex 0x405f68
+optadd 0x402bd0
+optparse 0x4031f0

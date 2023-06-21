@@ -1,0 +1,3 @@
+afalg_chk_platform 0x21ec
+afalg_do_cipher 0x2920
+afalg_setup_async_event_notification 0x2e9c

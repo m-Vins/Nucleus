@@ -1,0 +1,5 @@
+_getopt_internal 0x5c45
+countlines 0x6bd0
+filelist 0x67aa
+optadd 0x3daa
+optparse 0x40aa

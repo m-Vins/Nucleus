@@ -1,0 +1,9 @@
+cdiff_cmd_del 0x8050250
+cdiff_cmd_open 0x80500f0
+comparesha 0x8059820
+decodehex 0x8057e70
+decodehexspecial 0x8058e00
+decodehexstr 0x8059600
+logg_facility 0x804cb20
+sigtool_scandir 0x8051920
+testsigs 0x80542d0

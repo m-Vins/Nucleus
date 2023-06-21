@@ -1,0 +1,8 @@
+_getopt_internal 0x12afa
+cdiff_cmd_open 0x1515f
+decodehex 0xca94
+diffdirs 0xc02e
+match_regex 0x14a88
+optadd 0x13007
+optadditem 0x13fab
+unpack 0xe9d7

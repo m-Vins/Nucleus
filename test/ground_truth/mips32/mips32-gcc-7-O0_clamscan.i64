@@ -1,0 +1,7 @@
+action_copy 0x4086ec
+action_move 0x40849c
+daemonize 0x409764
+freshdbdir 0x408be8
+getdest 0x408210
+mprintf 0x4032fc
+optaddarg 0x405390

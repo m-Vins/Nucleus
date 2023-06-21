@@ -1,0 +1,4 @@
+digest_sha1 0x2440
+digest_sha256 0x25d0
+ossltest_aes128_gcm_cipher 0x19e0
+ossltest_digests 0x1d60

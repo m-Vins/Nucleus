@@ -1,0 +1,12 @@
+_getopt_internal 0xe540
+cdiff_cmd_move 0x11820
+cdiff_ctx_free 0x10f60
+cdiff_execute 0x115d0
+decodesigmod 0x13ad0
+decodesigs 0x17b70
+diffdirs 0x147f0
+getdsig 0x13d10
+optfree 0xefc0
+optparse 0xf0a0
+sha256file 0x13bc0
+sigtool_scandir 0x13580

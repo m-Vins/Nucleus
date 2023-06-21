@@ -1,0 +1,5 @@
+cdiff_cmd_del 0x40b500
+cdiff_cmd_open 0x40b270
+cdiff_ctx_free 0x40ad60
+cdiff_execute 0x40aec0
+logg_facility 0x405670

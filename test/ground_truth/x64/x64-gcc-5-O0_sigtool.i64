@@ -1,0 +1,11 @@
+cdiff_cmd_del 0x15c11
+cdiff_cmd_open 0x159ce
+daemonize 0x15378
+decodehex 0x227a2
+decodesig 0x23bf2
+getdsig 0x1b201
+logg_close 0x106fc
+matchsig 0x214b8
+mdprintf 0xfec0
+optadd 0x1275b
+optfree 0x12c2f

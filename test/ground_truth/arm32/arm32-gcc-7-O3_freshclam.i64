@@ -1,0 +1,10 @@
+cdiff_cmd_add 0x18aec
+cdiff_cmd_close 0x17dc4
+cdiff_cmd_move 0x182c4
+cdiff_ctx_free 0x17cf8
+daemonize 0x17998
+download 0x19d40
+execute 0x1ffb4
+mirman_write 0x20fb8
+recvln 0x19ba0
+remote_cvdhead 0x1b304

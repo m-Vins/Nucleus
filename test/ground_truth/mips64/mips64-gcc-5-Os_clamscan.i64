@@ -1,0 +1,11 @@
+action_move 0x1200066e8
+checkaccess 0x120007cd4
+countlines 0x12000751c
+logg_close 0x1200034f0
+logg_facility 0x120004050
+mdprintf 0x120003160
+meta 0x1200089c4
+my_getopt 0x1200040e0
+optaddarg 0x120004dc4
+optfree 0x120004f80
+print_version 0x120006d2c

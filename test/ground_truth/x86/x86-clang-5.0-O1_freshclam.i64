@@ -1,0 +1,14 @@
+cdiff_apply 0x804f600
+cdiff_cmd_move 0x80508a0
+cdiff_execute 0x804ff30
+download 0x80523f0
+downloadmanager 0x8052610
+logg_facility 0x804cb20
+mirman_check 0x8058a60
+mirman_list 0x8058e00
+msg_callback 0x8052280
+my_getopt 0x804e3e0
+optfree 0x804cd50
+optget_i 0x804dd30
+test_database_wrap 0x8055000
+wwwconnect 0x8055300

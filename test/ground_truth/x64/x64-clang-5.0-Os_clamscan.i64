@@ -1,0 +1,7 @@
+action_move 0x4058e4
+actsetup 0x4057e0
+checkaccess 0x408c4c
+getdest 0x405a67
+is_valid_hostid 0x408acc
+mprintf 0x403363
+post 0x40809e

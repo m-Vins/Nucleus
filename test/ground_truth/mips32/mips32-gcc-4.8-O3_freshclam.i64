@@ -1,0 +1,9 @@
+_getopt_internal 0x426fc0
+cdiff_apply 0x429fc8
+is_valid_hostid 0x42b5c0
+logg 0x424338
+mirman_write 0x4341cc
+my_getopt 0x426b60
+optadd 0x424ff4
+tar_addfile 0x42ab40
+updatedb 0x42e880

@@ -1,0 +1,3 @@
+afalg_chk_platform 0x102c8
+afalg_cipher_cleanup 0x10e08
+afalg_do_cipher 0x10c50

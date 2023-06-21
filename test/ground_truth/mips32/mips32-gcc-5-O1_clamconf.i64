@@ -1,0 +1,3 @@
+daemonize 0x404e18
+match_regex 0x405080
+print_version 0x404840

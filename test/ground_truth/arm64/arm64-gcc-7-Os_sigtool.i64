@@ -1,0 +1,14 @@
+cdiff_apply 0x5a610
+cdiff_cmd_unlink 0x597d4
+cdiff_execute 0x596a8
+compare 0x5035c
+countlines 0x5949c
+decodesig 0x52240
+maxlinelen 0x50000
+mprintf 0x5642c
+my_getopt 0x56f70
+optget_i 0x579c8
+optparse 0x57c5c
+print_version 0x58e98
+sigtool_scandir 0x5b61c
+testsigs 0x52d70

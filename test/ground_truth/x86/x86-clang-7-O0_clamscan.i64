@@ -1,0 +1,6 @@
+_getopt_internal 0x804b870
+getdest 0x804eee0
+is_valid_hostid 0x8054750
+optaddarg 0x804deb0
+optadditem 0x804e1a0
+scanfile 0x8054030

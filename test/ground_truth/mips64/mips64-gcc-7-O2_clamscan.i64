@@ -1,0 +1,6 @@
+_getopt_internal 0x120004758
+freshdbdir 0x120007318
+get_hostid 0x12000b800
+logg_close 0x120003520
+meta 0x120009530
+scanfile 0x120008a38

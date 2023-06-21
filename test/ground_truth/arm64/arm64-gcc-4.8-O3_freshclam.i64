@@ -1,0 +1,8 @@
+cdiff_cmd_del 0x40a9a8
+cdiff_cmd_move 0x40a148
+cdiff_execute 0x40ad2c
+dns_label 0x40bf80
+dnsquery 0x411638
+logg_facility 0x406ffc
+optaddarg 0x407260
+wwwconnect 0x40c8a0

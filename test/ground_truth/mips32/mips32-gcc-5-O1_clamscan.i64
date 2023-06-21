@@ -1,0 +1,6 @@
+_getopt_internal 0x40375c
+action_move 0x406784
+getdest 0x4063d8
+mprintf 0x402300
+my_getopt 0x403260
+optparse 0x40477c

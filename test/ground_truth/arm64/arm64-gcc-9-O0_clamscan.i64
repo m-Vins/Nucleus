@@ -1,0 +1,5 @@
+action_copy 0x10634
+action_move 0x104c8
+countlines 0x11448
+getdest 0x10338
+meta 0x1257c

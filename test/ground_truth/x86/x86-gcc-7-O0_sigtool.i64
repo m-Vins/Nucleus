@@ -1,0 +1,13 @@
+cdiff_cmd_add 0x235f6
+cdiff_cmd_close 0x239d1
+cdiff_cmd_del 0x236c7
+cdiff_token 0x23398
+compare 0x2e0d7
+daemonize 0x22e7e
+decodesigmod 0x30ae9
+mdprintf 0x1e13d
+mprintf 0x1f011
+optadd 0x20379
+print_version 0x22a4e
+sha256file 0x293da
+sigtool_scandir 0x26f5e

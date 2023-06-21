@@ -1,0 +1,11 @@
+cdiff_apply 0x8052520
+cdiff_cmd_del 0x8053e40
+cdiff_ctx_free 0x8053680
+compare 0x805cf70
+countlines 0x8052440
+decodehexstr 0x8061340
+filelist 0x8051dc0
+maxlinelen 0x805d9a0
+optget_i 0x80509b0
+testsigs 0x805aff0
+verifydiff 0x805c210

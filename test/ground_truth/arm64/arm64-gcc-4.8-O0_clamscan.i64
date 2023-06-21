@@ -1,0 +1,4 @@
+is_valid_hostid 0x40e700
+logg_close 0x40345c
+optadd 0x405d8c
+optaddarg 0x405fb8

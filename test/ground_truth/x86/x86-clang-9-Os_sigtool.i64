@@ -1,0 +1,14 @@
+cdiff_cmd_del 0x804ecb8
+cdiff_cmd_open 0x804eb79
+compare 0x8054977
+comparesha 0x80577a4
+countlines 0x804e02f
+decodesig 0x8055b57
+decodesigs 0x8052a9b
+freshdbdir 0x804d97a
+listdir 0x80550d7
+logg_facility 0x804b9f4
+my_getopt 0x804bbb0
+optadditem 0x804d523
+sha256file 0x8054846
+unpack 0x8052618

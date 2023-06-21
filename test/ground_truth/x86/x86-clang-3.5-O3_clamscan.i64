@@ -1,0 +1,3 @@
+_getopt_internal 0x804afc0
+daemonize 0x804d960
+mprintf 0x804a6c0

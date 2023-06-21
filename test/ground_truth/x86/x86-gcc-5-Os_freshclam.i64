@@ -1,0 +1,12 @@
+cdiff_cmd_del 0x208a8
+cdiff_token 0x204f5
+dnsquery 0x28546
+execute 0x287fe
+is_valid_hostid 0x226d9
+logg_facility 0x1dd44
+mirman_update 0x2926e
+mirman_write 0x29675
+mprintf 0x1d3de
+recvln 0x222df
+tar_addfile 0x21f4a
+test_database_wrap 0x22ae3

@@ -1,0 +1,3 @@
+_getopt_internal 0xc944
+my_getopt 0xc0b4
+optget_i 0x98ec

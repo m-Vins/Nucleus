@@ -1,0 +1,4 @@
+cdiff_execute 0x8050420
+mirman_check 0x8059b10
+mirman_list 0x8059f40
+print_version 0x804f450

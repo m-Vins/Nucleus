@@ -1,0 +1,9 @@
+cdiff_cmd_add 0x18d40
+cdiff_cmd_open 0x18c68
+cdiff_execute 0x190cc
+execute 0x201dc
+mirman_check 0x20b20
+mprintf 0x146c8
+optadditem 0x163cc
+optfree 0x1545c
+wwwconnect 0x1adc4

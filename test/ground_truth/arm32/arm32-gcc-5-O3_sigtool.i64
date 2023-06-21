@@ -1,0 +1,9 @@
+convenience_ctx 0x1fb28
+decodehexspecial 0x143f0
+logg 0x1a874
+matchsig 0x158f8
+optadd 0x1ba0c
+optadditem 0x1cd4c
+optparse 0x1be44
+tar_addfile 0x1f864
+testsigs 0x1689c

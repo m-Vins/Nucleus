@@ -1,0 +1,14 @@
+cdiff_cmd_close 0x804f260
+cdiff_cmd_move 0x804f660
+cdiff_cmd_unlink 0x804fd30
+cdiff_cmd_xchg 0x804f170
+countlines 0x804e380
+downloadmanager 0x8051360
+execute 0x8056d60
+mprintf 0x804b8e0
+my_getopt 0x804d220
+nonblock_fcntl 0x8056ec0
+optadd 0x804cae0
+print_version 0x804de60
+tar_addfile 0x804fe10
+updatedb 0x80527e0

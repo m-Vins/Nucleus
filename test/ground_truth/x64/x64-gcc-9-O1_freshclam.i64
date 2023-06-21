@@ -1,0 +1,8 @@
+cdiff_apply 0x10609
+cdiff_cmd_xchg 0x10203
+daemonize 0xee2f
+logg 0xbb17
+msg_callback 0x115a4
+nonblock_fcntl 0x19948
+optaddarg 0xc487
+remote_cvdhead 0x14997

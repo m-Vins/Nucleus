@@ -1,0 +1,9 @@
+cdiff_cmd_add 0x19a84
+cdiff_cmd_del 0x19b78
+cdiff_cmd_move 0x1a454
+comparesha 0x254ec
+listdir 0x241ac
+logg_close 0x13e74
+matchsig 0x26a0c
+my_getopt 0x14c38
+unpack 0x23d10

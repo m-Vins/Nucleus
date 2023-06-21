@@ -1,0 +1,5 @@
+_getopt_internal 0x138a8
+daemonize 0x145d8
+optadd 0x118c4
+optaddarg 0x11a3c
+optfree 0x11ca8

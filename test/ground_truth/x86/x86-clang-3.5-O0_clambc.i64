@@ -1,0 +1,5 @@
+_getopt_internal 0x804ca90
+countlines 0x804e170
+my_getopt 0x804c3f0
+optadditem 0x804ba00
+optparse 0x8049990

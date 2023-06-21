@@ -1,0 +1,10 @@
+_getopt_internal 0x120031964
+cdiff_cmd_add 0x120036d9c
+cdiff_cmd_move 0x120037cdc
+cdiff_cmd_xchg 0x1200371a0
+cdiff_ctx_free 0x120036770
+freshdbdir 0x1200356e4
+maxlinelen 0x120045034
+mprintf 0x120030b14
+print_version 0x120035aa8
+tar_addfile 0x12003a380

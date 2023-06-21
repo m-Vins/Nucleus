@@ -1,0 +1,10 @@
+build 0x2a195
+cdiff_cmd_add 0x23591
+cdiff_cmd_close 0x2396c
+cdiff_cmd_open 0x23452
+cdiff_cmd_xchg 0x237ed
+compare 0x2df1f
+getdsig 0x28bb7
+matchsig 0x2eddc
+optadd 0x2039b
+sigtool_vba_scandir 0x27371

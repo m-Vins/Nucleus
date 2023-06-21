@@ -1,0 +1,4 @@
+freshdbdir 0xca60
+my_getopt 0xc008
+optget_i 0xa998
+optparse 0xac78

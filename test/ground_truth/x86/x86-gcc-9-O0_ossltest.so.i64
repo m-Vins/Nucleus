@@ -1,0 +1,5 @@
+bind_engine 0x1f92
+digest_sha512 0x1895
+ossltest_aes_128_cbc 0x1b97
+ossltest_aes_128_gcm 0x1c98
+ossltest_ciphers 0x21ae

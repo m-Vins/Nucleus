@@ -1,0 +1,9 @@
+cdiff_cmd_close 0x17a90
+cdiff_token 0x173c0
+downloadmanager 0x1f33c
+mirman_whitelist 0x21cd4
+mprintf 0x137c4
+optfree 0x14768
+optget_i 0x14328
+remote_cvdhead 0x1c92c
+sighandler 0x19538

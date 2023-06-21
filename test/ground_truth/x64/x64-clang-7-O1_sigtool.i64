@@ -1,0 +1,14 @@
+_getopt_internal 0x404ad0
+build 0x40a100
+cdiff_apply 0x406f00
+cdiff_cmd_add 0x407a10
+cdiff_cmd_close 0x407c90
+cdiff_cmd_move 0x408020
+cdiff_cmd_unlink 0x408670
+comparesha 0x410610
+decodehexspecial 0x40fd10
+listdir 0x40de10
+logg_facility 0x404430
+print_version 0x4069a0
+sigtool_scandir 0x408fc0
+unpack 0x40b310

@@ -1,0 +1,7 @@
+countlines 0xea59
+logg_close 0xaa36
+logg_facility 0xb6cd
+mdprintf 0xa5a0
+meta 0xf936
+my_getopt 0xb721
+optfree 0xc595

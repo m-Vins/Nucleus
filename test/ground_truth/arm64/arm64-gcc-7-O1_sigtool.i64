@@ -1,0 +1,11 @@
+build 0x5c1e4
+cdiff_cmd_unlink 0x545e4
+cdiff_token 0x54364
+comparesha 0x59b78
+listdir 0x588f8
+logg 0x50a68
+mprintf 0x50604
+my_getopt 0x513bc
+optadd 0x51f7c
+optget_i 0x51f20
+print_version 0x53aec

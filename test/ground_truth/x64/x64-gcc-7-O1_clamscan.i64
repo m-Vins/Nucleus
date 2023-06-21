@@ -1,0 +1,8 @@
+action_move 0xdf8b
+checkaccess 0xfc6f
+countlines 0xeb41
+filelist 0xe6e1
+is_valid_hostid 0x12305
+logg 0xada2
+match_regex 0xea41
+optparse 0xc6d2

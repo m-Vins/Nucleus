@@ -1,0 +1,2 @@
+bind_ossltest 0x1f10
+digest_sha512 0x25e0

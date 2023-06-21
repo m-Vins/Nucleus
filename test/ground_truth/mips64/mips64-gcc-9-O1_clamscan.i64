@@ -1,0 +1,5 @@
+is_valid_hostid 0x12000b258
+logg 0x120002f98
+match_regex 0x120007264
+optadditem 0x120005c30
+optparse 0x120004be8

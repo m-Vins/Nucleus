@@ -1,0 +1,12 @@
+_getopt_internal 0xe393
+cdiff_cmd_move 0xf794
+cdiff_execute 0xf58c
+dnsquery 0x1622e
+is_valid_hostid 0x10e99
+msg_callback 0x10c70
+nonblock_fcntl 0x16625
+optaddarg 0xcef4
+optfree 0xd025
+remote_cvdhead 0x11e47
+sendln 0x10a5e
+test_database_wrap 0x11b30

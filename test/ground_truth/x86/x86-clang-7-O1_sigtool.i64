@@ -1,0 +1,9 @@
+cdiff_cmd_move 0x804f610
+cdiff_ctx_free 0x804ec80
+cdiff_token 0x804ee30
+decodehex 0x8056a80
+getdsig 0x8054480
+listdir 0x8055950
+logg_facility 0x804baf0
+optaddarg 0x804d670
+optadditem 0x804d7d0

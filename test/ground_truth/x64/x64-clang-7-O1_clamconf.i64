@@ -1,0 +1,5 @@
+daemonize 0x403f30
+freshdbdir 0x403a80
+optadd 0x402790
+optget_i 0x4028d0
+optparse 0x4019f0

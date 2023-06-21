@@ -1,0 +1,13 @@
+cdiff_cmd_add 0x4076c0
+cdiff_cmd_close 0x407940
+cdiff_cmd_xchg 0x407850
+countlines 0x406b30
+daemonize 0x406910
+dns_label 0x40e070
+freshdbdir 0x406460
+mirman_read 0x40f910
+mirman_update 0x40fc20
+optadditem 0x405470
+print_version 0x406650
+tar_addfile 0x408410
+test_database_wrap 0x40c080

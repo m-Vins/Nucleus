@@ -1,0 +1,16 @@
+cdiff_apply 0x21770
+cdiff_cmd_del 0x2149c
+cdiff_cmd_xchg 0x21357
+cdiff_token 0x2072f
+downloadmanager 0x28fb5
+execute 0x2af9f
+match_regex 0x1ff82
+mirman_list 0x2bd15
+mirman_write 0x2c01a
+optfree 0x1d47a
+proxyauth 0x23ecc
+remote_cvdhead 0x25f71
+tar_addfile 0x22321
+test_database 0x25ab3
+test_database_wrap 0x25c0e
+updatedb 0x26c10

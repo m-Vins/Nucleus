@@ -1,0 +1,7 @@
+cdiff_cmd_close 0x8053c00
+cdiff_cmd_move 0x80542c0
+cdiff_ctx_free 0x8053060
+dns_label 0x805ff40
+dnsquery 0x8061d10
+mirman_check 0x80631f0
+optadd 0x804f330

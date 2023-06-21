@@ -1,0 +1,3 @@
+bind_ossltest 0x10440
+digest_md5 0x10854
+digest_sha384 0x10adc

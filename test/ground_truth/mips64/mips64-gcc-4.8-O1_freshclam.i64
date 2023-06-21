@@ -1,0 +1,14 @@
+cdiff_cmd_open 0x12003575c
+daemonize 0x120033af0
+download 0x120036cd0
+get_hostid 0x1200380b4
+logg_facility 0x120030894
+match_regex 0x120033d00
+mirman_check 0x12003fd5c
+mirman_read 0x12003fb94
+mirman_write 0x1200406f4
+optparse 0x120030f90
+proxyauth 0x120038198
+sendln 0x120036840
+updatedb 0x12003b060
+wwwconnect 0x120038854

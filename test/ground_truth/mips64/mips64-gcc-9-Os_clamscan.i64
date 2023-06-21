@@ -1,0 +1,6 @@
+action_move 0x120006228
+mdprintf 0x120002f00
+meta 0x120008324
+optadd 0x120004860
+optaddarg 0x120004a84
+post 0x120008518

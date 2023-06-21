@@ -1,0 +1,7 @@
+comparesha 0x1dcc8
+decodehex 0x1d594
+decodesig 0x1e93c
+logg 0x15478
+logg_facility 0x15b84
+tar_addfile 0x1a540
+testsigs 0x1f600

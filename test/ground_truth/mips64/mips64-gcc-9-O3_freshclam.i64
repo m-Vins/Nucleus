@@ -1,0 +1,9 @@
+cdiff_cmd_open 0x1200361c0
+execute 0x12003f7b0
+freshdbdir 0x1200342c8
+mirman_update 0x120040820
+mirman_whitelist 0x120040ef8
+my_getopt 0x1200336a0
+optfree 0x120031f18
+sighandler 0x120038068
+wwwconnect 0x1200391d0

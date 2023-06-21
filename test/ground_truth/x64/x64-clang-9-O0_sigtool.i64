@@ -1,0 +1,7 @@
+cdiff_cmd_close 0x40b370
+decodehex 0x416af0
+decodehexstr 0x418d80
+getdsig 0x413370
+optadd 0x407fc0
+sigtool_scandir 0x40d1d0
+testsigs 0x4112f0

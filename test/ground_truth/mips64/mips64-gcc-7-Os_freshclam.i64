@@ -1,0 +1,8 @@
+cdiff_ctx_free 0x120034720
+execute 0x12003d960
+get_hostid 0x12003723c
+logg 0x1200310a4
+mprintf 0x120030da0
+optaddarg 0x120031b24
+remote_cvdhead 0x120038620
+wwwconnect 0x120037e48

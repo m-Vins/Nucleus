@@ -1,0 +1,2 @@
+OSSL_provider_init 0xcd4
+mdc2_set_ctx_params 0xf58

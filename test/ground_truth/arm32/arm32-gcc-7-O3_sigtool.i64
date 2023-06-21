@@ -1,0 +1,8 @@
+cdiff_cmd_del 0x1e948
+cdiff_cmd_xchg 0x1ea60
+comparesha 0x15268
+convenience_ctx 0x1f8e8
+decodesigmod 0x1376c
+my_getopt 0x1ae70
+optget_i 0x1ba2c
+optparse 0x1bd00

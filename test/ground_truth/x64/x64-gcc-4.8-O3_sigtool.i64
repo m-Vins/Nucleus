@@ -1,0 +1,15 @@
+_getopt_internal 0x40b460
+cdiff_apply 0x40f1c0
+cdiff_cmd_add 0x40ecc0
+cdiff_cmd_open 0x40ebd0
+cdiff_cmd_unlink 0x40ef80
+countlines 0x40ddb0
+decodesigs 0x4064f8
+diffdirs 0x403f2a
+getdsig 0x4066ab
+logg 0x40a620
+logg_facility 0x40af80
+optfree 0x40bf50
+optget_i 0x40baf0
+optparse 0x40c030
+unpack 0x406a7d

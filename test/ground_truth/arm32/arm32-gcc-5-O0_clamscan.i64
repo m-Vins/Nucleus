@@ -1,0 +1,3 @@
+mdprintf 0x11f14
+meta 0x19608
+my_getopt 0x1347c

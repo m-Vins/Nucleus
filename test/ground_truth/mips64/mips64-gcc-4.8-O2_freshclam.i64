@@ -1,0 +1,11 @@
+cdiff_cmd_add 0x120036980
+cdiff_cmd_move 0x120035ce8
+countlines 0x120034fe0
+logg 0x1200311d8
+logg_facility 0x120031a80
+mirman_check 0x12003fe38
+mprintf 0x120030e68
+optadd 0x120031de8
+optadditem 0x120033168
+print_version 0x120034778
+wwwconnect 0x120038f80

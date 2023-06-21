@@ -1,0 +1,4 @@
+digest_md5 0x2d38
+digest_sha1 0x2e5c
+ossltest_ciphers 0x28e4
+ossltest_digest_nids 0x2aa8

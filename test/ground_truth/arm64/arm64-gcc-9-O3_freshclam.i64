@@ -1,0 +1,11 @@
+cdiff_apply 0x561a8
+cdiff_cmd_add 0x55c08
+cdiff_cmd_del 0x55ca8
+cdiff_cmd_move 0x55370
+cdiff_cmd_open 0x55b00
+cdiff_ctx_free 0x54d58
+daemonize 0x549b8
+mprintf 0x51490
+print_version 0x545b0
+sendln 0x56d58
+wwwconnect 0x58008

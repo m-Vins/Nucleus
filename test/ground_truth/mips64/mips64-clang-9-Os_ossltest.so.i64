@@ -1,0 +1,4 @@
+digest_sha1 0x10eb8
+ossltest_aes_128_cbc 0x118e8
+ossltest_ciphers 0x109c0
+ossltest_digest_nids 0x10b78

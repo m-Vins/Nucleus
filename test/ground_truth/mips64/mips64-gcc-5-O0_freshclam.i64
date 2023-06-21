@@ -1,0 +1,9 @@
+cdiff_cmd_close 0x12003788c
+cdiff_cmd_xchg 0x120037620
+daemonize 0x12003656c
+dnsquery 0x1200480e0
+logg_facility 0x12003126c
+mirman_write 0x12004aa84
+optadditem 0x120033948
+optparse 0x120031e00
+wwwconnect 0x12003d954

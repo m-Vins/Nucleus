@@ -1,0 +1,5 @@
+getdest 0xe278
+logg 0xb7b0
+logg_close 0xb358
+logg_facility 0xc020
+post 0x103e0

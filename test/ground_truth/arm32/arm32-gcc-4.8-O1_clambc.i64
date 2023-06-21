@@ -1,0 +1,5 @@
+_getopt_internal 0xb78c
+countlines 0xc708
+optadd 0x9a14
+optadditem 0xad48
+tracehook 0xc7e4

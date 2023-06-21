@@ -1,0 +1,2 @@
+bind_dasync 0x10398
+dasync_cipher_ctrl_helper 0x11be0

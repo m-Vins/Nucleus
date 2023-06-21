@@ -1,0 +1,6 @@
+cdiff_cmd_close 0x407dd3
+decodehex 0x40ed5b
+sha256file 0x40d52c
+tar_addfile 0x408938
+testsigs 0x40b891
+unpack 0x40b3ae

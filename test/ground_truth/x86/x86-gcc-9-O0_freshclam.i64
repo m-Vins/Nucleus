@@ -1,0 +1,11 @@
+cdiff_apply 0x23c2f
+cdiff_cmd_close 0x229e7
+cdiff_cmd_del 0x226dd
+downloadmanager 0x2dd9e
+mirman_check 0x301cc
+mirman_list 0x306ce
+my_getopt 0x209c0
+optget_i 0x1e4e0
+remote_cvdhead 0x27ce9
+sighandler 0x25484
+test_database 0x2ad29

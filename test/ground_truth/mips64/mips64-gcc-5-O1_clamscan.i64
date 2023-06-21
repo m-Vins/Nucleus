@@ -1,0 +1,10 @@
+_getopt_internal 0x1200040a8
+actsetup 0x120006cd4
+getdest 0x1200067d8
+match_regex 0x120007890
+mdprintf 0x120002a20
+meta 0x120008aa4
+optparse 0x120004f44
+post 0x1200089a8
+print_version 0x120007158
+scandirs 0x1200094d4

@@ -1,0 +1,10 @@
+cdiff_cmd_move 0x16b40
+countlines 0x16470
+decodesig 0xdc54
+decodesigs 0xe899
+listdb 0x19110
+logg_facility 0x134c0
+match_regex 0x16370
+mdprintf 0x12270
+sigtool_vba_scandir 0x18760
+testsigs 0xe91f

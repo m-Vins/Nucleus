@@ -1,0 +1,10 @@
+cdiff_cmd_move 0x12003813c
+match_regex 0x1200368f8
+mirman_read 0x1200498f4
+mirman_update 0x120049fac
+mirman_write 0x12004aa58
+mprintf 0x120030cec
+msg_callback 0x12003bb70
+nonblock_fcntl 0x120049430
+updatedb 0x120043c00
+wwwconnect 0x12003d924

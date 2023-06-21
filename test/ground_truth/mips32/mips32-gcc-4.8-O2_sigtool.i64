@@ -1,0 +1,13 @@
+cdiff_cmd_del 0x430f08
+cdiff_execute 0x42ffd8
+compare 0x422e70
+countlines 0x42f648
+decodehex 0x4249dc
+decodesig 0x425624
+decodesigmod 0x42260c
+getdsig 0x422904
+mprintf 0x42b458
+my_getopt 0x42c1b0
+optget_i 0x42cda0
+print_version 0x42ede4
+tar_addfile 0x431eb0

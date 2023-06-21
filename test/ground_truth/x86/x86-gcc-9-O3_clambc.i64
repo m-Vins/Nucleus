@@ -1,0 +1,5 @@
+countlines 0x7d90
+match_regex 0x7c80
+my_getopt 0x6820
+optadd 0x4c90
+optparse 0x51a0

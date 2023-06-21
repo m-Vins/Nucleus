@@ -1,0 +1,11 @@
+_getopt_internal 0x53dd8
+cdiff_cmd_add 0x55d80
+cdiff_execute 0x561e0
+dns_label 0x57608
+dnsquery 0x5cee0
+download 0x571d8
+logg_facility 0x52180
+msg_callback 0x57198
+proxyauth 0x57a48
+remote_cvdhead 0x58910
+wwwconnect 0x581c0

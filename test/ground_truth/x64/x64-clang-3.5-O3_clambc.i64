@@ -1,0 +1,4 @@
+my_getopt 0x403880
+optadditem 0x403340
+optfree 0x402100
+tracehook 0x405660

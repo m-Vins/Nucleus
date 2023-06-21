@@ -1,0 +1,2 @@
+digest_default_get_params 0x16d0
+mdc2_set_ctx_params 0x1480

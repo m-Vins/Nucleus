@@ -1,0 +1,10 @@
+actsetup 0x120006d50
+checkaccess 0x1200082a8
+getdest 0x120006860
+is_valid_hostid 0x12000b3e0
+match_regex 0x1200079a0
+meta 0x1200090d0
+mprintf 0x120003348
+optadd 0x120004c30
+optparse 0x1200051f8
+scanmanager 0x1200093f0

@@ -1,0 +1,7 @@
+_getopt_internal 0x42cdc0
+cdiff_apply 0x431cac
+convenience_ctx 0x432bc0
+countlines 0x42ff10
+decodehexstr 0x4235e4
+decodesig 0x42594c
+optparse 0x42db90

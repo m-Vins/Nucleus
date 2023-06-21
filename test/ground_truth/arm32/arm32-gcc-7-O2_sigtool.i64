@@ -1,0 +1,4 @@
+cdiff_cmd_move 0x1e5f8
+compare 0x13970
+getdsig 0x169cc
+sha256file 0x13824

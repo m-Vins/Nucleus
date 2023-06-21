@@ -1,0 +1,5 @@
+_getopt_internal 0x403d60
+action_copy 0x406474
+daemonize 0x4071ec
+is_valid_hostid 0x40b310
+match_regex 0x407488

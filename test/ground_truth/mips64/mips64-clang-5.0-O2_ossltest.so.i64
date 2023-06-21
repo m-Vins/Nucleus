@@ -1,0 +1,4 @@
+digest_md5 0x10d70
+digest_sha256 0x10fd0
+ossltest_aes128_gcm_cipher 0x105b8
+ossltest_digests 0x10888

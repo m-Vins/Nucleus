@@ -1,0 +1,8 @@
+cdiff_cmd_move 0x16f80
+cdiff_cmd_unlink 0x165b0
+countlines 0x16250
+daemonize 0x15f60
+decodesigmod 0xb89d
+matchsig 0xd89d
+maxlinelen 0xb7c0
+mprintf 0x12650

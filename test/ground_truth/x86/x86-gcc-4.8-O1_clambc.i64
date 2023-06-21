@@ -1,0 +1,4 @@
+_getopt_internal 0x804b638
+countlines 0x804c5de
+match_regex 0x804c4b7
+optaddarg 0x8049771

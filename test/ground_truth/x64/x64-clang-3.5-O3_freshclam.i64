@@ -1,0 +1,9 @@
+cdiff_cmd_open 0x407de0
+cdiff_ctx_free 0x407b40
+cdiff_token 0x407d00
+dns_label 0x40d930
+execute 0x4105c0
+mirman_check 0x410eb0
+mirman_update 0x4111b0
+mirman_whitelist 0x411630
+sendln 0x4090a0

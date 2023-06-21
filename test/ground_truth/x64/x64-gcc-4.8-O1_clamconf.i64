@@ -1,0 +1,4 @@
+filelist 0x4041f2
+optadd 0x401963
+optfree 0x401d0b
+optget_i 0x401900

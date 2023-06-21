@@ -1,0 +1,15 @@
+compare 0x58344
+decodehexstr 0x5988c
+decodesigmod 0x57fb0
+decodesigs 0x5c8bc
+diffdirs 0x589dc
+filelist 0x53bdc
+listdir 0x59564
+logg 0x50a98
+maxlinelen 0x57e68
+optadd 0x51efc
+optadditem 0x53244
+optfree 0x522b0
+print_version 0x539a4
+sha256file 0x580b0
+sigtool_scandir 0x579f4

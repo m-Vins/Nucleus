@@ -1,0 +1,4 @@
+_getopt_internal 0x6c50
+countlines 0x7d50
+filelist 0x7870
+optfree 0x50a0

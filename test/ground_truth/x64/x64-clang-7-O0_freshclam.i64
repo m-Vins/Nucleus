@@ -1,0 +1,16 @@
+cdiff_apply 0x409910
+cdiff_cmd_xchg 0x40b1d0
+daemonize 0x409500
+logg_facility 0x4051a0
+mirman_update 0x419c90
+mprintf 0x4049a0
+my_getopt 0x407cd0
+optaddarg 0x407120
+optadditem 0x407400
+optget_i 0x407080
+optparse 0x4056a0
+proxyauth 0x415490
+remote_cvdhead 0x415b30
+sendln 0x40c990
+sighandler 0x40e2b0
+tar_addfile 0x40c570

@@ -1,0 +1,12 @@
+_getopt_internal 0xfa74
+cdiff_apply 0x11d0c
+cdiff_cmd_del 0x11a6c
+cdiff_execute 0x11044
+cdiff_token 0x10f50
+execute 0x1a350
+mirman_read 0x1aa9c
+mirman_whitelist 0x1b25c
+msg_callback 0x12d8c
+nonblock_fcntl 0x1a484
+optaddarg 0xdafc
+sighandler 0x12ddc

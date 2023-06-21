@@ -1,0 +1,5 @@
+actsetup 0x804da70
+checkaccess 0x804ead0
+freshdbdir 0x804db90
+optaddarg 0x804be00
+post 0x804f7d0

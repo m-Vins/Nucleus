@@ -1,0 +1,5 @@
+cdiff_cmd_close 0x408240
+dnsquery 0x40fb90
+logg_close 0x403ca0
+optget_i 0x405800
+wwwconnect 0x40ce20

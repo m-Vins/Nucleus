@@ -1,0 +1,5 @@
+_getopt_internal 0x7130
+countlines 0x8230
+daemonize 0x7f20
+filelist 0x7d40
+optaddarg 0x5360

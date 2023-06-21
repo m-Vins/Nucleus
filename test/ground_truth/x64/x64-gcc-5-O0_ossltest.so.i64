@@ -1,0 +1,5 @@
+bind_ossltest 0x2579
+ossltest_aes128_cbc_cipher 0x2cfa
+ossltest_aes128_gcm_cipher 0x2e06
+ossltest_aes_128_cbc 0x234b
+ossltest_digests 0x2828

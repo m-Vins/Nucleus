@@ -1,0 +1,9 @@
+convenience_ctx 0x5c5d8
+decodehex 0x51464
+decodehexspecial 0x50e00
+diffdirs 0x50960
+maxlinelen 0x50000
+optparse 0x588f0
+sha256file 0x50210
+sigtool_scandir 0x5cc60
+testsigs 0x53040

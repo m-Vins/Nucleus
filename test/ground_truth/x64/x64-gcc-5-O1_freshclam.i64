@@ -1,0 +1,12 @@
+cdiff_cmd_xchg 0xf8b9
+cdiff_token 0xf589
+dns_label 0x12c43
+dnsquery 0x196df
+downloadmanager 0x17d07
+freshdbdir 0xeb6f
+logg_close 0xb8f6
+mirman_write 0x1aa70
+optadd 0xc641
+optaddarg 0xc7b8
+tar_addfile 0x1141a
+updatedb 0x1584d

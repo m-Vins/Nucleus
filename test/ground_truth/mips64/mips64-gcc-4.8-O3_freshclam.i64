@@ -1,0 +1,10 @@
+cdiff_apply 0x120036c30
+cdiff_cmd_add 0x120036448
+freshdbdir 0x1200344f8
+is_valid_hostid 0x120038220
+logg 0x1200311a0
+logg_close 0x120030dc0
+mirman_check 0x12003ff18
+mirman_write 0x120040990
+optaddarg 0x120031bb8
+print_version 0x1200347d8

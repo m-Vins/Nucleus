@@ -1,0 +1,4 @@
+afalg_chk_platform 0x1a30
+afalg_cipher_init 0x1f30
+afalg_fin_cipher_aio 0x2520
+bind_afalg 0x1b70

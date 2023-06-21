@@ -1,0 +1,13 @@
+cdiff_cmd_add 0xf8d0
+cdiff_cmd_del 0xf7f5
+cdiff_cmd_xchg 0xf70c
+dns_label 0x11915
+dnsquery 0x168a7
+get_hostid 0x112f2
+is_valid_hostid 0x11290
+my_getopt 0xe364
+optadd 0xcf7e
+sendln 0x10e6e
+tar_addfile 0x10c5d
+test_database 0x11547
+test_database_wrap 0x11675

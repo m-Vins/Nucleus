@@ -1,0 +1,10 @@
+_getopt_internal 0x1200391b0
+build 0x120033fb4
+cdiff_cmd_del 0x12003d988
+comparesha 0x120031a34
+decodehexstr 0x120030594
+logg_close 0x120037f38
+mdprintf 0x120037ae0
+optfree 0x120039ea0
+optget_i 0x120039be8
+sigtool_vba_scandir 0x12003f088

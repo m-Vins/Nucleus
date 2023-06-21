@@ -1,0 +1,10 @@
+cdiff_cmd_move 0x11ba4
+cdiff_ctx_free 0x115d0
+daemonize 0x112f8
+download 0x13734
+execute 0x19480
+freshdbdir 0x10db4
+get_hostid 0x13a08
+mirman_whitelist 0x1a340
+mirman_write 0x1a414
+wwwconnect 0x14320

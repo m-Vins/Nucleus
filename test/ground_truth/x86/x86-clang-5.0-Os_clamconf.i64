@@ -1,0 +1,4 @@
+countlines 0x804b8e3
+match_regex 0x804b826
+optget_i 0x804a274
+optparse 0x80494cf

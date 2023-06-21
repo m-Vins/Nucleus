@@ -1,0 +1,5 @@
+actsetup 0x406460
+logg_facility 0x403688
+match_regex 0x407148
+meta 0x408b00
+optparse 0x40489c

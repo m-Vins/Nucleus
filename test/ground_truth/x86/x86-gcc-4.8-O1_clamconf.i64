@@ -1,0 +1,7 @@
+countlines 0x804c21e
+filelist 0x804bde5
+freshdbdir 0x804b946
+my_getopt 0x804aeb0
+optadd 0x8049241
+optfree 0x8049627
+optget_i 0x80491e0

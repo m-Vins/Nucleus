@@ -1,0 +1,9 @@
+build 0x434304
+cdiff_apply 0x42c7b0
+cdiff_execute 0x42c4cc
+compare 0x439bb0
+daemonize 0x429638
+getdsig 0x4325c0
+matchsig 0x43b21c
+mprintf 0x423bcc
+sha256file 0x432e8c

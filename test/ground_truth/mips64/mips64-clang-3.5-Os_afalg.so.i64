@@ -1,0 +1,3 @@
+afalg_aes_cbc 0x107c8
+afalg_chk_platform 0x102c8
+afalg_fin_cipher_aio 0x10f88

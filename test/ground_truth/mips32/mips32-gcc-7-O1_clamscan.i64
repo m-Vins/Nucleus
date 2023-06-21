@@ -1,0 +1,6 @@
+freshdbdir 0x4069fc
+getdest 0x406288
+is_valid_hostid 0x40c9f8
+logg 0x402654
+optaddarg 0x4041cc
+scandirs 0x409970

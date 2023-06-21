@@ -1,0 +1,4 @@
+_getopt_internal 0x404070
+optaddarg 0x405a70
+optadditem 0x405bf0
+post 0x408c50

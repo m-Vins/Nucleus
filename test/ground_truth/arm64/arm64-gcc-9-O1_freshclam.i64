@@ -1,0 +1,11 @@
+cdiff_cmd_move 0x55e74
+cdiff_cmd_xchg 0x5555c
+dnsquery 0x5e494
+downloadmanager 0x5cf44
+match_regex 0x53f5c
+mirman_read 0x5f05c
+mirman_write 0x5f934
+msg_callback 0x575b4
+nonblock_fcntl 0x5e96c
+optget_i 0x513b4
+remote_cvdhead 0x5a950

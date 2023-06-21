@@ -1,0 +1,13 @@
+build 0x804e39b
+cdiff_cmd_move 0x8054aa0
+cdiff_cmd_open 0x8054636
+cdiff_execute 0x8054218
+compare 0x804b2c3
+comparesha 0x804c809
+decodehex 0x804c21f
+decodesig 0x804d073
+decodesigmod 0x804b0e1
+getdsig 0x804dd31
+logg_facility 0x8051dc1
+mprintf 0x8051569
+optfree 0x80528ed

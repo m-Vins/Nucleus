@@ -1,0 +1,7 @@
+cdiff_cmd_move 0x4085a0
+cdiff_cmd_unlink 0x408c20
+cdiff_token 0x407dc0
+compare 0x40dd10
+logg 0x403b70
+optadd 0x4064c0
+testsigs 0x40be50

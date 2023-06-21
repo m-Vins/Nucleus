@@ -1,0 +1,7 @@
+countlines 0x9280
+daemonize 0x8f80
+is_valid_hostid 0xc310
+optaddarg 0x6a40
+optadditem 0x7cb0
+optparse 0x6d20
+print_version 0x8b30

@@ -1,0 +1,4 @@
+_getopt_internal 0xb344
+filelist 0xbea4
+optadditem 0xa900
+optget_i 0x9354

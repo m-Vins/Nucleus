@@ -1,0 +1,5 @@
+_getopt_internal 0x403a80
+action_move 0x405860
+meta 0x407f20
+my_getopt 0x4035a0
+scanfile 0x408700

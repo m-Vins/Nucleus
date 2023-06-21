@@ -1,0 +1,11 @@
+_getopt_internal 0x179dc
+cdiff_cmd_close 0x19ba4
+cdiff_cmd_open 0x195d8
+cdiff_cmd_xchg 0x19a18
+cdiff_execute 0x1a9fc
+cdiff_token 0x19420
+execute 0x276a4
+mdprintf 0x13370
+mirman_check 0x283d8
+nonblock_fcntl 0x27fb8
+optparse 0x15128

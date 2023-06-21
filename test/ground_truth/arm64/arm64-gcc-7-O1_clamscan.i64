@@ -1,0 +1,3 @@
+get_hostid 0x14704
+mprintf 0xad94
+optparse 0xdbcc

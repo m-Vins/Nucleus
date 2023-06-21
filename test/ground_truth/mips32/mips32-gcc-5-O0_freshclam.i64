@@ -1,0 +1,11 @@
+_getopt_internal 0x427e9c
+cdiff_cmd_add 0x42a450
+cdiff_cmd_close 0x42aab4
+cdiff_cmd_move 0x42b440
+cdiff_cmd_unlink 0x42c394
+dnsquery 0x43c4c0
+downloadmanager 0x43aac0
+filelist 0x42945c
+mirman_list 0x43e974
+optadditem 0x426ae4
+optparse 0x424e60

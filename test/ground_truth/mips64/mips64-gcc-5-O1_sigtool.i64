@@ -1,0 +1,8 @@
+cdiff_cmd_del 0x12003485c
+decodehex 0x12003a4f8
+maxlinelen 0x120037910
+optadd 0x1200316c4
+sha256file 0x120037c0c
+sigtool_vba_scandir 0x120036d10
+testsigs 0x12003d540
+verifydiff 0x12003b0e4

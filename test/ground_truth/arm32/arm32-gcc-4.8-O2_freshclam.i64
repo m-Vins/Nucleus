@@ -1,0 +1,13 @@
+_getopt_internal 0x10654
+cdiff_cmd_open 0x126ec
+cdiff_execute 0x11b0c
+daemonize 0x1123c
+dnsquery 0x19180
+freshdbdir 0x10cf8
+logg_facility 0xe83c
+mdprintf 0xdb14
+mirman_check 0x19cc8
+msg_callback 0x13628
+nonblock_fcntl 0x195f8
+remote_cvdhead 0x14934
+sighandler 0x137a8

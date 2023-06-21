@@ -1,0 +1,10 @@
+_getopt_internal 0x4044a3
+filelist 0x407d65
+freshdbdir 0x4078ae
+getdest 0x4073ba
+is_valid_hostid 0x40cb15
+logg_close 0x402f63
+logg_facility 0x403dfa
+mdprintf 0x40276d
+mprintf 0x4038aa
+print_version 0x407b32

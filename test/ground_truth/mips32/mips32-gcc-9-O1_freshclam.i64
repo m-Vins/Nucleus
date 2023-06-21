@@ -1,0 +1,10 @@
+cdiff_apply 0x429abc
+cdiff_cmd_add 0x4283dc
+dns_label 0x42cf98
+freshdbdir 0x426b5c
+mirman_check 0x436cac
+mirman_read 0x436a74
+mprintf 0x422c1c
+my_getopt 0x425e60
+sighandler 0x42b2ac
+test_database 0x42d64c

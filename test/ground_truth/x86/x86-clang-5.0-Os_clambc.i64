@@ -1,0 +1,4 @@
+_getopt_internal 0x804b0ae
+countlines 0x804bcf3
+optaddarg 0x804a6cf
+optget_i 0x804a684

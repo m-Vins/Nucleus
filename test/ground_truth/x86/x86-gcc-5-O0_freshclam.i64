@@ -1,0 +1,12 @@
+cdiff_cmd_close 0x2296c
+dns_label 0x2b46c
+download 0x25780
+downloadmanager 0x2dcbb
+execute 0x2f528
+filelist 0x21c43
+get_hostid 0x26c9c
+mdprintf 0x1d170
+mirman_list 0x3061a
+optadditem 0x20216
+sighandler 0x253a8
+test_database 0x2ac62

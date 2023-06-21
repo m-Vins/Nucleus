@@ -1,0 +1,13 @@
+cdiff_cmd_close 0x42f5c4
+cdiff_cmd_open 0x42f468
+compare 0x422914
+countlines 0x42eaac
+decodesig 0x4253f4
+decodesigs 0x4261f4
+listdir 0x432aec
+match_regex 0x42e95c
+optget_i 0x42c7d4
+optparse 0x42cb78
+tar_addfile 0x430f10
+testsigs 0x426304
+verifydiff 0x424ad0

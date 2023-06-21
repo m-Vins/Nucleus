@@ -1,0 +1,7 @@
+decodesigmod 0x8056b40
+filelist 0x804f6c0
+logg 0x804c400
+logg_facility 0x804cb40
+maxlinelen 0x8056130
+print_version 0x804f510
+sha256file 0x8055910

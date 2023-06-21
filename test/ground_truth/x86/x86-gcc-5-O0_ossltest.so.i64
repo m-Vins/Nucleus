@@ -1,0 +1,6 @@
+digest_md5 0x14ca
+digest_sha512 0x18ec
+ossltest_aes128_cbc_cipher 0x2646
+ossltest_aes_128_cbc 0x1bee
+ossltest_ciphers 0x2202
+ossltest_digests 0x2149

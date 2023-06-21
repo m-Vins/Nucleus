@@ -1,0 +1,5 @@
+bind_dasync 0x102ec
+dasync_cipher_ctrl_helper 0x11ba8
+dasync_cipher_helper 0x1182c
+dasync_digest_nids 0x114cc
+dasync_digests 0x10cbc

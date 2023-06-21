@@ -1,0 +1,12 @@
+cdiff_apply 0x12ed1
+daemonize 0x110b9
+dnsquery 0x1e5f0
+downloadmanager 0x1d28c
+execute 0x1eb8e
+logg_facility 0xd2e2
+mirman_check 0x1f83f
+mirman_list 0x1fe16
+nonblock_fcntl 0x1f46e
+optfree 0xd934
+optget_i 0xd3e0
+wwwconnect 0x160c6

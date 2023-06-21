@@ -1,0 +1,9 @@
+cdiff_cmd_xchg 0x23ef0
+cdiff_ctx_free 0x22cd0
+comparesha 0x2a5a0
+decodehex 0x28830
+listdir 0x27930
+logg 0x1f2b0
+mprintf 0x1efc0
+my_getopt 0x1fb20
+optfree 0x20a80

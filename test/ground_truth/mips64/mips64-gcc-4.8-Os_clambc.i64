@@ -1,0 +1,4 @@
+optfree 0x120002e8c
+optparse 0x120002fac
+print_version 0x120004fac
+tracehook 0x120005800

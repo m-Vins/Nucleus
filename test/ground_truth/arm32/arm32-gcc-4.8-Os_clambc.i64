@@ -1,0 +1,5 @@
+_getopt_internal 0xba44
+countlines 0xc6a8
+optaddarg 0xa320
+optget_i 0xa2c4
+tracehook 0xc770

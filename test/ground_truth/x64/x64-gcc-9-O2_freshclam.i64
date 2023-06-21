@@ -1,0 +1,14 @@
+cdiff_execute 0x10910
+cdiff_token 0x10840
+daemonize 0xff40
+dnsquery 0x18c50
+download 0x12510
+freshdbdir 0xf8f0
+match_regex 0x10110
+mirman_list 0x19d50
+mirman_write 0x1a020
+nonblock_fcntl 0x19190
+optadditem 0xe880
+recvln 0x122d0
+sendln 0x12220
+wwwconnect 0x12b20

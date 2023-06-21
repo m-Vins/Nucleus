@@ -1,0 +1,8 @@
+cdiff_apply 0x554a8
+cdiff_cmd_add 0x54990
+logg_facility 0x51da8
+mirman_check 0x5c030
+mirman_list 0x5c3a8
+mirman_update 0x5c208
+optaddarg 0x51f94
+wwwconnect 0x56ce4

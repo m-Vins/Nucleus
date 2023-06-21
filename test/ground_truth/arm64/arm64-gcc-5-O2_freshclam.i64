@@ -1,0 +1,8 @@
+cdiff_cmd_close 0x555f0
+cdiff_cmd_unlink 0x550a8
+daemonize 0x549d0
+msg_callback 0x56f80
+nonblock_fcntl 0x5cff8
+optget_i 0x52340
+proxyauth 0x575c0
+tar_addfile 0x56a90

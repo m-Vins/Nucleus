@@ -1,0 +1,11 @@
+cdiff_cmd_del 0x13048
+cdiff_cmd_xchg 0x13228
+cdiff_ctx_free 0x12ad8
+cdiff_token 0x12c30
+dns_label 0x1b9b4
+dnsquery 0x1eff8
+download 0x15ec0
+execute 0x1f4bc
+logg_facility 0xe090
+my_getopt 0x1099c
+proxyauth 0x17f9c

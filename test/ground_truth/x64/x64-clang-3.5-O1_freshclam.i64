@@ -1,0 +1,11 @@
+cdiff_cmd_close 0x4082d0
+cdiff_cmd_open 0x407f40
+dns_label 0x40d710
+downloadmanager 0x40a270
+match_regex 0x407310
+mdprintf 0x403900
+mirman_check 0x410b00
+mirman_read 0x4109b0
+optparse 0x4049b0
+sighandler 0x409f30
+tar_addfile 0x408e00

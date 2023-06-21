@@ -1,0 +1,14 @@
+build 0x21138
+cdiff_cmd_del 0x19b5c
+cdiff_cmd_xchg 0x19d3c
+cdiff_execute 0x1ad20
+compare 0x25af8
+decodesig 0x29218
+decodesigmod 0x287d0
+decodesigs 0x29a24
+filelist 0x18e9c
+listdb 0x244f8
+optadd 0x16288
+optfree 0x167e4
+sha256file 0x1fd7c
+sigtool_vba_scandir 0x1e0f4

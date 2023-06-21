@@ -1,0 +1,5 @@
+countlines 0x804bc00
+daemonize 0x804b9c0
+filelist 0x804b890
+optfree 0x80495a0
+optget_i 0x804a4c0

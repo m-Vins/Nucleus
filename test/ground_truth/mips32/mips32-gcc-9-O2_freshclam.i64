@@ -1,0 +1,9 @@
+cdiff_cmd_close 0x428dd0
+cdiff_cmd_open 0x428c54
+daemonize 0x427d30
+downloadmanager 0x430ef4
+mdprintf 0x423b30
+mirman_update 0x433e5c
+mirman_write 0x4345fc
+optfree 0x4251b8
+test_database 0x42bb18

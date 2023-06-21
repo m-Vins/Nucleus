@@ -1,0 +1,10 @@
+cdiff_cmd_add 0x80523d0
+cdiff_cmd_open 0x8052250
+cdiff_cmd_xchg 0x80526c0
+decodehex 0x805edc0
+getdsig 0x805b200
+maxlinelen 0x805d070
+optfree 0x804d8b0
+testsigs 0x8058e50
+unpack 0x8058550
+verifydiff 0x8059f10

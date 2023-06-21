@@ -1,0 +1,12 @@
+cdiff_cmd_del 0x210fe
+cdiff_cmd_move 0x2097d
+dnsquery 0x280d0
+downloadmanager 0x26917
+freshdbdir 0x1f9df
+get_hostid 0x2240b
+is_valid_hostid 0x223b3
+logg_facility 0x1dcb9
+mirman_update 0x28d88
+optaddarg 0x1debf
+optfree 0x1e050
+sighandler 0x222fa

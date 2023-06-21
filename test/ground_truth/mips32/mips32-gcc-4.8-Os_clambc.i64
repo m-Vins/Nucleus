@@ -1,0 +1,7 @@
+countlines 0x4051b0
+filelist 0x404ce8
+my_getopt 0x403cd0
+optadd 0x402680
+optaddarg 0x4024a4
+optadditem 0x403718
+optget_i 0x402420

@@ -1,0 +1,2 @@
+bind_ossltest 0x1cf0
+ossltest_aes128_cbc_cipher 0x1b50

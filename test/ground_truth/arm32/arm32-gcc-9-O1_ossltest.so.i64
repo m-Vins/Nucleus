@@ -1,0 +1,4 @@
+bind_ossltest 0x1fbc
+digest_sha1 0x17b8
+digest_sha512 0x1adc
+ossltest_aes128_gcm_cipher 0x2304

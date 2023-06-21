@@ -1,0 +1,6 @@
+_getopt_internal 0x5f5f
+countlines 0x6f41
+my_getopt 0x5b5f
+optadd 0x3f91
+optfree 0x43bd
+optget_i 0x3f3d

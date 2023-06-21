@@ -1,0 +1,13 @@
+convenience_ctx 0x18fe0
+daemonize 0x16e64
+decodehex 0xe83c
+decodesigs 0xfd44
+matchsig 0xeeb8
+maxlinelen 0xce40
+mdprintf 0x13680
+my_getopt 0x14404
+optparse 0x1532c
+sha256file 0xcfc4
+sigtool_vba_scandir 0x1912c
+tar_addfile 0x18d5c
+verifydiff 0x1014c

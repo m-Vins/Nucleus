@@ -1,0 +1,3 @@
+optget_i 0x118ec
+print_version 0x15838
+tracehook 0x16348

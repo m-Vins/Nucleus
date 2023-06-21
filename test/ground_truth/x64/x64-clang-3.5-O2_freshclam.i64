@@ -1,0 +1,5 @@
+cdiff_cmd_close 0x408090
+cdiff_ctx_free 0x407a80
+dnsquery 0x40ffb0
+mirman_whitelist 0x411130
+nonblock_fcntl 0x4103f0

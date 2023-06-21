@@ -1,0 +1,5 @@
+daemonize 0x403f60
+filelist 0x403e40
+my_getopt 0x402fd0
+optadditem 0x402b60
+optfree 0x401950

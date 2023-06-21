@@ -1,0 +1,16 @@
+cdiff_cmd_add 0x80523d0
+cdiff_cmd_unlink 0x80539f0
+cdiff_ctx_free 0x8051d90
+dns_label 0x805e3d0
+downloadmanager 0x8055eb0
+freshdbdir 0x80500e0
+logg_facility 0x804c570
+match_regex 0x8050ac0
+mirman_list 0x8061ad0
+mprintf 0x804c0b0
+my_getopt 0x804f100
+optadd 0x804e210
+recvln 0x8054120
+remote_cvdhead 0x805d4a0
+sendln 0x8054000
+updatedb 0x80580d0

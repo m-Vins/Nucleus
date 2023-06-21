@@ -1,0 +1,4 @@
+action_move 0x405de0
+getdest 0x405c0c
+mprintf 0x40337c
+scandirs 0x407384

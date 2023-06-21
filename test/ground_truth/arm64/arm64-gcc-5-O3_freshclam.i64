@@ -1,0 +1,12 @@
+cdiff_apply 0x56200
+cdiff_cmd_xchg 0x55e68
+cdiff_ctx_free 0x54de8
+countlines 0x54d38
+dns_label 0x57830
+freshdbdir 0x54438
+is_valid_hostid 0x572d0
+match_regex 0x54c20
+mirman_check 0x5df08
+mprintf 0x514d8
+recvln 0x56e50
+sighandler 0x57200

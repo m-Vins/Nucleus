@@ -1,0 +1,8 @@
+_getopt_internal 0xb50c
+filelist 0xdd3c
+freshdbdir 0xd95c
+get_hostid 0x11258
+meta 0xf180
+optadditem 0xcf74
+optfree 0xbf34
+optparse 0xc004

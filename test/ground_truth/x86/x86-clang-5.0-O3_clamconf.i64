@@ -1,0 +1,5 @@
+countlines 0x804c090
+optadd 0x804a390
+optaddarg 0x804a510
+optget_i 0x804a4c0
+optparse 0x80494e0

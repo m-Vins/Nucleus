@@ -1,0 +1,9 @@
+cdiff_cmd_xchg 0x429bfc
+dns_label 0x42b798
+downloadmanager 0x43133c
+is_valid_hostid 0x42b638
+match_regex 0x428188
+mprintf 0x423fdc
+print_version 0x4279cc
+recvln 0x42b07c
+sendln 0x42af70

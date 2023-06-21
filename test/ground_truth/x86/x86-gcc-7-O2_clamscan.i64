@@ -1,0 +1,7 @@
+action_copy 0x8410
+daemonize 0x8f60
+freshdbdir 0x8860
+get_hostid 0xc5c0
+mprintf 0x50e0
+optfree 0x6c50
+optget_i 0x6a00

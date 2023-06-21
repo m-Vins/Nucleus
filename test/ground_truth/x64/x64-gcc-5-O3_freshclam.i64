@@ -1,0 +1,17 @@
+_getopt_internal 0xf4e0
+cdiff_apply 0x11a00
+cdiff_cmd_add 0x114d0
+cdiff_cmd_del 0x11570
+cdiff_cmd_move 0x10c00
+daemonize 0x10250
+dns_label 0x12e40
+downloadmanager 0x17ee0
+execute 0x19a10
+logg_facility 0xd580
+mirman_check 0x1a410
+mirman_whitelist 0x1aae0
+mprintf 0xc830
+nonblock_fcntl 0x19c00
+optaddarg 0xd810
+optget_i 0xd7a0
+test_database_wrap 0x13700

@@ -1,0 +1,12 @@
+cdiff_apply 0x120036090
+cdiff_cmd_close 0x1200349b0
+cdiff_cmd_unlink 0x120035174
+cdiff_token 0x120034ec0
+comparesha 0x12003c058
+decodehex 0x12003a5b0
+listdb 0x120038e78
+logg_close 0x1200310bc
+mdprintf 0x120030d70
+mprintf 0x120031120
+my_getopt 0x120031c70
+tar_addfile 0x120036a20

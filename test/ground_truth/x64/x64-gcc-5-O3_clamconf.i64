@@ -1,0 +1,5 @@
+filelist 0xd2e0
+optadd 0xa830
+optaddarg 0xaa50
+optparse 0xad00
+print_version 0xd050

@@ -1,0 +1,12 @@
+_getopt_internal 0x51870
+cdiff_ctx_free 0x55244
+cdiff_token 0x552f8
+convenience_ctx 0x57224
+countlines 0x55194
+decodehex 0x59e30
+decodesigmod 0x57e0c
+diffdirs 0x587a0
+listdir 0x5929c
+mprintf 0x506b4
+optadd 0x51f74
+sha256file 0x57f1c

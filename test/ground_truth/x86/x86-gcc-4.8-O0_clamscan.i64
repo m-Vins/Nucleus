@@ -1,0 +1,6 @@
+_getopt_internal 0x804b34d
+getdest 0x804e042
+my_getopt 0x804adec
+optaddarg 0x804be85
+optget_i 0x804bc37
+scanfile 0x80500a7

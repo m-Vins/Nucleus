@@ -1,0 +1,6 @@
+action_move 0x8fed
+is_valid_hostid 0xeab2
+optadd 0x6abb
+optaddarg 0x6cce
+optparse 0x70b8
+scanmanager 0xc653

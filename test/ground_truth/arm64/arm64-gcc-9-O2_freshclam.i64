@@ -1,0 +1,11 @@
+cdiff_cmd_xchg 0x55078
+cdiff_ctx_free 0x54c28
+cdiff_execute 0x54dd8
+daemonize 0x54860
+dns_label 0x57280
+freshdbdir 0x54230
+mirman_write 0x5dd60
+nonblock_fcntl 0x5ce00
+proxyauth 0x574f0
+tar_addfile 0x56988
+updatedb 0x599e0

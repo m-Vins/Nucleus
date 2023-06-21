@@ -1,0 +1,9 @@
+cdiff_cmd_del 0x19bc0
+compare 0x25b54
+comparesha 0x253e4
+convenience_ctx 0x1cbb8
+decodesigmod 0x28604
+filelist 0x18ef4
+freshdbdir 0x189d8
+maxlinelen 0x259f8
+optfree 0x167fc

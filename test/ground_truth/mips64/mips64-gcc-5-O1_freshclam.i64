@@ -1,0 +1,12 @@
+cdiff_execute 0x12003452c
+daemonize 0x120033ea4
+get_hostid 0x1200386d0
+is_valid_hostid 0x1200385fc
+logg 0x120030170
+match_regex 0x1200340d0
+mirman_list 0x120040d28
+mprintf 0x12002fdec
+optaddarg 0x120030d78
+recvln 0x120036e34
+tar_addfile 0x120036a10
+wwwconnect 0x120039410

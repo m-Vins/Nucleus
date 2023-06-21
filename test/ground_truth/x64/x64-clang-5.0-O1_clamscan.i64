@@ -1,0 +1,4 @@
+getdest 0x405db0
+is_valid_hostid 0x408f10
+logg_close 0x402e60
+my_getopt 0x403900

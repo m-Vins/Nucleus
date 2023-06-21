@@ -1,0 +1,12 @@
+build 0x209a3
+cdiff_cmd_open 0x276d8
+cdiff_token 0x271a5
+decodesig 0x1f4af
+decodesigs 0x20094
+getdsig 0x202a7
+listdir 0x2a217
+matchsig 0x1f1de
+sha256file 0x1d1da
+sigtool_scandir 0x29611
+tar_addfile 0x28bfa
+testsigs 0x20122

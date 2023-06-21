@@ -1,0 +1,17 @@
+cdiff_apply 0x804fc23
+cdiff_cmd_close 0x804f27c
+cdiff_cmd_xchg 0x804ef7a
+cdiff_ctx_free 0x804ec79
+cdiff_token 0x804ed25
+countlines 0x804ebf5
+dnsquery 0x8056081
+filelist 0x804e8d2
+get_hostid 0x8050b95
+logg_facility 0x804c951
+mirman_list 0x8056d46
+mirman_read 0x8056922
+mirman_write 0x8056f71
+mprintf 0x804c0f9
+optget_i 0x804c989
+remote_cvdhead 0x8051b1e
+sighandler 0x8050a8e

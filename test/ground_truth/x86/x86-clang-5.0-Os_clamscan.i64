@@ -1,0 +1,9 @@
+actsetup 0x804c79c
+checkaccess 0x80501fc
+daemonize 0x804cfd2
+freshdbdir 0x804cb3a
+is_valid_hostid 0x8050086
+meta 0x804f3f0
+mprintf 0x804a595
+optadditem 0x804c323
+post 0x804f56c

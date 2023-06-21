@@ -1,0 +1,9 @@
+cdiff_apply 0x17141
+cdiff_cmd_close 0x15f1b
+cdiff_cmd_del 0x15bc2
+countlines 0x15657
+decodesigmod 0x23202
+diffdirs 0x24748
+optfree 0x12bdb
+print_version 0x14ee4
+sigtool_vba_scandir 0x1989d

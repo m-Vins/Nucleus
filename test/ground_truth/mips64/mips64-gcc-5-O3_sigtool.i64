@@ -1,0 +1,4 @@
+cdiff_cmd_open 0x12003d6e0
+decodehex 0x120031228
+decodehexstr 0x120030594
+decodesigs 0x120033480

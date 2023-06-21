@@ -1,0 +1,8 @@
+cdiff_cmd_add 0x120035c80
+cdiff_cmd_del 0x120035ab8
+cdiff_cmd_unlink 0x120035728
+downloadmanager 0x12003da00
+freshdbdir 0x120034638
+logg_close 0x120030f50
+mirman_check 0x1200403c0
+nonblock_fcntl 0x12003f8b8

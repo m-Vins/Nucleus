@@ -1,0 +1,13 @@
+cdiff_cmd_open 0x80506c0
+cdiff_cmd_unlink 0x80514f0
+cdiff_execute 0x80504f0
+countlines 0x804fa90
+download 0x80529e0
+mirman_check 0x8059a30
+mirman_list 0x8059e50
+msg_callback 0x8052850
+optfree 0x804cdb0
+optget_i 0x804df90
+optparse 0x804ce90
+sighandler 0x80528a0
+test_database_wrap 0x8057200

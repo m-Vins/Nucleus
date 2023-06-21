@@ -1,0 +1,6 @@
+bind_dasync 0x1e30
+dasync_cipher_helper 0x3540
+dasync_cipher_init_key_helper 0x37e0
+dasync_ciphers 0x2b80
+dasync_digests 0x2ad0
+dummy_pause_job 0x3980

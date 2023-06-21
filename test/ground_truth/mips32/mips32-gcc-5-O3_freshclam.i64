@@ -1,0 +1,16 @@
+cdiff_cmd_move 0x428e1c
+cdiff_cmd_unlink 0x429e84
+cdiff_execute 0x42a068
+dnsquery 0x433190
+get_hostid 0x42b894
+is_valid_hostid 0x42b7e8
+mirman_list 0x434a14
+mirman_update 0x434618
+msg_callback 0x42b460
+optparse 0x4254a0
+print_version 0x427b78
+proxyauth 0x42be70
+remote_cvdhead 0x42d1f0
+sendln 0x42b120
+sighandler 0x42b6dc
+test_database_wrap 0x42c39c

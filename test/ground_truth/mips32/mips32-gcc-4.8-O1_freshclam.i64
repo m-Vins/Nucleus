@@ -1,0 +1,7 @@
+download 0x42b120
+freshdbdir 0x426a3c
+mirman_check 0x436310
+mirman_read 0x4360f4
+print_version 0x426da4
+sendln 0x42ac40
+wwwconnect 0x42d388

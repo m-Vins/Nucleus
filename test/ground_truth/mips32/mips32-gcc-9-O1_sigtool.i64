@@ -1,0 +1,14 @@
+cdiff_cmd_move 0x428c78
+cdiff_cmd_xchg 0x427ec8
+decodehexspecial 0x42eae4
+decodesig 0x4322ec
+decodesigmod 0x42c0cc
+listdir 0x42e2ac
+logg_facility 0x42399c
+matchsig 0x431de0
+mprintf 0x422abc
+optadd 0x4247b8
+optparse 0x424ed8
+print_version 0x426da0
+sigtool_scandir 0x42b854
+testsigs 0x43373c

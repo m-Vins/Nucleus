@@ -1,0 +1,6 @@
+cdiff_cmd_move 0x120034dd8
+download 0x120036a58
+mirman_list 0x12003e328
+mirman_whitelist 0x12003e55c
+nonblock_fcntl 0x12003d538
+test_database_wrap 0x120037508

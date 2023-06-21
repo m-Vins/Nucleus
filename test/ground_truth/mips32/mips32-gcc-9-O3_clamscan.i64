@@ -1,0 +1,6 @@
+_getopt_internal 0x403bbc
+action_copy 0x406194
+is_valid_hostid 0x40b0d8
+logg 0x402d5c
+logg_facility 0x4036ac
+mdprintf 0x402570

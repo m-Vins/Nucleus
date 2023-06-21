@@ -1,0 +1,12 @@
+cdiff_apply 0x80574b0
+cdiff_cmd_del 0x8056560
+cdiff_execute 0x80561f0
+cdiff_token 0x8056140
+compare 0x804b2c5
+daemonize 0x8055d20
+decodehexstr 0x804bc75
+freshdbdir 0x8055660
+logg_facility 0x8052fd0
+print_version 0x8055920
+sigtool_vba_scandir 0x8058200
+tar_addfile 0x8057e00

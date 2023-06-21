@@ -1,0 +1,17 @@
+cdiff_cmd_add 0x407a0f
+cdiff_cmd_move 0x408064
+cdiff_token 0x407493
+countlines 0x40734e
+daemonize 0x4070fc
+logg_close 0x4039da
+match_regex 0x40725b
+mirman_list 0x4122e4
+mprintf 0x403a0e
+optadd 0x4046e3
+optadditem 0x405b4e
+optfree 0x404a8b
+optparse 0x404b50
+proxyauth 0x40aaf2
+sendln 0x409500
+tar_addfile 0x40923e
+updatedb 0x40d3ce

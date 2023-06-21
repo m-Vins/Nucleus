@@ -1,0 +1,9 @@
+cdiff_cmd_unlink 0x8051610
+cdiff_ctx_free 0x8050450
+cdiff_token 0x8050610
+execute 0x8059550
+filelist 0x804f6f0
+mirman_whitelist 0x805a550
+nonblock_fcntl 0x80596b0
+optaddarg 0x804df80
+sendln 0x8051a10

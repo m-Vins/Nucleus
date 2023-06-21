@@ -1,0 +1,9 @@
+decodehex 0x43d16c
+decodesigmod 0x43e03c
+listdir 0x437484
+logg 0x423088
+logg_close 0x422ff4
+logg_facility 0x4240b0
+mprintf 0x423b6c
+my_getopt 0x424180
+sigtool_scandir 0x42fa58

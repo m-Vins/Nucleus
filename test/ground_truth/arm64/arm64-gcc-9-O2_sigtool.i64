@@ -1,0 +1,12 @@
+_getopt_internal 0x52d68
+cdiff_apply 0x568b8
+cdiff_cmd_move 0x56158
+countlines 0x553b0
+decodehex 0x5a000
+decodesigs 0x5bfb8
+filelist 0x54ef0
+listdb 0x58c28
+optadd 0x53370
+optadditem 0x544b8
+optparse 0x53790
+verifydiff 0x5a9c0

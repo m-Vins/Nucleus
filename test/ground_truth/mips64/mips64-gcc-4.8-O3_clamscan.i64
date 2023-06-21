@@ -1,0 +1,9 @@
+actsetup 0x120006f20
+checkaccess 0x120008388
+daemonize 0x120007888
+logg_facility 0x120004010
+meta 0x120009160
+mprintf 0x1200033f0
+optadd 0x120004fc8
+post 0x1200093a8
+print_version 0x120007398

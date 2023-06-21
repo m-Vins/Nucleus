@@ -1,0 +1,5 @@
+action_copy 0x804ced0
+match_regex 0x804d790
+mprintf 0x804a340
+optadditem 0x804c650
+optget_i 0x804c480

@@ -1,0 +1,5 @@
+bind_dasync 0x1020c
+dasync_cipher_ctrl_helper 0x110fc
+dasync_cipher_helper 0x10f58
+dasync_ciphers 0x108d4
+dasync_digests 0x10880

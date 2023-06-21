@@ -1,0 +1,14 @@
+cdiff_cmd_close 0x57a00
+cdiff_cmd_move 0x57f24
+cdiff_cmd_open 0x57470
+cdiff_execute 0x587c0
+dnsquery 0x636d8
+download 0x59fc0
+logg 0x50a84
+mdprintf 0x50104
+mirman_check 0x6486c
+mirman_read 0x646bc
+mirman_update 0x64ba0
+nonblock_fcntl 0x64484
+optfree 0x52090
+updatedb 0x5f788

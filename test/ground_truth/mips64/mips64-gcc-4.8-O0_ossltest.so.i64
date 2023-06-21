@@ -1,0 +1,6 @@
+bind_ossltest 0x27b0
+digest_sha1 0x19e8
+digest_sha384 0x1d00
+ossltest_aes128_gcm_cipher 0x3a28
+ossltest_aes_128_gcm 0x2560
+ossltest_ciphers 0x2f24

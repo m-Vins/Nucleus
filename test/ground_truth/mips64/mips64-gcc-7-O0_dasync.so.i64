@@ -1,0 +1,3 @@
+bind_dasync 0x21fc
+dasync_digests 0x2e20
+dummy_pause_job 0x30b4

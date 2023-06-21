@@ -1,0 +1,3 @@
+my_getopt 0x804c1d0
+optadditem 0x804bc10
+optget_i 0x804a6a0

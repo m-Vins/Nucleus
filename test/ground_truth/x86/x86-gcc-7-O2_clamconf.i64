@@ -1,0 +1,5 @@
+countlines 0x8110
+freshdbdir 0x76f0
+my_getopt 0x6b80
+optaddarg 0x5320
+optfree 0x5510

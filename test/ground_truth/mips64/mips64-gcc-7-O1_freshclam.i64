@@ -1,0 +1,8 @@
+cdiff_cmd_open 0x120034b58
+dnsquery 0x12003f520
+downloadmanager 0x12003dadc
+is_valid_hostid 0x120038414
+msg_callback 0x120036e50
+optget_i 0x120030a70
+optparse 0x1200310dc
+remote_cvdhead 0x12003ac5c

@@ -1,0 +1,7 @@
+_getopt_internal 0x804c3f0
+cdiff_cmd_del 0x804f880
+decodehexspecial 0x8058780
+decodesigs 0x80539a0
+listdir 0x8056640
+my_getopt 0x804bf40
+sha256file 0x8055940

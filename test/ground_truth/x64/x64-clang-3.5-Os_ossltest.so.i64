@@ -1,0 +1,5 @@
+ossltest_aes128_cbc_cipher 0x1d51
+ossltest_aes128_gcm_cipher 0x1e2e
+ossltest_aes_128_gcm 0x22a5
+ossltest_ciphers 0x202e
+ossltest_digests 0x1fbc

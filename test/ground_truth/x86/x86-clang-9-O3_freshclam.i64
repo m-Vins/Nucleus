@@ -1,0 +1,9 @@
+cdiff_cmd_unlink 0x8050670
+cdiff_cmd_xchg 0x804f980
+cdiff_token 0x804f630
+countlines 0x804ea60
+downloadmanager 0x8051ed0
+execute 0x8057c50
+mdprintf 0x804b120
+proxyauth 0x8055f20
+tar_addfile 0x8050770

@@ -1,0 +1,14 @@
+cdiff_cmd_del 0x4292b0
+cdiff_ctx_free 0x427600
+cdiff_token 0x427ea4
+daemonize 0x4271c4
+decodesig 0x430c34
+diffdirs 0x42d268
+freshdbdir 0x4268dc
+match_regex 0x427414
+mdprintf 0x4226b0
+my_getopt 0x4239b0
+optparse 0x424e28
+sha256file 0x42c010
+sigtool_scandir 0x42b50c
+verifydiff 0x432db8

@@ -1,0 +1,8 @@
+cdiff_cmd_close 0x19bac
+mirman_update 0x28634
+mprintf 0x1440c
+nonblock_fcntl 0x27e70
+optget_i 0x14988
+remote_cvdhead 0x1f408
+sighandler 0x1cce4
+test_database_wrap 0x2334c

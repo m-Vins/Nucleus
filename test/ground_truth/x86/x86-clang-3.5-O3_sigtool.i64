@@ -1,0 +1,7 @@
+cdiff_ctx_free 0x8050450
+cdiff_token 0x8050610
+decodehexspecial 0x8057f60
+listdir 0x8058a50
+mprintf 0x804c950
+my_getopt 0x804cd50
+sha256file 0x8055b20

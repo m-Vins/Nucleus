@@ -1,0 +1,3 @@
+my_getopt 0xbfa0
+optaddarg 0xa9e8
+optfree 0xab80

@@ -1,0 +1,5 @@
+afalg_aes_cbc 0x2ca8
+afalg_chk_platform 0x310c
+afalg_do_cipher 0x29f4
+bind_afalg 0x2e6c
+bind_helper 0x2fe4

@@ -1,0 +1,5 @@
+_getopt_internal 0x40387c
+filelist 0x40432c
+optaddarg 0x401d68
+optget_i 0x401b88
+optparse 0x40207c

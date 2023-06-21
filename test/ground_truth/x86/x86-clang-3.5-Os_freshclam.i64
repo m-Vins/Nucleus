@@ -1,0 +1,6 @@
+cdiff_execute 0x80500c4
+execute 0x8058a3c
+logg 0x804c3c8
+mirman_update 0x80594ea
+mprintf 0x804c8f3
+updatedb 0x8053c39

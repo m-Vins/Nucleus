@@ -1,0 +1,4 @@
+daemonize 0x804ce3d
+match_regex 0x804cfec
+my_getopt 0x804ba3f
+optadditem 0x804b323

@@ -1,0 +1,11 @@
+build 0x20b85
+cdiff_cmd_open 0x289c0
+cdiff_execute 0x28400
+compare 0x1d338
+comparesha 0x1ec56
+daemonize 0x27eb0
+decodehexspecial 0x1de6f
+freshdbdir 0x277c0
+sha256file 0x1d1d0
+tar_addfile 0x2a230
+unpack 0x208a8

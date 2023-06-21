@@ -1,0 +1,4 @@
+bind_engine 0x2718
+bind_ossltest 0x242c
+digest_sha512 0x1a8c
+ossltest_digest_nids 0x1d3c

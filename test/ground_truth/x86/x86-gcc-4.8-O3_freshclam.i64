@@ -1,0 +1,13 @@
+_getopt_internal 0x804efd0
+cdiff_cmd_move 0x8050720
+cdiff_ctx_free 0x80500c0
+downloadmanager 0x8057a10
+execute 0x8059530
+mirman_write 0x805a690
+my_getopt 0x804eb60
+optget_i 0x804cf80
+recvln 0x80521c0
+remote_cvdhead 0x80539a0
+tar_addfile 0x8051e20
+test_database 0x8052c40
+updatedb 0x80554a0

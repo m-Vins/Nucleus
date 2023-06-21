@@ -1,0 +1,7 @@
+_getopt_internal 0x24b7d
+cdiff_cmd_close 0x27574
+cdiff_cmd_del 0x27325
+freshdbdir 0x2665f
+match_regex 0x26d32
+sha256file 0x1d1c1
+unpack 0x205b1

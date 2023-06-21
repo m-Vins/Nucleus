@@ -1,0 +1,6 @@
+cdiff_cmd_move 0x407a83
+compare 0x40ce23
+optaddarg 0x405dc1
+sigtool_scandir 0x4089bc
+tar_addfile 0x4081b8
+unpack 0x40abf7

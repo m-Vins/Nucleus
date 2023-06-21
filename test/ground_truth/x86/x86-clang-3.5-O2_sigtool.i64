@@ -1,0 +1,7 @@
+cdiff_ctx_free 0x8050360
+cdiff_token 0x8050520
+compare 0x80559f0
+convenience_ctx 0x80517f0
+decodehexstr 0x80584e0
+optadditem 0x804ed00
+sigtool_scandir 0x8051e80

@@ -1,0 +1,8 @@
+cdiff_cmd_add 0x18c50
+cdiff_cmd_unlink 0x18ee4
+cdiff_execute 0x18fe8
+freshdbdir 0x17548
+logg 0x149fc
+match_regex 0x17cbc
+mirman_update 0x20f34
+mirman_whitelist 0x21370

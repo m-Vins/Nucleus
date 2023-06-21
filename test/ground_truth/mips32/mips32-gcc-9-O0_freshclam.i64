@@ -1,0 +1,8 @@
+cdiff_cmd_close 0x42ab08
+cdiff_cmd_open 0x42a288
+daemonize 0x4297a4
+dns_label 0x437694
+mirman_check 0x43df88
+nonblock_fcntl 0x43d8e0
+optget_i 0x4243a4
+optparse 0x424e10

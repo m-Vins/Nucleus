@@ -1,0 +1,5 @@
+action_copy 0xe3c0
+checkaccess 0x106a8
+logg 0xb758
+optaddarg 0xccb0
+optadditem 0xdcb8

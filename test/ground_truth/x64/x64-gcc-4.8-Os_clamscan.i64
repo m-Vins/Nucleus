@@ -1,0 +1,8 @@
+action_move 0x40580e
+freshdbdir 0x4059fb
+match_regex 0x40600b
+meta 0x406ece
+mprintf 0x403048
+optadditem 0x405276
+optfree 0x404643
+scanmanager 0x407110

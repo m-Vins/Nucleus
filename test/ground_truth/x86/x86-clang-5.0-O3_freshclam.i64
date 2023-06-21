@@ -1,0 +1,12 @@
+cdiff_cmd_unlink 0x80518f0
+cdiff_cmd_xchg 0x8050b40
+cdiff_token 0x8050800
+execute 0x8058fa0
+filelist 0x804f8b0
+logg_close 0x804c3e0
+mdprintf 0x804c120
+mirman_update 0x8059a40
+my_getopt 0x804e940
+optget_i 0x804e0a0
+recvln 0x8051d70
+remote_cvdhead 0x8057630

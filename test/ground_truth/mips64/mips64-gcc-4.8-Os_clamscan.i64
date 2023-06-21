@@ -1,0 +1,4 @@
+logg_close 0x1200032f8
+mprintf 0x12000335c
+my_getopt 0x120003e40
+post 0x12000861c

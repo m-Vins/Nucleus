@@ -1,0 +1,4 @@
+optadd 0x402c78
+optaddarg 0x402df9
+optadditem 0x402f4d
+print_version 0x403f9a

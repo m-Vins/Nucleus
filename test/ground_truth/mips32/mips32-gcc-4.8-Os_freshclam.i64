@@ -1,0 +1,10 @@
+cdiff_apply 0x429178
+daemonize 0x4274d0
+dnsquery 0x430e40
+get_hostid 0x42a4d4
+mirman_check 0x431cfc
+mirman_whitelist 0x432494
+mirman_write 0x432590
+remote_cvdhead 0x42b8a8
+sighandler 0x42a314
+tar_addfile 0x429b30

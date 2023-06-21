@@ -1,0 +1,5 @@
+is_valid_hostid 0x1cbb8
+logg_close 0x12678
+match_regex 0x18280
+meta 0x195f8
+scanmanager 0x1ab28

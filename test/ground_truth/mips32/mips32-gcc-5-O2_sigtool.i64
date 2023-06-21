@@ -1,0 +1,9 @@
+_getopt_internal 0x42cdcc
+build 0x427558
+cdiff_cmd_close 0x430a6c
+cdiff_cmd_xchg 0x4304c8
+compare 0x42296c
+getdsig 0x426bd4
+mprintf 0x42bb5c
+my_getopt 0x42c910
+verifydiff 0x424fd0

@@ -1,0 +1,5 @@
+countlines 0x15040
+match_regex 0x14f48
+optadd 0x124d0
+optfree 0x1280c
+optget_i 0x12600

@@ -1,0 +1,12 @@
+cdiff_token 0x11250
+compare 0x13fe8
+convenience_ctx 0x12e20
+daemonize 0x10ab0
+listdb 0x14afc
+listdir 0x153b4
+logg 0xd568
+matchsig 0x168c8
+mprintf 0xd2bc
+sha256file 0x13a9c
+sigtool_scandir 0x13468
+testsigs 0x178c0

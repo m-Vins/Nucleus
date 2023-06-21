@@ -1,0 +1,4 @@
+my_getopt 0xb512
+optadditem 0xaf5d
+optget_i 0x99f0
+optparse 0x9ec6

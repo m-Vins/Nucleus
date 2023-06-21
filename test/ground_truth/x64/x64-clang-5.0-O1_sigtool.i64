@@ -1,0 +1,14 @@
+_getopt_internal 0x404fa0
+cdiff_apply 0x407420
+cdiff_cmd_close 0x408180
+cdiff_cmd_del 0x407fa0
+cdiff_cmd_move 0x408590
+cdiff_cmd_xchg 0x408090
+cdiff_execute 0x407c80
+compare 0x40dcc0
+decodehex 0x40f4a0
+decodehexspecial 0x410380
+decodesigs 0x40bd00
+optaddarg 0x4066c0
+tar_addfile 0x408d30
+unpack 0x40b880

@@ -1,0 +1,7 @@
+_getopt_internal 0x403d4c
+checkaccess 0x407ddc
+getdest 0x406170
+logg_facility 0x4037e0
+mdprintf 0x402600
+meta 0x408cc4
+optadditem 0x405b0c

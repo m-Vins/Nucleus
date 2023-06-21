@@ -1,0 +1,13 @@
+cdiff_apply 0x42fc48
+cdiff_cmd_close 0x42e46c
+cdiff_cmd_xchg 0x42f734
+diffdirs 0x4235f0
+logg_close 0x42a92c
+logg_facility 0x42b49c
+match_regex 0x42e1b4
+mdprintf 0x42a5c0
+optadditem 0x42d2b8
+optget_i 0x42bfc0
+testsigs 0x425fc4
+unpack 0x4239f4
+verifydiff 0x426488

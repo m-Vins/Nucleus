@@ -1,0 +1,14 @@
+cdiff_apply 0x410650
+cdiff_cmd_unlink 0x40f644
+cdiff_cmd_xchg 0x40f788
+compare 0x405364
+convenience_ctx 0x411130
+decodehex 0x4064c4
+decodehexstr 0x405c30
+logg_close 0x40bc18
+logg_facility 0x40c828
+optadditem 0x40e504
+optfree 0x40d69c
+sigtool_vba_scandir 0x411288
+testsigs 0x407ff8
+verifydiff 0x406d68

@@ -1,0 +1,5 @@
+action_move 0x405ce0
+countlines 0x406690
+mprintf 0x4030f0
+my_getopt 0x4035a0
+optadd 0x405470

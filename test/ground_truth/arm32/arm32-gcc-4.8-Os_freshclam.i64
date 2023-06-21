@@ -1,0 +1,11 @@
+_getopt_internal 0xfcb0
+cdiff_cmd_move 0x1108c
+cdiff_cmd_open 0x118c0
+cdiff_cmd_xchg 0x1165c
+dnsquery 0x17864
+filelist 0x105dc
+mirman_check 0x182b8
+mirman_read 0x1818c
+optaddarg 0xe58c
+print_version 0x10430
+sighandler 0x1273c

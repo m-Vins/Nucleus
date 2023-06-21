@@ -1,0 +1,5 @@
+actsetup 0x804c650
+logg 0x8049e20
+logg_facility 0x804a4f0
+mprintf 0x804a310
+post 0x804f3f0

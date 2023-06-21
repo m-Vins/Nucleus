@@ -1,0 +1,11 @@
+cdiff_apply 0x12003c03c
+cdiff_cmd_close 0x12003a960
+cdiff_cmd_xchg 0x12003bb04
+comparesha 0x120032d88
+diffdirs 0x120030464
+listdb 0x12003d85c
+mprintf 0x12003703c
+my_getopt 0x120037b20
+optadditem 0x120039870
+optget_i 0x1200385e0
+tar_addfile 0x12003c950

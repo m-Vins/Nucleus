@@ -1,0 +1,11 @@
+cdiff_cmd_open 0x11729
+downloadmanager 0x1d288
+logg_close 0xc40b
+logg_facility 0xd2dd
+mirman_write 0x201f3
+optaddarg 0xd683
+recvln 0x14278
+sendln 0x1419e
+tar_addfile 0x13dea
+test_database 0x1a000
+updatedb 0x1ab5c

@@ -1,0 +1,4 @@
+daemonize 0x4048bc
+my_getopt 0x403840
+optadd 0x401ea3
+optget_i 0x401e40

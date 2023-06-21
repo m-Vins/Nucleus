@@ -1,0 +1,6 @@
+checkaccess 0x40e0a0
+countlines 0x4094e0
+freshdbdir 0x4089f0
+match_regex 0x4093a0
+scandirs 0x40cce0
+scanfile 0x40d6f0

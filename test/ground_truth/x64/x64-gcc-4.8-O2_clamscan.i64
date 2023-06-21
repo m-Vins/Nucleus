@@ -1,0 +1,6 @@
+get_hostid 0x409c10
+optfree 0x404fa0
+optget_i 0x404b60
+optparse 0x405080
+post 0x408310
+scandirs 0x407dc0

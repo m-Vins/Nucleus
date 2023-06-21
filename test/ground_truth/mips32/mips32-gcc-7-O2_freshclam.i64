@@ -1,0 +1,12 @@
+cdiff_cmd_xchg 0x4288ac
+cdiff_execute 0x42853c
+logg 0x424358
+mdprintf 0x423b50
+mirman_list 0x434290
+mirman_write 0x4346c0
+msg_callback 0x42b150
+nonblock_fcntl 0x4331b4
+optadd 0x424d60
+recvln 0x42af1c
+tar_addfile 0x42ab20
+test_database_wrap 0x42be3c

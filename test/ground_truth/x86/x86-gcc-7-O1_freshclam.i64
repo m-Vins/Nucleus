@@ -1,0 +1,9 @@
+logg 0x1c79b
+mirman_list 0x2bc8e
+mprintf 0x1c4b9
+msg_callback 0x228be
+optadditem 0x1e6af
+optget_i 0x1d002
+optparse 0x1d561
+test_database 0x2431b
+updatedb 0x26c23

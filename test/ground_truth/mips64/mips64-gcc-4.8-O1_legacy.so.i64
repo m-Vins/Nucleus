@@ -1,0 +1,3 @@
+legacy_get_params 0x11b4
+md4_internal_final 0x14a8
+ripemd160_internal_final 0x1920

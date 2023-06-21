@@ -1,0 +1,11 @@
+cdiff_execute 0x80537c0
+cdiff_token 0x80539e0
+dnsquery 0x8062eb0
+filelist 0x8051dc0
+freshdbdir 0x80517f0
+logg_facility 0x804d740
+mirman_list 0x8064b00
+optparse 0x804dc60
+proxyauth 0x80627f0
+sendln 0x8055b40
+sighandler 0x8057650

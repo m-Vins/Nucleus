@@ -1,0 +1,11 @@
+cdiff_cmd_close 0x8050760
+cdiff_cmd_del 0x80504b0
+cdiff_cmd_xchg 0x80503a0
+cdiff_execute 0x8050140
+dns_label 0x8052640
+dnsquery 0x8059160
+mirman_read 0x8059cc0
+mirman_update 0x805a100
+optaddarg 0x804d160
+optparse 0x804d480
+test_database 0x8052b50

@@ -1,0 +1,12 @@
+cdiff_cmd_add 0x15af1
+cdiff_ctx_free 0x15728
+cdiff_execute 0x16f79
+decodehex 0x22614
+decodehexspecial 0x21c56
+decodesig 0x23a5b
+diffdirs 0x245fe
+getdsig 0x1b201
+listdb 0x1f006
+mdprintf 0xfe35
+sha256file 0x1b8ac
+sigtool_vba_scandir 0x198b5

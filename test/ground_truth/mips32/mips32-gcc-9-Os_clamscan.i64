@@ -1,0 +1,4 @@
+is_valid_hostid 0x40a4a4
+logg 0x402c60
+meta 0x408190
+print_version 0x40624c

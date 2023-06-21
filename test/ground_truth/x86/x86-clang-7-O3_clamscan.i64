@@ -1,0 +1,4 @@
+checkaccess 0x80508d0
+mprintf 0x804a320
+optadditem 0x804c6c0
+scanfile 0x8050230

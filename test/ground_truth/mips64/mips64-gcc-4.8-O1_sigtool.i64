@@ -1,0 +1,11 @@
+_getopt_internal 0x120030c38
+cdiff_cmd_xchg 0x12003517c
+countlines 0x120033c34
+decodesig 0x12003b490
+decodesigmod 0x1200374a8
+optadd 0x120031704
+optadditem 0x120032b7c
+print_version 0x120033470
+sha256file 0x120037778
+tar_addfile 0x120036390
+testsigs 0x12003c400

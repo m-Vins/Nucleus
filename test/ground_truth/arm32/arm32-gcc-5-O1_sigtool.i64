@@ -1,0 +1,11 @@
+_getopt_internal 0x14ac8
+cdiff_execute 0x178f8
+decodesigmod 0x1a2fc
+diffdirs 0x1ac74
+listdir 0x1b820
+logg 0x13de8
+match_regex 0x175a4
+optadd 0x15270
+optadditem 0x167d8
+optget_i 0x151fc
+print_version 0x16ff0

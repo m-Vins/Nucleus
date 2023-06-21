@@ -1,0 +1,11 @@
+cdiff_apply 0x1d670
+cdiff_cmd_add 0x1cb8c
+cdiff_cmd_unlink 0x1c8b0
+comparesha 0x14ea0
+decodehexstr 0x141a8
+listdir 0x1f134
+logg 0x19a2c
+match_regex 0x1c4f8
+mprintf 0x197d4
+optparse 0x1ad74
+sha256file 0x137e4

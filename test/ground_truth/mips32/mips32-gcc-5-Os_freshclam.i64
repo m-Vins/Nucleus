@@ -1,0 +1,12 @@
+_getopt_internal 0x4268f8
+cdiff_apply 0x429514
+cdiff_cmd_open 0x4284c8
+countlines 0x427b0c
+is_valid_hostid 0x42a8d0
+logg 0x42425c
+nonblock_fcntl 0x431ddc
+optadd 0x424bb0
+optparse 0x425108
+print_version 0x4272ac
+sendln 0x42a270
+sighandler 0x42a7c4

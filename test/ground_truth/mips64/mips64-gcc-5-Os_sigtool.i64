@@ -1,0 +1,5 @@
+cdiff_cmd_add 0x12003b8e8
+cdiff_cmd_close 0x12003bb1c
+listdb 0x12003e254
+matchsig 0x120031ed0
+mdprintf 0x120037250

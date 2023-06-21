@@ -1,0 +1,5 @@
+action_move 0x804cf70
+checkaccess 0x8050bb0
+freshdbdir 0x804d240
+logg_facility 0x804a880
+scandirs 0x804fe30

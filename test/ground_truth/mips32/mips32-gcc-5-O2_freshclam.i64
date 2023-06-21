@@ -1,0 +1,17 @@
+cdiff_cmd_del 0x428ba8
+cdiff_cmd_move 0x42966c
+cdiff_cmd_unlink 0x428840
+cdiff_execute 0x428698
+countlines 0x428360
+dns_label 0x42b808
+downloadmanager 0x431198
+execute 0x4331d0
+logg 0x424444
+mdprintf 0x423be0
+mirman_check 0x433fb4
+mirman_update 0x4342b8
+optget_i 0x425090
+optparse 0x425490
+print_version 0x427a88
+recvln 0x42b108
+test_database 0x42be54

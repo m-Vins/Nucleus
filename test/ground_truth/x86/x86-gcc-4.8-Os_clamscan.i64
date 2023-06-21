@@ -1,0 +1,5 @@
+get_hostid 0x804fb48
+getdest 0x804c7ec
+logg 0x804a5d3
+mprintf 0x804a3d9
+scandirs 0x804ddaf

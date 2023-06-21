@@ -1,0 +1,8 @@
+action_move 0xd702
+actsetup 0xd830
+checkaccess 0xe720
+daemonize 0xdea9
+getdest 0xd52d
+optget_i 0xc295
+scandirs 0xecb2
+scanmanager 0xf27a

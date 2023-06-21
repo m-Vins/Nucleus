@@ -1,0 +1,3 @@
+afalg_aes_cbc 0x107d8
+bind_afalg 0x10490
+bind_helper 0x10238

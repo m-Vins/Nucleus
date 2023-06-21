@@ -1,0 +1,8 @@
+build 0x120033bc0
+freshdbdir 0x12003b158
+getdsig 0x12002f8ac
+listdb 0x12003f490
+logg 0x120037e00
+match_regex 0x12003bb78
+optadditem 0x12003a9e0
+tar_addfile 0x12003e3a0

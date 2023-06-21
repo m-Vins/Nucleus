@@ -1,0 +1,12 @@
+cdiff_execute 0x804f1df
+decodesigs 0x8056a80
+filelist 0x804eb85
+listdir 0x80535a8
+logg_close 0x804b46d
+match_regex 0x804ee97
+maxlinelen 0x8051e71
+optaddarg 0x804cbe1
+optget_i 0x804ca10
+print_version 0x804e957
+sigtool_vba_scandir 0x805144b
+tar_addfile 0x8050fe4

@@ -1,0 +1,6 @@
+action_move 0x120008dec
+countlines 0x12000a598
+match_regex 0x12000a3cc
+mprintf 0x120003e98
+optadditem 0x1200080e8
+scanmanager 0x12000db18

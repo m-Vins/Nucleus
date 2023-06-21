@@ -1,0 +1,11 @@
+cdiff_cmd_del 0x40c438
+cdiff_cmd_xchg 0x40c608
+cdiff_ctx_free 0x40bf24
+cdiff_execute 0x40d514
+dnsquery 0x419878
+execute 0x419eec
+filelist 0x40b824
+freshdbdir 0x40b394
+match_regex 0x40bcd0
+mirman_list 0x41b0f8
+mirman_read 0x41a8dc

@@ -1,0 +1,5 @@
+logg_facility 0x5b10
+match_regex 0x90b0
+optadditem 0x7c50
+post 0xa710
+scandirs 0xa070

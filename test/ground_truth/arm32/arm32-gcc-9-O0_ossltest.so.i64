@@ -1,0 +1,3 @@
+bind_engine 0x23c0
+bind_ossltest 0x21a0
+digest_sha512 0x1968

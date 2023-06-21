@@ -1,0 +1,9 @@
+cdiff_apply 0x120037180
+cdiff_cmd_unlink 0x120036078
+decodesigmod 0x120038f00
+filelist 0x120034f20
+listdb 0x12003a5c0
+mdprintf 0x120030fb0
+optfree 0x120033168
+optparse 0x1200332a8
+testsigs 0x12003dfd8

@@ -1,0 +1,7 @@
+_getopt_internal 0x406800
+getdsig 0x410238
+logg 0x405af4
+matchsig 0x40f150
+mprintf 0x4056b8
+optfree 0x4072c0
+optparse 0x40738c

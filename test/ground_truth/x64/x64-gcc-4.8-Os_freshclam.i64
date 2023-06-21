@@ -1,0 +1,9 @@
+cdiff_cmd_del 0x407603
+cdiff_cmd_open 0x407761
+dnsquery 0x40e507
+filelist 0x406e73
+mdprintf 0x40408d
+optadditem 0x405e65
+optget_i 0x404f37
+print_version 0x406ca5
+test_database 0x4091bf

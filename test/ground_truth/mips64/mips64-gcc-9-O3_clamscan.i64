@@ -1,0 +1,6 @@
+checkaccess 0x1200082b8
+logg 0x1200036f0
+logg_close 0x120003300
+mdprintf 0x120002f00
+mprintf 0x120003370
+my_getopt 0x120004050

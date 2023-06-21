@@ -1,0 +1,7 @@
+countlines 0x4064bd
+getdest 0x405cec
+meta 0x4082eb
+mprintf 0x403445
+optfree 0x404456
+optget_i 0x40544a
+post 0x408473

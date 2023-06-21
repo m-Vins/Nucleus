@@ -1,0 +1,7 @@
+cdiff_apply 0x120039058
+cdiff_cmd_close 0x1200374a0
+cdiff_cmd_xchg 0x120037234
+comparesha 0x120044b50
+optfree 0x120032f70
+optparse 0x1200331a0
+sigtool_vba_scandir 0x12003c624

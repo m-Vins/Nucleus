@@ -1,0 +1,9 @@
+cdiff_apply 0x804f764
+cdiff_cmd_close 0x80505a0
+cdiff_cmd_del 0x80503c2
+cdiff_cmd_unlink 0x8051057
+decodehexstr 0x8057c43
+filelist 0x804f36a
+my_getopt 0x804ccd8
+sigtool_scandir 0x8051a24
+unpack 0x8053e2f

@@ -1,0 +1,3 @@
+ossltest_aes_128_cbc 0x2550
+ossltest_ciphers 0x1a60
+ossltest_digests 0x19c0

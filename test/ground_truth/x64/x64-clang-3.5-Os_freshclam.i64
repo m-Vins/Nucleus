@@ -1,0 +1,9 @@
+cdiff_cmd_del 0x407c09
+cdiff_cmd_unlink 0x408810
+daemonize 0x406da0
+freshdbdir 0x4068e6
+mirman_check 0x4102f4
+mirman_list 0x410673
+optadditem 0x405997
+sighandler 0x4099bc
+updatedb 0x40b0b7

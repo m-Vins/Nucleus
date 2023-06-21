@@ -1,0 +1,5 @@
+_getopt_internal 0x4035e5
+filelist 0x403ff0
+freshdbdir 0x403c56
+optadd 0x402a13
+optget_i 0x402b52

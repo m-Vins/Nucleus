@@ -1,0 +1,10 @@
+cdiff_apply 0x5b99c
+comparesha 0x631d8
+countlines 0x5a0d4
+decodesigs 0x67204
+getdsig 0x5f18c
+listdb 0x623d8
+maxlinelen 0x635c0
+optadditem 0x58db4
+print_version 0x59848
+sigtool_scandir 0x5d8a0

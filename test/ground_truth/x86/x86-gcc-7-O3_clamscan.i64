@@ -1,0 +1,6 @@
+actsetup 0x87d0
+checkaccess 0x99f0
+daemonize 0x9030
+mprintf 0x5110
+optadd 0x68b0
+scanmanager 0xa960

@@ -1,0 +1,8 @@
+cdiff_cmd_open 0x16b10
+cdiff_cmd_unlink 0x16700
+countlines 0x163c0
+diffdirs 0xc0b6
+logg_close 0x12730
+mprintf 0x12770
+sigtool_vba_scandir 0x185b0
+unpack 0xee14

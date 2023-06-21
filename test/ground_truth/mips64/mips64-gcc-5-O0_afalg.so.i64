@@ -1,0 +1,5 @@
+afalg_chk_platform 0x3a1c
+afalg_do_cipher 0x2eb0
+afalg_fin_cipher_aio 0x1f8c
+afalg_setup_async_event_notification 0x1b34
+bind_engine 0x393c

@@ -1,0 +1,3 @@
+digest_sha1 0x1d70
+digest_sha512 0x2010
+ossltest_aes128_gcm_cipher 0x2580

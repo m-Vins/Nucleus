@@ -1,0 +1,2 @@
+bind_ossltest 0x245c
+ossltest_aes_128_gcm 0x2a94

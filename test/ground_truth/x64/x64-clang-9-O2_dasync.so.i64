@@ -1,0 +1,2 @@
+bind_dasync 0x2380
+dasync_cipher_helper 0x3060

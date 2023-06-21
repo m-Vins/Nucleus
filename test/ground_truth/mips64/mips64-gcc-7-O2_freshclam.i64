@@ -1,0 +1,10 @@
+cdiff_token 0x1200353b8
+daemonize 0x120034dc0
+execute 0x12003f6d0
+freshdbdir 0x120034598
+logg 0x120031290
+mdprintf 0x120030a90
+mirman_write 0x120040ea8
+nonblock_fcntl 0x12003f978
+remote_cvdhead 0x120039b30
+test_database_wrap 0x120038db0

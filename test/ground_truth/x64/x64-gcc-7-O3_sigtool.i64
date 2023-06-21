@@ -1,0 +1,17 @@
+_getopt_internal 0x13910
+build 0xeff9
+cdiff_cmd_move 0x16b00
+cdiff_cmd_unlink 0x176c0
+cdiff_cmd_xchg 0x175b0
+countlines 0x16430
+decodehex 0xcc05
+decodesig 0xdbed
+decodesigmod 0xb8dd
+diffdirs 0xc0e0
+getdsig 0xe9da
+listdb 0x19170
+listdir 0x19980
+logg_facility 0x13400
+match_regex 0x16330
+optadditem 0x15440
+testsigs 0xe89b

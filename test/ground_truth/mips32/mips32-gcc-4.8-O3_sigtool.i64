@@ -1,0 +1,11 @@
+build 0x42709c
+cdiff_cmd_xchg 0x430f30
+convenience_ctx 0x4322c0
+listdb 0x433184
+logg 0x42b788
+logg_close 0x42b3b4
+match_regex 0x42f608
+matchsig 0x425274
+mprintf 0x42b418
+my_getopt 0x42c180
+sha256file 0x422754

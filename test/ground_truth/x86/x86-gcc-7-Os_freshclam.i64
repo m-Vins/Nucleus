@@ -1,0 +1,12 @@
+cdiff_cmd_close 0x20a94
+cdiff_execute 0x20533
+execute 0x284c7
+get_hostid 0x225b8
+logg 0x1d5df
+mirman_list 0x2906c
+mirman_whitelist 0x29237
+mprintf 0x1d3a6
+optaddarg 0x1def8
+optadditem 0x1eea9
+optfree 0x1e07e
+sighandler 0x224a5

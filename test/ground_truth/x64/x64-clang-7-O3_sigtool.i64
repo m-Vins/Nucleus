@@ -1,0 +1,7 @@
+cdiff_cmd_add 0x408680
+cdiff_cmd_move 0x408e30
+cdiff_cmd_xchg 0x408840
+logg_facility 0x404580
+optaddarg 0x406ac0
+optadditem 0x406c40
+sha256file 0x40e4f0

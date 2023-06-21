@@ -1,0 +1,5 @@
+checkaccess 0x8050d40
+logg_close 0x804a130
+logg_facility 0x804a8c0
+my_getopt 0x804aad0
+scanfile 0x80505a0

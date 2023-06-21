@@ -1,0 +1,3 @@
+dasync_ciphers 0x1bd0
+dasync_digests 0x33a0
+dummy_pause_job 0x2354

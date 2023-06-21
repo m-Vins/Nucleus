@@ -1,0 +1,6 @@
+match_regex 0x12003c0c8
+matchsig 0x120032290
+mdprintf 0x120037ae0
+my_getopt 0x120038c80
+optfree 0x120039df8
+optget_i 0x120039b40

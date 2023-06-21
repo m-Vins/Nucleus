@@ -1,0 +1,6 @@
+_getopt_internal 0xb214
+getdest 0xcbc0
+is_valid_hostid 0x101f4
+logg 0xa83c
+optaddarg 0xb80c
+scandirs 0xe218

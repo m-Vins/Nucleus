@@ -1,0 +1,15 @@
+cdiff_cmd_del 0x42f1a0
+cdiff_cmd_unlink 0x42ee94
+cdiff_cmd_xchg 0x42f030
+compare 0x4228e8
+comparesha 0x424770
+decodehex 0x423f00
+decodesig 0x4253d8
+decodesigs 0x4261e4
+getdsig 0x42651c
+listdb 0x43200c
+listdir 0x4329e8
+logg 0x42b22c
+match_regex 0x42e8d8
+unpack 0x426a34
+verifydiff 0x424acc

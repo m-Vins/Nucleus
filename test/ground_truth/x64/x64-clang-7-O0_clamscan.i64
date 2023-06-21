@@ -1,0 +1,5 @@
+countlines 0x4090e0
+getdest 0x408460
+optparse 0x4059e0
+post 0x40c770
+scandirs 0x40c880

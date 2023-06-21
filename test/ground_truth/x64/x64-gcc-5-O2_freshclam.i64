@@ -1,0 +1,10 @@
+cdiff_cmd_del 0x10a00
+cdiff_token 0x105e0
+logg_close 0xc7f0
+match_regex 0x10380
+mirman_check 0x19f70
+mirman_whitelist 0x1a5e0
+nonblock_fcntl 0x19760
+optadd 0xd610
+optadditem 0xeab0
+tar_addfile 0x122d0

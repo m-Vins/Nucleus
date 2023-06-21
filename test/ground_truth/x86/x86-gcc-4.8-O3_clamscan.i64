@@ -1,0 +1,5 @@
+match_regex 0x804e4d0
+mprintf 0x804a590
+optadd 0x804bca0
+optget_i 0x804bc40
+print_version 0x804df20

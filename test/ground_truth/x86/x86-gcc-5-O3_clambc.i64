@@ -1,0 +1,4 @@
+_getopt_internal 0x6cd0
+filelist 0x7900
+my_getopt 0x6860
+optadd 0x4d60

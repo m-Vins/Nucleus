@@ -1,0 +1,10 @@
+cdiff_apply 0x22770
+cdiff_cmd_del 0x2249c
+decodehex 0x272fa
+decodehexstr 0x26660
+filelist 0x20c5a
+logg 0x1d7a5
+mdprintf 0x1d139
+my_getopt 0x1dfe9
+optfree 0x1eedc
+tar_addfile 0x23321

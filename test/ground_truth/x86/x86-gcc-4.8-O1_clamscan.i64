@@ -1,0 +1,10 @@
+actsetup 0x804d4d1
+countlines 0x804deae
+logg_close 0x8049f5d
+logg_facility 0x804aa29
+meta 0x804eb1e
+mprintf 0x8049f8e
+optaddarg 0x804b6d1
+optget_i 0x804b500
+optparse 0x804ba05
+scanmanager 0x804f7f4

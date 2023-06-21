@@ -1,0 +1,9 @@
+cdiff_token 0x17548
+logg_facility 0x1430c
+mirman_update 0x21b24
+mirman_whitelist 0x21f50
+mirman_write 0x22014
+nonblock_fcntl 0x210f8
+optfree 0x147ac
+optget_i 0x14364
+print_version 0x16d30

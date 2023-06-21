@@ -1,0 +1,11 @@
+cdiff_cmd_open 0x10b20
+cdiff_token 0x10500
+countlines 0x103b0
+mdprintf 0xc270
+mirman_read 0x19c10
+mprintf 0xc7b0
+optfree 0xd950
+optget_i 0xd740
+recvln 0x12580
+remote_cvdhead 0x13d80
+wwwconnect 0x134d0

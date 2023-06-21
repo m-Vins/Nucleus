@@ -1,0 +1,6 @@
+action_move 0xdbf4
+actsetup 0xdd60
+checkaccess 0xec74
+get_hostid 0x110a0
+optadditem 0xd570
+post 0xf884

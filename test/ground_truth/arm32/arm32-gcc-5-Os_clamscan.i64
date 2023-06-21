@@ -1,0 +1,7 @@
+_getopt_internal 0x13488
+checkaccess 0x16060
+countlines 0x15ae0
+daemonize 0x1586c
+is_valid_hostid 0x185a0
+logg 0x12a8c
+optadd 0x13a24

@@ -1,0 +1,11 @@
+cdiff_cmd_xchg 0x407dc0
+cdiff_execute 0x4078f0
+download 0x409c80
+get_hostid 0x409f40
+mirman_check 0x4101e0
+mirman_update 0x4103e0
+optaddarg 0x4052c0
+optadditem 0x405430
+optparse 0x4043d0
+tar_addfile 0x4089d0
+updatedb 0x40b280

@@ -1,0 +1,4 @@
+countlines 0x1200051e4
+match_regex 0x1200050f0
+optfree 0x120002258
+tracehook 0x120005364

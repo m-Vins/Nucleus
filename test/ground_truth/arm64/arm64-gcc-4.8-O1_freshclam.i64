@@ -1,0 +1,9 @@
+cdiff_cmd_del 0x4095dc
+cdiff_cmd_move 0x409ce0
+cdiff_token 0x409128
+dnsquery 0x411dc8
+logg_facility 0x406378
+mdprintf 0x405168
+mirman_read 0x41287c
+sendln 0x40affc
+sighandler 0x40b2b8

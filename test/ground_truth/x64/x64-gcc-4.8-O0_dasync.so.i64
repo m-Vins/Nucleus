@@ -1,0 +1,3 @@
+bind_dasync 0x2573
+bind_engine 0x2b07
+dasync_digests 0x2c46

@@ -1,0 +1,10 @@
+cdiff_cmd_open 0x5bd48
+comparesha 0x51ad4
+countlines 0x5b548
+decodesigs 0x52f78
+diffdirs 0x50960
+freshdbdir 0x5ac20
+logg_facility 0x579b8
+matchsig 0x52140
+maxlinelen 0x50000
+tar_addfile 0x5d2e8

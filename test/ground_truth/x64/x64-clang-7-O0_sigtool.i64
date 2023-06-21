@@ -1,0 +1,12 @@
+_getopt_internal 0x405e40
+build 0x40f070
+cdiff_apply 0x409c10
+cdiff_cmd_add 0x40b1c0
+cdiff_cmd_del 0x40b2d0
+compare 0x414e00
+decodehexspecial 0x418b80
+logg 0x403f70
+logg_close 0x403f20
+maxlinelen 0x415720
+sha256file 0x414c10
+tar_addfile 0x40c870

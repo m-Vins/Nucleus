@@ -1,0 +1,10 @@
+build 0x8051870
+cdiff_cmd_del 0x804f090
+cdiff_execute 0x804ed80
+convenience_ctx 0x8050040
+decodesigmod 0x8056850
+listdir 0x8055820
+logg_close 0x804b3b0
+logg_facility 0x804bac0
+matchsig 0x8056f80
+maxlinelen 0x8055710

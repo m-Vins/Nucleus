@@ -1,0 +1,12 @@
+cdiff_cmd_add 0x12003708c
+cdiff_cmd_move 0x120037fbc
+cdiff_ctx_free 0x120036a60
+decodehex 0x120048ad0
+diffdirs 0x12004b9e8
+freshdbdir 0x1200358e4
+getdsig 0x12003ec78
+listdir 0x120043564
+logg_facility 0x120031094
+my_getopt 0x120031170
+sigtool_scandir 0x12003c340
+sigtool_vba_scandir 0x12003c9d4

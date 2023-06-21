@@ -1,0 +1,4 @@
+daemonize 0x409440
+logg_facility 0x4036dc
+optparse 0x405878
+scanfile 0x40bb68

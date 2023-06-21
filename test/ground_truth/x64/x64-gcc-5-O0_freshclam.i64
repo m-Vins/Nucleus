@@ -1,0 +1,11 @@
+cdiff_apply 0x12f20
+cdiff_cmd_close 0x11cfa
+cdiff_cmd_unlink 0x12bb9
+cdiff_execute 0x12d3e
+daemonize 0x11108
+download 0x1497d
+downloadmanager 0x1d2f1
+mdprintf 0xbc50
+optparse 0xdaef
+updatedb 0x1abc7
+wwwconnect 0x16116

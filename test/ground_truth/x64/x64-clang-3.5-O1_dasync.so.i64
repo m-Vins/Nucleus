@@ -1,0 +1,3 @@
+dasync_ciphers 0x2ca0
+dasync_digest_nids 0x3540
+dasync_digests 0x2c50

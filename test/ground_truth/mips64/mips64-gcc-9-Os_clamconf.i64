@@ -1,0 +1,5 @@
+_getopt_internal 0x120004808
+daemonize 0x120005560
+filelist 0x120005388
+freshdbdir 0x120004e88
+optparse 0x1200031e0

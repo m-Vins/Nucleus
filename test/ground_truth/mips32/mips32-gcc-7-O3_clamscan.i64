@@ -1,0 +1,6 @@
+action_copy 0x4062f4
+action_move 0x40644c
+countlines 0x407480
+daemonize 0x407070
+get_hostid 0x40b298
+print_version 0x406b6c

@@ -1,0 +1,9 @@
+cdiff_apply 0x804f920
+download 0x8052880
+downloadmanager 0x8052ba0
+logg 0x804c420
+mirman_check 0x8059060
+mirman_read 0x8058ed0
+mirman_update 0x8059240
+optparse 0x804d090
+sendln 0x8051750

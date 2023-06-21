@@ -1,0 +1,15 @@
+cdiff_apply 0x55638
+cdiff_cmd_del 0x54a08
+cdiff_cmd_unlink 0x547ec
+countlines 0x544a8
+dnsquery 0x5b6dc
+freshdbdir 0x53cac
+logg 0x516e4
+match_regex 0x543a0
+mirman_check 0x5c2ec
+mprintf 0x5133c
+msg_callback 0x5629c
+recvln 0x5611c
+sendln 0x56074
+tar_addfile 0x55e38
+test_database_wrap 0x56998

@@ -1,0 +1,11 @@
+cdiff_cmd_del 0x12003d3f8
+cdiff_cmd_unlink 0x12003c758
+compare 0x12002fd90
+decodehex 0x120031734
+decodesigmod 0x12002f5cc
+getdsig 0x12002f8b0
+matchsig 0x120031f58
+optadditem 0x12003aa68
+optfree 0x120039978
+optget_i 0x120039430
+print_version 0x12003b3e8

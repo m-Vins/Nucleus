@@ -1,0 +1,5 @@
+action_copy 0xe4f0
+logg 0xb4e0
+logg_close 0xb0a0
+meta 0x10380
+scanmanager 0x10620

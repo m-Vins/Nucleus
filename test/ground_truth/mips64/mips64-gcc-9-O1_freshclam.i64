@@ -1,0 +1,6 @@
+cdiff_cmd_open 0x1200355e0
+dns_label 0x120038438
+freshdbdir 0x1200331e8
+match_regex 0x120033b94
+mirman_check 0x12003fc70
+mirman_read 0x12003fab4

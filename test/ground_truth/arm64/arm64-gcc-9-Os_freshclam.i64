@@ -1,0 +1,11 @@
+_getopt_internal 0x5359c
+cdiff_apply 0x554b8
+cdiff_cmd_move 0x54eac
+download 0x560d8
+logg_facility 0x51dac
+match_regex 0x54224
+optaddarg 0x51f98
+proxyauth 0x56440
+sendln 0x55e84
+sighandler 0x56264
+wwwconnect 0x56cd0

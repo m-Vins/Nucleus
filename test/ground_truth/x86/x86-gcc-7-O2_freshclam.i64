@@ -1,0 +1,13 @@
+cdiff_apply 0x22800
+cdiff_cmd_add 0x218d0
+cdiff_cmd_open 0x21970
+cdiff_cmd_unlink 0x21500
+cdiff_token 0x212e0
+freshdbdir 0x20740
+logg_facility 0x1e0e0
+mprintf 0x1d540
+nonblock_fcntl 0x2a860
+optaddarg 0x1e370
+optparse 0x1e640
+print_version 0x209e0
+tar_addfile 0x231d0

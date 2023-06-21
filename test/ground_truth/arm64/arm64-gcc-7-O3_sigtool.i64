@@ -1,0 +1,8 @@
+_getopt_internal 0x57f20
+cdiff_cmd_move 0x5ad68
+cdiff_cmd_xchg 0x5b868
+cdiff_execute 0x5bad0
+decodesigmod 0x50128
+mdprintf 0x568f0
+optfree 0x58930
+sigtool_vba_scandir 0x5c940

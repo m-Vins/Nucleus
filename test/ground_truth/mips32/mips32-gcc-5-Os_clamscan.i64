@@ -1,0 +1,11 @@
+action_move 0x405d6c
+countlines 0x406c6c
+filelist 0x406724
+get_hostid 0x40a6c0
+logg_close 0x402994
+logg_facility 0x4035d4
+meta 0x408370
+my_getopt 0x403670
+optadd 0x404140
+optadditem 0x405494
+optfree 0x40455c

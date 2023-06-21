@@ -1,0 +1,12 @@
+cdiff_cmd_add 0x13294
+cdiff_cmd_open 0x13128
+cdiff_cmd_xchg 0x13568
+compare 0x1d28c
+convenience_ctx 0x159a8
+decodesigmod 0x1fdc0
+filelist 0x126f8
+getdsig 0x18444
+listdir 0x1b9b8
+logg 0xd768
+maxlinelen 0x1d150
+optfree 0x1002c

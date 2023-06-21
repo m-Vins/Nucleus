@@ -1,0 +1,9 @@
+daemonize 0x406501
+dnsquery 0x40e7d8
+mirman_check 0x40f263
+mirman_whitelist 0x40f773
+mirman_write 0x40f808
+optaddarg 0x4050c5
+optadditem 0x405219
+remote_cvdhead 0x40d264
+tar_addfile 0x407f24

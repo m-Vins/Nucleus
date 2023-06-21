@@ -1,0 +1,9 @@
+cdiff_cmd_add 0x429ff8
+cdiff_cmd_xchg 0x42a28c
+comparesha 0x42ffec
+convenience_ctx 0x42b5c0
+matchsig 0x430e08
+optaddarg 0x42637c
+optadditem 0x427670
+optparse 0x4266d0
+tar_addfile 0x42b270

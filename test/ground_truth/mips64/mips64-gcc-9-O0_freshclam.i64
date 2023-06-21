@@ -1,0 +1,11 @@
+cdiff_cmd_close 0x1200375e0
+cdiff_cmd_del 0x1200370d8
+cdiff_cmd_move 0x120037ea0
+cdiff_execute 0x120038ec8
+dns_label 0x120043070
+mirman_check 0x120049304
+mirman_list 0x120049b3c
+nonblock_fcntl 0x120048bd0
+optget_i 0x120031294
+tar_addfile 0x12003a540
+test_database 0x120042558

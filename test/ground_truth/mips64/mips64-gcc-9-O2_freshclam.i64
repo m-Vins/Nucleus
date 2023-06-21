@@ -1,0 +1,8 @@
+cdiff_cmd_open 0x120036958
+cdiff_execute 0x120035820
+dns_label 0x120038570
+dnsquery 0x12003f0d0
+freshdbdir 0x120034298
+mirman_check 0x120040200
+my_getopt 0x120033670
+tar_addfile 0x120037660

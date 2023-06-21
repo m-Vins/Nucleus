@@ -1,0 +1,11 @@
+cdiff_cmd_move 0x21990
+cdiff_cmd_open 0x22200
+cdiff_cmd_unlink 0x22630
+downloadmanager 0x28c00
+filelist 0x20d30
+is_valid_hostid 0x23a40
+mirman_list 0x2b6f0
+mirman_update 0x2b480
+optaddarg 0x1e350
+sighandler 0x23950
+tar_addfile 0x231c0

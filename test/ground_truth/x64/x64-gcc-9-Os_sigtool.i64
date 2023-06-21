@@ -1,0 +1,12 @@
+_getopt_internal 0xdbee
+build 0x16049
+cdiff_cmd_close 0xfc63
+cdiff_cmd_move 0x102c4
+cdiff_cmd_open 0x10b3e
+cdiff_cmd_xchg 0x108ff
+cdiff_ctx_free 0xfbc5
+cdiff_token 0x1003d
+decodehexstr 0x13953
+mdprintf 0xca35
+mprintf 0xce04
+my_getopt 0xd89a

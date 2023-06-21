@@ -1,0 +1,12 @@
+cdiff_cmd_close 0x17d90
+decodehex 0x1c590
+decodesig 0x1df08
+decodesigmod 0x1a16c
+decodesigs 0x1eb60
+listdb 0x1aeec
+listdir 0x1b774
+maxlinelen 0x1a070
+optadditem 0x166cc
+optfree 0x15608
+sigtool_scandir 0x19c50
+tar_addfile 0x192fc

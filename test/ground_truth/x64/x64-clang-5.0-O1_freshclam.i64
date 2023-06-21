@@ -1,0 +1,13 @@
+cdiff_cmd_move 0x408220
+cdiff_execute 0x407910
+dns_label 0x40e5c0
+download 0x409bf0
+downloadmanager 0x409e00
+logg 0x403cd0
+logg_facility 0x404580
+mirman_list 0x410310
+msg_callback 0x409ac0
+optaddarg 0x4057c0
+optfree 0x4047b0
+remote_cvdhead 0x40ddf0
+wwwconnect 0x40c860

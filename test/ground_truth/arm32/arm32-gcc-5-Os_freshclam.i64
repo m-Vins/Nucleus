@@ -1,0 +1,7 @@
+_getopt_internal 0x1660c
+cdiff_cmd_open 0x179b0
+cdiff_cmd_xchg 0x1774c
+countlines 0x1735c
+mirman_write 0x1f7e0
+optadditem 0x15de8
+tar_addfile 0x18bc8

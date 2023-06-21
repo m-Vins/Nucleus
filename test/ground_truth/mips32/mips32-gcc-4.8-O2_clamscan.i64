@@ -1,0 +1,8 @@
+daemonize 0x406d40
+freshdbdir 0x40656c
+get_hostid 0x40ac60
+getdest 0x405f50
+is_valid_hostid 0x40abb0
+optparse 0x4048e0
+scanfile 0x407cb0
+scanmanager 0x408b14

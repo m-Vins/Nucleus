@@ -1,0 +1,3 @@
+_getopt_internal 0x1200055c8
+my_getopt 0x120004d20
+optaddarg 0x1200021a0

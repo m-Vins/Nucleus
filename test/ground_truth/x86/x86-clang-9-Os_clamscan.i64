@@ -1,0 +1,6 @@
+daemonize 0x804cbca
+is_valid_hostid 0x804fa23
+logg 0x8049db8
+meta 0x804ee5c
+my_getopt 0x804a5d0
+optparse 0x804afe7

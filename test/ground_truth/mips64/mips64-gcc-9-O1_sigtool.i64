@@ -1,0 +1,17 @@
+cdiff_cmd_add 0x12003534c
+cdiff_cmd_move 0x1200346dc
+cdiff_cmd_open 0x120035420
+compare 0x120037cc4
+comparesha 0x12003c6dc
+decodehex 0x12003a8c0
+decodehexspecial 0x120039be0
+decodehexstr 0x120039960
+diffdirs 0x1200384b4
+maxlinelen 0x120037234
+mprintf 0x12002fa10
+optadd 0x12003161c
+optaddarg 0x1200313e0
+optparse 0x1200319b8
+print_version 0x1200332e4
+sha256file 0x120037658
+unpack 0x12003887c

@@ -1,0 +1,10 @@
+cdiff_cmd_move 0x804f196
+cdiff_cmd_unlink 0x804f85f
+daemonize 0x804dd5e
+dns_label 0x8055422
+filelist 0x804dc4c
+mirman_update 0x8056eb4
+mirman_whitelist 0x8057239
+mirman_write 0x80572be
+optadd 0x804c8c8
+tar_addfile 0x804f940

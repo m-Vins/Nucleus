@@ -1,0 +1,7 @@
+action_copy 0xd3a4
+action_move 0xd453
+checkaccess 0xe43b
+filelist 0xda8d
+logg_close 0xac96
+optadditem 0xce8d
+scanmanager 0xef6c

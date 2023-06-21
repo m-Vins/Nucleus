@@ -1,0 +1,15 @@
+cdiff_cmd_close 0x5ab04
+cdiff_cmd_xchg 0x5a988
+cdiff_ctx_free 0x5a298
+comparesha 0x6333c
+convenience_ctx 0x5c978
+countlines 0x5a1d8
+decodehex 0x658ac
+decodesigs 0x672ec
+filelist 0x59b9c
+freshdbdir 0x5969c
+listdb 0x6253c
+matchsig 0x64568
+mprintf 0x5544c
+optadd 0x57118
+sha256file 0x5f7c8

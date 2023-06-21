@@ -1,0 +1,4 @@
+_getopt_internal 0x804ada0
+action_move 0x804ca30
+checkaccess 0x8050330
+daemonize 0x804d1d0

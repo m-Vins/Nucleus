@@ -1,0 +1,12 @@
+cdiff_cmd_del 0x4280f8
+cdiff_cmd_move 0x428a10
+cdiff_cmd_open 0x428330
+download 0x42a39c
+mirman_list 0x432940
+mirman_whitelist 0x432be0
+my_getopt 0x426370
+optfree 0x424ef0
+optparse 0x425030
+remote_cvdhead 0x42bc98
+sighandler 0x42a5c8
+updatedb 0x42d84c

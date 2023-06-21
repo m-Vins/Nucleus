@@ -1,0 +1,4 @@
+bind_dasync 0x2874
+bind_engine 0x2e10
+dasync_cipher_init_key_helper 0x267c
+dummy_pause_job 0x1d88

@@ -1,0 +1,6 @@
+_getopt_internal 0x403bb5
+countlines 0x4048f9
+my_getopt 0x403728
+optaddarg 0x403178
+optadditem 0x4032d7
+optget_i 0x403122

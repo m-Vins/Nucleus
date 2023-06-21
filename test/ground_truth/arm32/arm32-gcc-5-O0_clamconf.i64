@@ -1,0 +1,4 @@
+daemonize 0x15920
+freshdbdir 0x15194
+my_getopt 0x13c8c
+print_version 0x1541c

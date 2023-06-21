@@ -1,0 +1,15 @@
+cdiff_cmd_add 0x152b0
+cdiff_cmd_del 0x151d5
+cdiff_cmd_open 0x1532f
+cdiff_execute 0x14ef5
+cdiff_token 0x14e6f
+comparesha 0xd0f9
+decodehexstr 0xc327
+decodesigmod 0xb88f
+diffdirs 0xc043
+getdsig 0xe694
+match_regex 0x14c61
+matchsig 0xd6e6
+optaddarg 0x13354
+optparse 0x1354e
+sigtool_scandir 0x16e71

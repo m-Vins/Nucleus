@@ -1,0 +1,9 @@
+cdiff_execute 0x1dda0
+daemonize 0x1d888
+decodesig 0x15bfc
+decodesigs 0x167ec
+logg_facility 0x1af94
+matchsig 0x158f4
+maxlinelen 0x13680
+optadd 0x1ba1c
+unpack 0x16dcc

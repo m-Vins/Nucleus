@@ -1,0 +1,4 @@
+logg_facility 0x5c30
+match_regex 0x90e0
+mdprintf 0x4d50
+mprintf 0x5110

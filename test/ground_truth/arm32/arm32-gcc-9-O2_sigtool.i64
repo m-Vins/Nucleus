@@ -1,0 +1,11 @@
+cdiff_cmd_close 0x18edc
+cdiff_cmd_xchg 0x18b60
+countlines 0x1871c
+filelist 0x182f0
+freshdbdir 0x17e74
+optadd 0x165dc
+optadditem 0x178a8
+optfree 0x16930
+optget_i 0x16730
+sha256file 0x1b210
+unpack 0x1fcdc

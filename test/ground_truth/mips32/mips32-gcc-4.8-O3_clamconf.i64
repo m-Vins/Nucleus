@@ -1,0 +1,4 @@
+my_getopt 0x404730
+optadd 0x402bc4
+optget_i 0x402900
+print_version 0x405644

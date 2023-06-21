@@ -1,0 +1,9 @@
+_getopt_internal 0x4053a0
+cdiff_cmd_add 0x408890
+cdiff_cmd_open 0x4087b0
+compare 0x40eb60
+countlines 0x407bf0
+listdb 0x40f6f0
+mdprintf 0x403c10
+optadditem 0x406e90
+optfree 0x405c40

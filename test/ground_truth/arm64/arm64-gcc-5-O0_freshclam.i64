@@ -1,0 +1,10 @@
+cdiff_cmd_del 0x567b8
+dns_label 0x5e514
+freshdbdir 0x5569c
+logg_facility 0x51a18
+mirman_check 0x62a38
+mirman_write 0x634dc
+optget_i 0x51b3c
+optparse 0x5222c
+print_version 0x55908
+recvln 0x58a54

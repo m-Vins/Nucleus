@@ -1,0 +1,12 @@
+convenience_ctx 0x41118c
+countlines 0x40f314
+decodesigmod 0x405124
+decodesigs 0x407f5c
+diffdirs 0x405930
+freshdbdir 0x40ea98
+match_regex 0x40f218
+maxlinelen 0x405000
+mprintf 0x40bc54
+optparse 0x40d784
+sigtool_vba_scandir 0x4112e4
+unpack 0x40859c

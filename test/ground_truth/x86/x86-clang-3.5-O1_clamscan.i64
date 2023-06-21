@@ -1,0 +1,7 @@
+_getopt_internal 0x804af80
+daemonize 0x804d950
+getdest 0x804d310
+is_valid_hostid 0x8050ad0
+optadd 0x804c770
+optadditem 0x804cac0
+scanmanager 0x804e6f0

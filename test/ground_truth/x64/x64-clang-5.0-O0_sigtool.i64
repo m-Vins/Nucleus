@@ -1,0 +1,8 @@
+_getopt_internal 0x406360
+cdiff_cmd_close 0x40bbf0
+cdiff_cmd_move 0x40c280
+comparesha 0x41a0f0
+decodehexstr 0x419d70
+getdsig 0x4140b0
+optadditem 0x408c80
+sha256file 0x4152d0

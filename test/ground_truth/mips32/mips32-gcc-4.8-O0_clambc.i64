@@ -1,0 +1,6 @@
+daemonize 0x406920
+my_getopt 0x404840
+optaddarg 0x401aa0
+optadditem 0x403d28
+optfree 0x401eb0
+tracehook 0x407210

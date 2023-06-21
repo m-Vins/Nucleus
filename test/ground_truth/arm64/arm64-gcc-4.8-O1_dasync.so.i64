@@ -1,0 +1,5 @@
+bind_dasync 0x2dcc
+bind_engine 0x347c
+dasync_cipher_ctrl_helper 0x23b8
+dasync_ciphers 0x2358
+dummy_pause_job 0x28ac

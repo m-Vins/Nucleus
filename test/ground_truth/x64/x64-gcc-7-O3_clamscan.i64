@@ -1,0 +1,6 @@
+action_copy 0xe630
+checkaccess 0xf9f0
+optaddarg 0xcca0
+optparse 0xcf30
+scandirs 0x100b0
+scanmanager 0x107b0

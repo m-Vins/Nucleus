@@ -1,0 +1,9 @@
+cdiff_apply 0x120035cbc
+daemonize 0x120034154
+get_hostid 0x120036ef0
+is_valid_hostid 0x120036e40
+mirman_check 0x12003dfc0
+mirman_read 0x12003de34
+optget_i 0x1200317a0
+recvln 0x120036944
+test_database 0x1200374c8

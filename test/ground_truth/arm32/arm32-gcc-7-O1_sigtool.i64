@@ -1,0 +1,8 @@
+comparesha 0x1ca20
+countlines 0x17620
+decodehexspecial 0x1bbfc
+decodehexstr 0x1ba6c
+diffdirs 0x1ab70
+getdsig 0x1eacc
+matchsig 0x1d904
+optparse 0x1569c

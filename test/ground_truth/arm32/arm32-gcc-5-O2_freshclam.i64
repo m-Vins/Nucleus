@@ -1,0 +1,15 @@
+cdiff_cmd_add 0x18360
+cdiff_cmd_open 0x183e8
+dns_label 0x1a140
+downloadmanager 0x1e7a0
+execute 0x2008c
+mdprintf 0x143cc
+mirman_check 0x209c4
+mirman_update 0x20c10
+mirman_whitelist 0x21034
+msg_callback 0x19da4
+nonblock_fcntl 0x20278
+optget_i 0x152a4
+proxyauth 0x1a394
+tar_addfile 0x19930
+test_database_wrap 0x1a6dc

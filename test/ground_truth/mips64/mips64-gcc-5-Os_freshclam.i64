@@ -1,0 +1,11 @@
+cdiff_apply 0x12003605c
+cdiff_cmd_add 0x1200350f8
+cdiff_cmd_open 0x1200351c4
+cdiff_cmd_unlink 0x120034c58
+cdiff_cmd_xchg 0x120034e00
+daemonize 0x120034460
+match_regex 0x12003468c
+mirman_read 0x12003e7dc
+optaddarg 0x120031c04
+print_version 0x120033fdc
+test_database 0x120037724

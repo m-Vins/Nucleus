@@ -1,0 +1,8 @@
+cdiff_apply 0x804eb80
+cdiff_cmd_add 0x804f840
+cdiff_cmd_xchg 0x804fa00
+cdiff_token 0x804f690
+daemonize 0x804e860
+my_getopt 0x804bf40
+optparse 0x804cc20
+sigtool_vba_scandir 0x8050bb0

@@ -1,0 +1,13 @@
+cdiff_cmd_move 0x804f269
+cdiff_token 0x804eacf
+daemonize 0x804de12
+download 0x8050c7f
+execute 0x8056590
+get_hostid 0x8050e1f
+is_valid_hostid 0x8050dbc
+mdprintf 0x804b114
+mirman_list 0x805703b
+mprintf 0x804b835
+sighandler 0x8050b5d
+tar_addfile 0x804fa14
+updatedb 0x8052287

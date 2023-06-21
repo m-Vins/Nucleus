@@ -1,0 +1,8 @@
+checkaccess 0x4094b0
+meta 0x408610
+my_getopt 0x403910
+optadd 0x405640
+optadditem 0x405960
+optget_i 0x405780
+optparse 0x404820
+scanfile 0x408e00

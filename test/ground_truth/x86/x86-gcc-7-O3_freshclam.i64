@@ -1,0 +1,11 @@
+cdiff_cmd_close 0x213c0
+cdiff_cmd_move 0x219e0
+cdiff_ctx_free 0x212e0
+daemonize 0x20ef0
+execute 0x2a960
+filelist 0x20d30
+mirman_update 0x2b630
+mprintf 0x1d540
+recvln 0x23640
+sighandler 0x23a10
+test_database 0x243d0

@@ -1,0 +1,13 @@
+cdiff_cmd_close 0x22d70
+cdiff_cmd_move 0x235f0
+cdiff_execute 0x23370
+compare 0x261f0
+comparesha 0x2a450
+decodehexspecial 0x27e30
+freshdbdir 0x221e0
+mprintf 0x1efc0
+optadd 0x20670
+optfree 0x20a80
+optparse 0x20b60
+print_version 0x22480
+tar_addfile 0x24ba0

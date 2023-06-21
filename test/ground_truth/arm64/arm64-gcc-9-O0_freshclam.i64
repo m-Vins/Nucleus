@@ -1,0 +1,10 @@
+cdiff_apply 0x578e8
+cdiff_execute 0x5770c
+filelist 0x55a1c
+logg_close 0x50a4c
+mirman_list 0x63dc4
+nonblock_fcntl 0x6235c
+optaddarg 0x51de0
+optadditem 0x537f8
+print_version 0x5579c
+sendln 0x5879c

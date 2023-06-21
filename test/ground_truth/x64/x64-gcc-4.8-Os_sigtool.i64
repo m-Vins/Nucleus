@@ -1,0 +1,14 @@
+build 0x406864
+cdiff_cmd_open 0x40caa1
+cdiff_ctx_free 0x40c55b
+compare 0x4038bb
+comparesha 0x404df0
+decodehex 0x4047f1
+decodesig 0x405659
+getdsig 0x4061fd
+listdb 0x40e84d
+my_getopt 0x40a277
+optadd 0x40ab00
+optaddarg 0x40ac3a
+optparse 0x40ae67
+print_version 0x40bfe5

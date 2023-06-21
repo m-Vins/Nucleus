@@ -1,0 +1,4 @@
+countlines 0xdc8c
+match_regex 0xdb4c
+my_getopt 0xbbf0
+print_version 0xd3ac

@@ -1,0 +1,3 @@
+action_copy 0x804d430
+daemonize 0x804db00
+optadd 0x804c880

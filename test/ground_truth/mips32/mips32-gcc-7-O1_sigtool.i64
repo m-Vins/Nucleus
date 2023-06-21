@@ -1,0 +1,13 @@
+cdiff_cmd_close 0x428560
+cdiff_cmd_del 0x428108
+cdiff_cmd_move 0x428cb0
+comparesha 0x42ff50
+countlines 0x4277a4
+daemonize 0x4273c8
+decodehexspecial 0x42ea14
+decodesig 0x431da4
+freshdbdir 0x426a4c
+listdir 0x42e240
+mprintf 0x422ac4
+my_getopt 0x423a20
+optget_i 0x424730

@@ -1,0 +1,7 @@
+filelist 0x8050140
+getdest 0x804f930
+is_valid_hostid 0x80557b0
+match_regex 0x8050630
+meta 0x8053f70
+optfree 0x804c8f0
+print_version 0x804fe80

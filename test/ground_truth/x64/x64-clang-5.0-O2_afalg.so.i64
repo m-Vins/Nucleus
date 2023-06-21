@@ -1,0 +1,3 @@
+afalg_aes_cbc 0x1d40
+afalg_fin_cipher_aio 0x2500
+afalg_setup_async_event_notification 0x2750

@@ -1,0 +1,3 @@
+afalg_cipher_cleanup 0x1a76
+afalg_cipher_init 0x1870
+afalg_do_cipher 0x194c

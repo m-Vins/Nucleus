@@ -1,0 +1,7 @@
+_getopt_internal 0xc974
+action_move 0xfb22
+logg 0xb438
+mdprintf 0xabba
+optaddarg 0xd68f
+post 0x11af8
+scandirs 0x12772

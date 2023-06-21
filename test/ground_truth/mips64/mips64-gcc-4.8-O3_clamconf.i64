@@ -1,0 +1,3 @@
+_getopt_internal 0x120005008
+optget_i 0x120002de0
+print_version 0x120005ab8

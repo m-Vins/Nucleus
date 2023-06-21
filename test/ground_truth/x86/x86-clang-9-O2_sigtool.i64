@@ -1,0 +1,12 @@
+cdiff_cmd_close 0x804f630
+cdiff_cmd_open 0x804f2f0
+cdiff_ctx_free 0x804efd0
+cdiff_execute 0x804f090
+compare 0x8055440
+comparesha 0x80585e0
+decodehex 0x8056ca0
+mdprintf 0x804b120
+optadd 0x804d7d0
+optadditem 0x804daa0
+sigtool_scandir 0x8050ab0
+unpack 0x8052eb0

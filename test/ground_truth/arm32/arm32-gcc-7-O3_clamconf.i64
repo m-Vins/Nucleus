@@ -1,0 +1,5 @@
+_getopt_internal 0x143fc
+filelist 0x14e8c
+match_regex 0x151d4
+my_getopt 0x14010
+print_version 0x14c68

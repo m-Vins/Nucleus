@@ -1,0 +1,8 @@
+action_move 0x10688
+get_hostid 0x15acc
+getdest 0x104f0
+is_valid_hostid 0x159e8
+logg_close 0xb8d4
+meta 0x127c0
+mprintf 0xc2ac
+optadd 0xdf78

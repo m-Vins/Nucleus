@@ -1,0 +1,6 @@
+cdiff_cmd_xchg 0x120036c80
+decodehex 0x12003c3e0
+listdb 0x12003a688
+optparse 0x1200332f8
+sha256file 0x120039160
+tar_addfile 0x120037d10

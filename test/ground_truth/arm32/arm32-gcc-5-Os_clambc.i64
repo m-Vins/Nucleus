@@ -1,0 +1,3 @@
+match_regex 0x147f8
+optadd 0x123a0
+tracehook 0x149e0

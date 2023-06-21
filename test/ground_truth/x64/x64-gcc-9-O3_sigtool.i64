@@ -1,0 +1,11 @@
+cdiff_cmd_move 0x11810
+cdiff_cmd_xchg 0x122d0
+convenience_ctx 0x131c0
+decodesig 0x17780
+getdsig 0x14040
+logg 0xd750
+mdprintf 0xce00
+mprintf 0xd340
+optaddarg 0xef70
+print_version 0x10a30
+sha256file 0x13ec0

@@ -1,0 +1,5 @@
+cdiff_apply 0x407900
+cdiff_cmd_del 0x4085b0
+dnsquery 0x410530
+optget_i 0x405b00
+remote_cvdhead 0x40ee60

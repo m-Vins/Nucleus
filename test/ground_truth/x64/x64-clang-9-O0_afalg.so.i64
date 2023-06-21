@@ -1,0 +1,4 @@
+afalg_chk_platform 0x1a70
+afalg_do_cipher 0x23e0
+afalg_fin_cipher_aio 0x2c60
+bind_helper 0x19e0

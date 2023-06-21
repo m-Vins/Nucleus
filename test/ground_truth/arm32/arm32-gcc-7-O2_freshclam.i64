@@ -1,0 +1,5 @@
+cdiff_cmd_add 0x18278
+cdiff_cmd_unlink 0x17f58
+cdiff_token 0x17d78
+dnsquery 0x1fa28
+logg_facility 0x15098

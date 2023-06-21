@@ -1,0 +1,10 @@
+convenience_ctx 0x410124
+decodehex 0x406428
+decodesig 0x4072bc
+listdb 0x410b28
+match_regex 0x40e4e0
+maxlinelen 0x405000
+mdprintf 0x40b170
+optadditem 0x40d9ec
+sha256file 0x4051f8
+sigtool_vba_scandir 0x41026c

@@ -1,0 +1,4 @@
+_getopt_internal 0x804b670
+optadd 0x804a8c0
+optget_i 0x804aa10
+optparse 0x8049910

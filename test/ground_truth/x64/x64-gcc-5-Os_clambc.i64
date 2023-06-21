@@ -1,0 +1,4 @@
+my_getopt 0xb7e6
+optadd 0xa400
+optaddarg 0xa586
+optadditem 0xb39a

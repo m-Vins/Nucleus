@@ -1,0 +1,11 @@
+cdiff_token 0x21890
+dnsquery 0x2a130
+download 0x23740
+mirman_check 0x2af40
+mirman_whitelist 0x2b650
+mprintf 0x1d5c0
+my_getopt 0x1fc70
+optfree 0x1e530
+recvln 0x234e0
+sighandler 0x238e0
+test_database_wrap 0x24a90

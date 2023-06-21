@@ -1,0 +1,14 @@
+cdiff_cmd_open 0x40a260
+cdiff_cmd_xchg 0x409f68
+cdiff_execute 0x409cd8
+daemonize 0x4097cc
+dnsquery 0x4115dc
+freshdbdir 0x4091f8
+logg_close 0x4063f8
+mprintf 0x406438
+msg_callback 0x40bb80
+optadd 0x4070e0
+optadditem 0x408278
+optparse 0x4074d4
+remote_cvdhead 0x40cf48
+tar_addfile 0x40b6bc

@@ -1,0 +1,7 @@
+cdiff_apply 0x42a70c
+cdiff_execute 0x428cdc
+decodesigmod 0x42c5e0
+maxlinelen 0x42c474
+mdprintf 0x424350
+my_getopt 0x425530
+verifydiff 0x4301cc

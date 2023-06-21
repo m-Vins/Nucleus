@@ -1,0 +1,13 @@
+_getopt_internal 0x1e3b3
+cdiff_cmd_add 0x2160c
+cdiff_cmd_close 0x217b9
+compare 0x244c9
+comparesha 0x26f2f
+decodesigmod 0x24154
+filelist 0x20a72
+logg_close 0x1d4a6
+matchsig 0x28035
+mdprintf 0x1d170
+optfree 0x1ee77
+optget_i 0x1ea10
+tar_addfile 0x23161

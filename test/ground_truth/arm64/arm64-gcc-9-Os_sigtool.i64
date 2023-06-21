@@ -1,0 +1,11 @@
+build 0x5afd8
+cdiff_cmd_del 0x54d9c
+decodehexstr 0x583f8
+decodesig 0x59d0c
+decodesigmod 0x56ee0
+freshdbdir 0x54024
+logg 0x51b7c
+optadditem 0x53b88
+sigtool_scandir 0x569c0
+sigtool_vba_scandir 0x564c8
+unpack 0x5ad40

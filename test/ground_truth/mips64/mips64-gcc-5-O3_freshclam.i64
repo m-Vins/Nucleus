@@ -1,0 +1,12 @@
+cdiff_cmd_add 0x120036840
+cdiff_cmd_del 0x120036928
+cdiff_cmd_move 0x120035cc8
+cdiff_execute 0x120036e58
+dns_label 0x120038788
+downloadmanager 0x12003de00
+mirman_check 0x120040820
+mirman_read 0x1200405f8
+mirman_whitelist 0x120041190
+remote_cvdhead 0x120039f38
+sighandler 0x1200384e0
+test_database_wrap 0x120039198

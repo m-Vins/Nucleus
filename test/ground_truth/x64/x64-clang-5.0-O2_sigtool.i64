@@ -1,0 +1,10 @@
+_getopt_internal 0x4050a0
+cdiff_cmd_del 0x4083b0
+decodehexspecial 0x4109c0
+decodesigmod 0x40f930
+getdsig 0x40d5d0
+matchsig 0x410150
+mdprintf 0x403c10
+optparse 0x4059d0
+tar_addfile 0x409160
+verifydiff 0x40cbf0

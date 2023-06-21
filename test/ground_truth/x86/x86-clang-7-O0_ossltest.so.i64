@@ -1,0 +1,6 @@
+bind_engine 0x1370
+bind_ossltest 0x18e0
+digest_sha1 0x2190
+ossltest_aes128_gcm_cipher 0x17a0
+ossltest_aes_128_cbc 0x2ca0
+ossltest_digest_nids 0x1e90

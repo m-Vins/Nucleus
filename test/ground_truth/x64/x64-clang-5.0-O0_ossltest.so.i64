@@ -1,0 +1,5 @@
+bind_engine 0x1ce0
+bind_ossltest 0x20e0
+digest_sha1 0x27b0
+ossltest_aes128_cbc_cipher 0x1ed0
+ossltest_digest_nids 0x2520

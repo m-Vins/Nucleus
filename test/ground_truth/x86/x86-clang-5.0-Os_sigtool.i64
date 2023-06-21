@@ -1,0 +1,7 @@
+cdiff_cmd_close 0x804ff38
+cdiff_cmd_del 0x804fd6d
+comparesha 0x8058cfe
+countlines 0x804f0f7
+logg_facility 0x804ca1e
+optaddarg 0x804e437
+testsigs 0x8053ccd

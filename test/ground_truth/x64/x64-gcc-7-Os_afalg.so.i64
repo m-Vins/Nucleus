@@ -1,0 +1,4 @@
+afalg_chk_platform 0x1e81
+afalg_cipher_cleanup 0x1a9d
+afalg_do_cipher 0x1fe9
+bind_engine 0x2513

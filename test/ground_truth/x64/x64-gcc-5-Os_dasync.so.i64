@@ -1,0 +1,4 @@
+bind_dasync 0x2d76
+dasync_cipher_ctrl_helper 0x239e
+dasync_cipher_helper 0x2546
+dasync_digests 0x29c4

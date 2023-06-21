@@ -1,0 +1,14 @@
+cdiff_apply 0x40a850
+cdiff_cmd_add 0x40bf10
+cdiff_cmd_del 0x40c020
+cdiff_cmd_move 0x40caf0
+cdiff_cmd_open 0x40bd70
+cdiff_cmd_unlink 0x40d4d0
+cdiff_execute 0x40b990
+comparesha 0x4141f0
+daemonize 0x40a400
+getdsig 0x41a4f0
+maxlinelen 0x415140
+mprintf 0x405300
+my_getopt 0x405eb0
+unpack 0x4121a0

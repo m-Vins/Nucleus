@@ -1,0 +1,11 @@
+cdiff_apply 0x12003c718
+compare 0x12002f994
+countlines 0x12003ae9c
+decodehexstr 0x120030504
+decodesig 0x120032200
+decodesigs 0x120032f38
+diffdirs 0x120030118
+listdb 0x12003e158
+match_regex 0x12003ad5c
+mdprintf 0x120037200
+optfree 0x120038ff0

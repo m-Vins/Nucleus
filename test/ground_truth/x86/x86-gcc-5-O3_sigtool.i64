@@ -1,0 +1,7 @@
+build 0x20b9c
+cdiff_apply 0x298d0
+cdiff_cmd_xchg 0x29520
+comparesha 0x1ec6d
+mdprintf 0x24280
+my_getopt 0x251c0
+verifydiff 0x1eede

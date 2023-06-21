@@ -1,0 +1,7 @@
+_getopt_internal 0x404a90
+cdiff_cmd_move 0x408050
+cdiff_cmd_open 0x407950
+cdiff_token 0x407880
+diffdirs 0x40cf40
+optget_i 0x406170
+print_version 0x4069c0

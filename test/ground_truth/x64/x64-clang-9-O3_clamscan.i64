@@ -1,0 +1,4 @@
+_getopt_internal 0x403e60
+countlines 0x406a80
+filelist 0x406710
+get_hostid 0x409570
