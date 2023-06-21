@@ -65,6 +65,68 @@ int main(int argc, char *argv[])
     }
   }
 
+  if (options.offs_n > 0)
+  {
+    std::map<uint64_t, uint64_t> functions_occurrences;
+
+    for (int i = 0; i < options.offs_n; i++)
+    {
+      // Check if the file is raw
+      if (options.binary.type != Binary::BIN_TYPE_RAW)
+      {
+        printf("ERROR: Option -o valid for raw files only\n");
+        return -1;
+      }
+
+      verbose(1, "disasm from offset: %ld\n", bin.sections[0].vma);
+      if (nucleus_disasm(&bin, &disasm) < 0)
+      {
+        return 1;
+      }
+
+      if (cfg.make_cfg(&bin, &disasm) < 0)
+      {
+        return 1;
+      }
+
+      // Loop over all the functions that have been found disasming from the
+      // current offset, then update functions_occurrences to keep track of
+      // the number of offset at which the given function has been found
+      for (auto &f : cfg.functions)
+      {
+
+        BB *entry_bb = f.entry.front();
+        unsigned offset = 0;
+
+        for (auto &e : entry_bb->ancestors)
+        {
+          if (e.type == Edge::EDGE_TYPE_CALL)
+            offset = e.offset;
+        }
+
+        uint64_t function_start = entry_bb->start + offset - i;
+        if (functions_occurrences.find(function_start) == functions_occurrences.end())
+        {
+          functions_occurrences[function_start] = 0;
+        }
+        functions_occurrences[function_start]++;
+      }
+
+      bin.sections[0].vma++;
+      cfg.clear_cfg();
+      disasm.clear();
+    }
+
+    printf("start address\t\toccurrencies\n");
+    printf("---------------------------------------\n");
+    for (const auto &pair : functions_occurrences)
+    {
+      printf("0x%016jx\t%ld\n", pair.first, pair.second);
+    }
+
+    return 0;
+  }
+
   if (nucleus_disasm(&bin, &disasm) < 0)
   {
     return 1;

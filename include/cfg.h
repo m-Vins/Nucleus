@@ -19,6 +19,7 @@ public:
   CFG() {}
 
   int make_cfg(Binary *bin, std::list<DisasmSection> *disasm);
+  void clear_cfg();
 
   BB *get_bb(uint64_t addr, unsigned *offset = NULL);
 

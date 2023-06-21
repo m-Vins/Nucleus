@@ -1430,3 +1430,13 @@ int CFG::make_cfg(Binary *bin, std::list<DisasmSection> *disasm)
 
   return 0;
 }
+
+void CFG::clear_cfg()
+{
+  // TODO: check that it properly deallocate everything
+  this->binary = NULL;
+  entry.clear();
+  functions.clear();
+  start2bb.clear();
+  bad_bbs.clear();
+}

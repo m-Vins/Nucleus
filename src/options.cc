@@ -52,6 +52,7 @@ void print_usage(char *prog)
   printf("     : export binary info to IDA Pro script\n");
   printf("  -n <file>\n");
   printf("     : export binary info to Binary Ninja script\n");
+  printf("  -o : try at different offsets from the binary base vma (only for raw binaries)\n");
   printf("  -v : verbose\n");
   printf("  -w : disable warnings\n");
   printf("  -h : help\n");
@@ -63,7 +64,7 @@ void print_usage(char *prog)
 int parse_options(int argc, char *argv[])
 {
   int i, opt;
-  char optstr[] = "vwhd:t:a:fb:Dpg:i:n:e:";
+  char optstr[] = "vwhd:t:a:fb:Dpg:i:n:e:o:";
   extern const char *binary_types_descr[][2];
   extern const char *binary_arch_descr[][2];
   std::string s;
@@ -73,6 +74,7 @@ int parse_options(int argc, char *argv[])
   options.only_code_sections = 1;
   options.allow_privileged = 0;
   options.summarize_functions = 0;
+  options.offs_n = 0;
 
   options.nucleuspath.real = str_realpath(std::string(argv[0]));
   options.nucleuspath.dir = str_realpath_dir(std::string(argv[0]));
@@ -181,7 +183,14 @@ int parse_options(int argc, char *argv[])
     case 'd':
       options.strategy_function.name = std::string(optarg);
       break;
-
+    case 'o':
+      options.offs_n = strtoul(optarg, NULL, 0);
+      if (!options.offs_n)
+      {
+        printf("ERROR: Invalid number of offsets %s\n", optarg);
+        return -1;
+      }
+      break;
     case 'h':
     default:
       print_usage(argv[0]);

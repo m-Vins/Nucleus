@@ -6,7 +6,7 @@
 
 #include <iomanip>
 
-#define DBG 1
+#define DBG 0
 
 static int
 is_cs_nop_ins(cs_insn *ins)
