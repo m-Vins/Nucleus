@@ -25,12 +25,12 @@ setup:
 	sudo apt install binutils-multiarch-dev libcapstone-dev file
 
 build_test:
-	$(MAKE) -C test
+	$(MAKE) -C test/simple_tests
 
 test: $(BIN) build_test
-	@for bin_file in $$(ls ./test/bin); do \
+	@for bin_file in $$(ls ./test/simple_tests/bin); do \
 		echo =============== $$bin_file ===============; \
-		bash ./utilities/cmp_symbols.sh ./test/bin/"$$bin_file"; \
+		bash ./utilities/cmp_symbols.sh ./test/simple_testsbin/"$$bin_file"; \
 		echo; \
 	done 
 
@@ -39,5 +39,5 @@ clean:
 	rm -f $(OBJ)
 	rm -Rf obj
 	rm -f $(BIN)
-	$(MAKE) -C test clean
+	$(MAKE) -C test/simple_tests clean
 
