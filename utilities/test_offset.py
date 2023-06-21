@@ -3,7 +3,7 @@ import os
 
 # Set the range of numbers
 start = 1
-end = 500
+end = 2048
 target = "./test/bin/test1"
 
 addresses = dict()
@@ -28,5 +28,7 @@ for offset in range(start, end):
 
 
 
-for key, value in addresses.items():
-    print(key, "->", len(value))
+print("OFFSET\t\tCOUNTER")
+print("-"*50)
+for address, offset in addresses.items():
+    print(f"{hex(address)}\t\t{len(offset)}")
