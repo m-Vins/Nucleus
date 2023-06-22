@@ -1,4 +1,5 @@
 /nucleus
 /obj
 
-/test/bin/*
+/test/binaries
+/test/simple_tests/bin
