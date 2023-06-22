@@ -19,7 +19,7 @@ for arch in $archs; do
     
     for bin in $binaries; do
         file_out=$(basename "$bin" .i64)
-        file_out="$target_path/$arch/$bin"
+        file_out="$target_path/$arch/$file_out"
         if [ -e "$file_out" ]; then
             echo "File $file_out already exists."
         else      
