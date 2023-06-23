@@ -29,25 +29,31 @@ else
 fi
 
 
-nucleus_functions=$(./nucleus -e $binary_path -d linear -f| cut -f 1)
+nucleus_out=$(./nucleus -e $binary_path -d linear -f) 
 
 
-found_count=0
-not_found_count=0
+if [ $? != 0 ]; then
+    echo "ERROR running file $binary"
+else
+    nucleus_functions=$(echo "$nucleus_out" | cut -f 1)
 
-while IFS= read -r line
-do  
-    func_addr=$(echo "$line" | cut -d " " -f 2)
-    func_name=$(echo "$line" | cut -d " " -f 1)
+    found_count=0
+    not_found_count=0
 
-    if echo "$nucleus_functions" | sed 's/0x0*/0x/' | grep -q "$func_addr"; then
-        printf "\t\033[1;32mFOUND\033[0m$func_name @ $func_addr\n"
-        ((found_count++))
-    else
-        printf "\t\033[1;31mNOT_FOUND\033[0m $func_name @ $func_addr\n"
-        ((not_found_count++))
-    fi
-done < "$ground_truth_path_file"
+    while IFS= read -r line
+    do  
+        func_addr=$(echo "$line" | cut -d " " -f 2)
+        func_name=$(echo "$line" | cut -d " " -f 1)
 
-echo "Found functions: $found_count"
-echo "Not found functions: $not_found_count"
+        if echo "$nucleus_functions" | sed 's/0x0*/0x/' | grep -q "$func_addr"; then
+            printf "\t\033[1;32mFOUND:\033[0m      $func_name @ $func_addr\n"
+            ((found_count++))
+        else
+            printf "\t\033[1;31mNOT_FOUND:\033[0m  $func_name @ $func_addr\n"
+            ((not_found_count++))
+        fi
+    done < "$ground_truth_path_file"
+
+    echo "Found functions: $found_count"
+    echo "Not found functions: $not_found_count"
+fi
