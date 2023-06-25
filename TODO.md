@@ -4,3 +4,5 @@
 - [] cfc.cc line 1203, after the script test is ready
 - [] check if the fix of get_octet is correct
 - [x] check clear_cfg
+- [] check the TODOs in the code
+- [] run test.sh with stripped binaries
