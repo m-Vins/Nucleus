@@ -2,6 +2,8 @@
 
 ## Artifacts
 
+<!-- TODO ## Makefile commands explanation -->
+
 ## Fixing the tool
 
 The [source code](https://bitbucket.org/vusec/nucleus/src/master/) was broken due to change in the API of the library `Binary File Descriptor`.

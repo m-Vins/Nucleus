@@ -3,7 +3,9 @@
 
 binaries_dir="./test/binaries/"
 ground_truth_dir="./test/ground_truth"
+report_file="./test/results_stripped.csv"
 
+echo "arch,binary,tested,found_count,not_found_count" > $report_file
 
 for binary in $(ls $binaries_dir); do
     echo "--------------------------------------------------------"
@@ -33,6 +35,7 @@ for binary in $(ls $binaries_dir); do
 
     if [ $? != 0 ]; then
         echo "ERROR running file $binary"
+        echo "$arch,$binary,error,," >> $report_file
     else
         nucleus_functions=$(echo "$nucleus_out" | cut -f 1)
 
@@ -55,5 +58,7 @@ for binary in $(ls $binaries_dir); do
 
         echo "Found functions: $found_count"
         echo "Not found functions: $not_found_count"
+
+        echo "$arch,$binary,yes,$found_count,$not_found_count" >> $report_file
     fi
 done
