@@ -1,6 +1,6 @@
 #!/bin/bash
 
-binaries_in_dir="./../binary_function_similarity/Binaries/Dataset-1/"
+binaries_in_dir="./../binaries/"
 binaries_out_dir="./test/binaries/"
 binaries_list="./test/binaries_list.txt"
 

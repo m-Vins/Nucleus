@@ -1,0 +1,16 @@
+binary,section_offset_elf,section_offset_raw
+arm32-clang-3.5-O0_afalg.so,135,8192
+arm32-clang-3.5-O0_curl,251,245760
+arm32-clang-3.5-O0_dasync.so,550,8192
+arm32-clang-3.5-O0_fips.so,161,45056
+arm32-clang-3.5-O0_libcrypto.so.3,374,655360
+arm32-clang-3.5-O0_libssl.so.3,631,98304
+arm32-clang-3.5-O0_openssl,167,200704
+arm32-clang-3.5-O0_ossltest.so,793,8192
+arm32-clang-3.5-O1_afalg.so,48,8192
+arm32-clang-3.5-O1_curl,671,245760
+arm32-clang-3.5-O1_fips.so,336,45056
+arm32-clang-3.5-O1_libcrypto.so.3,1003,655360
+arm32-clang-3.5-O1_libssl.so.3,172,102400
+arm32-clang-3.5-O1_openssl,440,204800
+arm32-clang-3.5-O1_ossltest.so,673,
