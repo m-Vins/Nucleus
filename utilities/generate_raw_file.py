@@ -13,7 +13,7 @@ def extract_code_section_from_elf(elf_path):
         
         # Get the offset of the section
         section_offset = section['sh_offset']
-        print(f"Offset of the code section: {section_offset}")
+        print(f"Offset: {section_offset}")
 
         # Extract the section data
         return section.data()
@@ -28,8 +28,6 @@ def write_raw_file(section_data, output_path, random_data_size):
         # Write the section data to the output file
         output_file.write(section_data)
 
-
-        
 
 if __name__ == '__main__':
     if len(sys.argv) != 4:
