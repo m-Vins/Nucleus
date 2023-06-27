@@ -4,21 +4,24 @@
 raw_directory="./test/raw_files"
 file_offsets="./test/raw_files_offsets.csv"
 ground_truth_dir="./test/ground_truth"
+report_file="./test/results_raw.csv"
 
-while IFS=',' read -r bin section_offset_raw section_offset_elf; do 
+echo "arch,binary,tested,found_count,not_found_count" > $report_file
+
+while IFS=',' read -r binary section_offset_raw section_offset_elf; do 
     echo "--------------------------------------------------------"
-    echo "testing binary: $bin"
+    echo "testing bin: $binary"
     echo "section_offset_elf: $section_offset_elf"
     echo "section_offset_raw: $section_offset_raw"
 
     
-    arch=$(echo $bin | cut -d - -f1)
+    arch=$(echo $binary | cut -d - -f1)
     echo "arch:           $arch"
 
-    ground_truth_path_file="$ground_truth_dir/$arch/$bin"
+    ground_truth_path_file="$ground_truth_dir/$arch/$binary"
 
     # Checking the ground truth path
-    ground_truth_path_file="$ground_truth_dir/$arch/$bin"
+    ground_truth_path_file="$ground_truth_dir/$arch/$binary"
     if [ -e $ground_truth_path_file ]; then
         echo "ground truth path:   $ground_truth_path_file"
     else
@@ -26,10 +29,10 @@ while IFS=',' read -r bin section_offset_raw section_offset_elf; do
         continue
     fi
 
-    # Checking if the raw file for the current binary is present
-    raw_path="$raw_directory/$bin"
+    # Checking if the raw file for the current bin is present
+    raw_path="$raw_directory/$binary"
     if [ -e $raw_path ]; then
-        echo "binary path:         $raw_path"
+        echo "bin path:         $raw_path"
     else
         echo "WARNING: file $raw_path not present"
         continue
@@ -69,11 +72,12 @@ while IFS=',' read -r bin section_offset_raw section_offset_elf; do
     # executing nucleus and computing the true offset using awk
     # The true offset of the function is the offset found by nucleus, less the 
     # offset of the random data in the raw file, plus the offset of the code section
-    # in the original binary
+    # in the original bin
     nucleus_out=$(./nucleus -e $raw_path -d linear -f -t raw -a $arch)
 
     if [ $? != 0 ]; then
-        echo "ERROR running file $bin"
+        echo "ERROR running file $binary"
+        echo "$arch,$binary,error,," >> $report_file
     else
         nucleus_functions=$(echo "$nucleus_out"| cut -f1 | gawk -v \
             raw="$section_offset_raw" -v elf="$section_offset_elf" '{
@@ -100,10 +104,11 @@ while IFS=',' read -r bin section_offset_raw section_offset_elf; do
             fi
         done < "$ground_truth_path_file"
 
+        echo "Found functions: $found_count"
+        echo "Not found functions: $not_found_count"
+
+        echo "$arch,$binary,yes,$found_count,$not_found_count" >> $report_file
+
     fi
     
-
-
-
-
 done <<< $(tail -n +2 $file_offsets)
