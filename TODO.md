@@ -5,6 +5,7 @@
 - [] check if the fix of get_octet is correct
 - [x] check clear_cfg
 - [] check the TODOs in the code
-- [] run test.sh with stripped binaries
-- [] check differences result stripped and not stripped
+- [x] run test.sh with stripped binaries
+- [x] check differences result stripped and not stripped
 - [] add descriptions in [here](./test/README.md) and in [here](./utilities/README.md)
+- [] build ground_truth using nmap and compare the results
