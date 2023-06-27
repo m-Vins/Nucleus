@@ -29,6 +29,7 @@ for binary in $(ls $binaries_dir); do
         echo "binary path:         $binary_path"
     else
         echo "WARNING: file $binary_path not present"
+        continue
     fi
 
     nucleus_out=$(./nucleus -e $binary_path -d linear -f) 
