@@ -9,7 +9,7 @@ offset_file="./test/raw_files_offsets.csv"   # Path to the offset file
 MAX_OFFSET=1024
 
 # Header for the offset file
-echo "binary,section_offset_elf,section_offset_raw" > $offset_file
+echo "binary,section_offset_raw,section_offset_elf" > $offset_file
 
 # Iterate over each file in the binaries directory
 for bin in $(ls $binaries_dir); do 

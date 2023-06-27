@@ -1,4 +1,4 @@
-binary,section_offset_elf,section_offset_raw
+binary,section_offset_raw,section_offset_elf
 arm32-clang-3.5-O0_afalg.so,780,8192
 arm32-clang-3.5-O0_curl,455,245760
 arm32-clang-3.5-O0_dasync.so,1014,8192
