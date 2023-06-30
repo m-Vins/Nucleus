@@ -9,3 +9,5 @@
 - [x] check differences result stripped and not stripped
 - [] add descriptions in [here](./test/README.md) and in [here](./utilities/README.md)
 - [] build ground_truth using nmap and compare the results
+- [] add dependencies in Dockerfile
+- [] add 100 binaries in git so that it's possible to reproduce the scripts
