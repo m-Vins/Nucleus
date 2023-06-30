@@ -11,3 +11,5 @@
 - [] build ground_truth using nmap and compare the results
 - [] add dependencies in Dockerfile
 - [] add 100 binaries in git so that it's possible to reproduce the scripts
+- [] change the test scripts so that they take the file_input from the command line
+- [] add commands in makefile to run the utilities scripts
