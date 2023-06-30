@@ -1,17 +1,21 @@
 #!/bin/bash
+
 _source_dir_=$(dirname "$0")
 BASE_DIR=$(readlink -f "${_source_dir_}/..")
 
 binaries_dir="${BASE_DIR}/test/binaries/"
 ground_truth_dir="${BASE_DIR}/test/ground_truth"
-report_file="${BASE_DIR}/test/results_stripped.csv"
+results_file="${BASE_DIR}/test/results.csv"
 
-echo "arch,binary,tested,found_count,not_found_count" > $report_file
+# Create a header for the results file
+echo "arch,binary,tested,found_count,not_found_count,false_positives" > $results_file
 
+# Loop through each binary in the binaries directory
 for binary in $(ls $binaries_dir); do
     echo "--------------------------------------------------------"
     echo "testing binary: $binary"
 
+    # Extract the architecture from the binary name
     arch=$(echo $binary | cut -d / -f 4 | cut -d - -f1)
 
     # Checking the ground truth path
@@ -23,7 +27,6 @@ for binary in $(ls $binaries_dir); do
         continue
     fi
 
-
     # Checking the binary path
     binary_path="$binaries_dir/$binary"
     if [ -e $binary_path ]; then
@@ -33,22 +36,28 @@ for binary in $(ls $binaries_dir); do
         continue
     fi
 
+    # Run nucleus with the binary and capture the output
     nucleus_out=$(./nucleus -e $binary_path -d linear -f) 
 
+    # Check the return code of nucleus
     if [ $? != 0 ]; then
         echo "ERROR running file $binary"
-        echo "$arch,$binary,error,," >> $report_file
+        echo "$arch,$binary,error,,," >> $results_file
     else
+        # Extract the functions from the nucleus output
         nucleus_functions=$(echo "$nucleus_out" | cut -f 1)
 
+        # Count the number of functions found by nucleus
+        nucleus_function_number=$(echo "$nucleus_functions" | wc -l)
+
+        # Initialize the counters
         found_count=0
         not_found_count=0
 
-        while IFS= read -r line
-        do  
-            func_addr=$(echo "$line" | cut -d " " -f 2)
-            func_name=$(echo "$line" | cut -d " " -f 1)
-
+        # Loop through each line in the ground truth file
+        while IFS=" " read -r func_name func_addr;
+        do
+            # Check if the function address is present in the 'nucleus' output
             if echo "$nucleus_functions" | sed 's/0x0*/0x/' | grep -q "$func_addr"; then
                 printf "\t\033[1;32mFOUND:\033[0m      $func_name @ $func_addr\n"
                 ((found_count++))
@@ -58,9 +67,15 @@ for binary in $(ls $binaries_dir); do
             fi
         done < "$ground_truth_path_file"
 
-        echo "Found functions: $found_count"
-        echo "Not found functions: $not_found_count"
+        # Compute the number of false positives: the number of 
+        # functions that are found by nucleus and not present in the ground truth file
+        false_positives=$((nucleus_function_number - found_count))
 
-        echo "$arch,$binary,yes,$found_count,$not_found_count" >> $report_file
+        echo "Found Functions: $found_count"
+        echo "Not Found Functions: $not_found_count"
+        echo "False Positives : $false_positives"
+
+        # Write the results to the results file
+        echo "$arch,$binary,yes,$found_count,$not_found_count,$false_positives" >> $results_file
     fi
 done
