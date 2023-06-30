@@ -2,15 +2,16 @@
 FROM ubuntu:latest
 
 # Install necessary dependencies for C++ development
-RUN apt-get update && \
-    apt-get install -y build-essential gdb cmake 
+RUN apt-get update && \                                 
+    apt-get install -y build-essential gdb cmake \
+    binutils-multiarch-dev libcapstone-dev\
+    python3 python3-pip \
+    less file gawk     
 
-# Install dependencies for the project
-RUN apt-get install -y binutils-multiarch-dev libcapstone-dev
+# Instapp python libraries
+RUN pip3 install pyelftools click==8.1.3 gdown==4.6.4
 
-# Install VSCode server
-RUN apt-get install -y curl
-RUN curl -fsSL https://code-server.dev/install.sh | sh
+WORKDIR /nucleus
 
 # Set the default command to run when the container starts
 CMD ["/bin/bash"]
