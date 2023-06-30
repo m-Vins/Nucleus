@@ -25,7 +25,7 @@ else
 #source ../env/bin/activate
 
 # Install the requirements in the current environment
-pip install click==8.1.3 && pip install gdown==4.6.4
+#pip install click==8.1.3 && pip install gdown==4.6.4
 
 python3 ${BASE_DIR}/test/scripts/gdrive_download.py --binaries
 
@@ -42,7 +42,7 @@ while IFS= read -r bin; do
         echo "Copying $bin"
         cp $file $binaries_out_dir
     else
-        echo "ERROR $bin doesn't exist in path $binaries_in_dirid_simo"
+        echo "ERROR $bin doesn't exist in path $binaries_in_dir"
     fi
 done < $binaries_list
 

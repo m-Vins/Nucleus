@@ -1,9 +1,13 @@
 #!/bin/bash
+set -e  # Stop if there is a failure
+
+_source_dir_=$(dirname "$0")
+BASE_DIR=$(readlink -f "${_source_dir_}/..")
 
 # Directory paths
-binaries_dir="./test/binaries/"    # Path to directory containing binary files
-out_dir="./test/raw_files/"        # Path to directory where raw files will be generated
-offset_file="./test/raw_files_offsets.csv"   # Path to the offset file
+binaries_dir="${BASE_DIR}/test/binaries/"    # Path to directory containing binary files
+out_dir="${BASE_DIR}/test/raw_files/"        # Path to directory where raw files will be generated
+offset_file="${BASE_DIR}/test/raw_files_offsets.csv"   # Path to the offset file
 
 # Maximum dimension of the random data, don't use it too big to avoid wasting memory
 MAX_OFFSET=1024
@@ -28,5 +32,5 @@ for bin in $(ls $binaries_dir); do
 
     # Run a Python script to generate the raw file using the input binary and offset,
     # and append the resulting section offset to the offset file
-    python3 ./utilities/generate_raw_file.py $file_in $file_out $random_offset | cut -d " " -f2 >> $offset_file
+    python3 ${BASE_DIR}/utilities/generate_raw_file.py $file_in $file_out $random_offset | cut -d " " -f2 >> $offset_file
 done

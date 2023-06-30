@@ -1,9 +1,10 @@
 #!/bin/bash
+_source_dir_=$(dirname "$0")
+BASE_DIR=$(readlink -f "${_source_dir_}/..")
 
-
-binaries_dir="./test/binaries/"
-ground_truth_dir="./test/ground_truth"
-report_file="./test/results_stripped.csv"
+binaries_dir="${BASE_DIR}/test/binaries/"
+ground_truth_dir="${BASE_DIR}/test/ground_truth"
+report_file="${BASE_DIR}/test/results_stripped.csv"
 
 echo "arch,binary,tested,found_count,not_found_count" > $report_file
 

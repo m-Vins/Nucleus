@@ -4,7 +4,9 @@
 
 - [simple_tests](./simple_tests/)
 - [ground_truth](./ground_truth/)
+- [ground_truth_nm](./ground_truth_nm/)
 - [binaries](./binaries/)
+- [scripts](./scripts/)
 
 ## Files
 

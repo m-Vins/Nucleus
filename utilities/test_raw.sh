@@ -1,10 +1,11 @@
 #!/bin/bash
+_source_dir_=$(dirname "$0")
+BASE_DIR=$(readlink -f "${_source_dir_}/..")
 
-
-raw_directory="./test/raw_files"
-file_offsets="./test/raw_files_offsets.csv"
-ground_truth_dir="./test/ground_truth"
-report_file="./test/results_raw.csv"
+raw_directory="${BASE_DIR}/test/raw_files"
+file_offsets="${BASE_DIR}/test/raw_files_offsets.csv"
+ground_truth_dir="${BASE_DIR}/test/ground_truth"
+report_file="${BASE_DIR}/test/results_raw.csv"
 
 echo "arch,binary,tested,found_count,not_found_count" > $report_file
 
