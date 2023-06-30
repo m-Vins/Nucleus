@@ -4,7 +4,6 @@
 - [] cfc.cc line 1203, after the script test is ready
 - [] check if the fix of get_octet is correct
 - [x] check clear_cfg
-- [] check the TODOs in the code
 - [x] run test.sh with stripped binaries
 - [x] check differences result stripped and not stripped
 - [] add descriptions in [here](./test/README.md) and in [here](./utilities/README.md)
@@ -13,3 +12,6 @@
 - [] add 100 binaries in git so that it's possible to reproduce the scripts
 - [] change the test scripts so that they take the file_input from the command line
 - [] add commands in makefile to run the utilities scripts
+- [] merge the report into the readme (?)
+
+- [] check the TODOs in the code
