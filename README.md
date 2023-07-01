@@ -36,6 +36,8 @@ The outperformed tasks can be categorized into the following areas of improvemen
 4. [**Evaluating different architectures performance**](#evaluating-different-architectures-performance):
    While Nucleos has undergone extensive testing for x86 architecture, the effectiveness of its approach on other architectures remains uncertain. For this task, a large number of binaries (~3000) belonging to different architectures along with their ground truth have been exploited to evaluate the performance of the tool. An other ground truth has been built using the `readelf` tool to carry out further testing.
 
+<!-- 5. TODO : evauation raw files -->
+
 ### Reorganization of the directory tree
 
 - [src](./src/): This directory contains the source code files of the project.
