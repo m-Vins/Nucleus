@@ -7,7 +7,7 @@ file_offsets="${BASE_DIR}/test/raw_files_offsets.csv"
 ground_truth_dir="${BASE_DIR}/test/ground_truth"
 report_file="${BASE_DIR}/test/results_raw.csv"
 
-echo "arch,binary,tested,found_count,not_found_count" > $report_file
+echo "arch,binary,tested,found_count,not_found_count,false_positives" > $report_file
 
 while IFS=',' read -r binary section_offset_raw section_offset_elf; do 
     echo "--------------------------------------------------------"
@@ -80,6 +80,10 @@ while IFS=',' read -r binary section_offset_raw section_offset_elf; do
         echo "ERROR running file $binary"
         echo "$arch,$binary,error,," >> $report_file
     else
+
+        # Count the number of functions found by nucleus
+        nucleus_function_number=$(echo "$nucleus_out" | wc -l)
+
         nucleus_functions=$(echo "$nucleus_out"| cut -f1 | gawk -v \
             raw="$section_offset_raw" -v elf="$section_offset_elf" '{
                 start = strtonum($0);
@@ -105,10 +109,15 @@ while IFS=',' read -r binary section_offset_raw section_offset_elf; do
             fi
         done < "$ground_truth_path_file"
 
+        # Compute the number of false positives: the number of 
+        # functions that are found by nucleus and not present in the ground truth file
+        false_positives=$((nucleus_function_number - found_count))
+
         echo "Found functions: $found_count"
         echo "Not found functions: $not_found_count"
+        echo "False Positives : $false_positives"
 
-        echo "$arch,$binary,yes,$found_count,$not_found_count" >> $report_file
+        echo "$arch,$binary,yes,$found_count,$not_found_count,$false_positives" >> $report_file
 
     fi
     
