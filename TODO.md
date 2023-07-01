@@ -2,16 +2,16 @@
 - [] Improve output
 - [x] Create test by comparing nucleus output with nm output (Python)
 - [] cfc.cc line 1203, after the script test is ready
-- [] check if the fix of get_octet is correct
+- [x] check if the fix of get_octet is correct
 - [x] check clear_cfg
 - [x] run test.sh with stripped binaries
 - [x] check differences result stripped and not stripped
 - [] add descriptions in [here](./test/README.md) and in [here](./utilities/README.md)
 - [] build ground_truth using nmap and compare the results
-- [] add dependencies in Dockerfile
-- [] add 100 binaries in git so that it's possible to reproduce the scripts
+- [x] add dependencies in Dockerfile
+- [x] add 100 binaries in git so that it's possible to reproduce the scripts
 - [] change the test scripts so that they take the file_input from the command line
-- [] add commands in makefile to run the utilities scripts
+- [x] add commands in makefile to run the utilities scripts
 - [] merge the report into the readme (?)
 
 - [] check the TODOs in the code
