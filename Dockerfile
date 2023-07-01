@@ -13,5 +13,9 @@ RUN pip3 install pyelftools click==8.1.3 gdown==4.6.4
 
 WORKDIR /nucleus
 
+# Comment the following line to work in development mode
+COPY . .
+RUN make
+
 # Set the default command to run when the container starts
 CMD ["/bin/bash"]
