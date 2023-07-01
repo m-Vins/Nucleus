@@ -52,7 +52,7 @@ void print_usage(char *prog)
   printf("     : export binary info to IDA Pro script\n");
   printf("  -n <file>\n");
   printf("     : export binary info to Binary Ninja script\n");
-  printf("  -o : try at different offsets from the binary base vma (only for raw binaries)\n");
+  printf("  -o : <n_offset> try at n_offset different offsets from the binary base vma (only for raw binaries)\n");
   printf("  -v : verbose\n");
   printf("  -w : disable warnings\n");
   printf("  -h : help\n");
