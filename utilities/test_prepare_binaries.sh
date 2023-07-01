@@ -16,19 +16,7 @@ if [ "$file_count" -eq "$line_count" ]; then
 else
 # --------------- DOWNLOAD BINARIES -------------- #
 
-# *** Requires virtualenv ***
-#python3 -m pip install --user virtualenv
-
-# create a new "env" environment
-#python3 -m venv ../env
-# enter the virtual environment
-#source ../env/bin/activate
-
-# Install the requirements in the current environment
-#pip install click==8.1.3 && pip install gdown==4.6.4
-
 python3 ${BASE_DIR}/test/scripts/gdrive_download.py --binaries
-
 
 # ----------------- COPY BINARIES ---------------- #
 
