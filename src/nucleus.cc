@@ -20,7 +20,10 @@ void print_raw_function_score(std::map<uint64_t, uint64_t> functions_occurrences
   for (const auto &pair : functions_occurrences)
   {
     float score = (float)pair.second / options.offs_n;
-    printf("0x%016jx\t%f\n", pair.first, score);
+    if (score < 0.99)
+      printf("\033[1;31m0x%016jx\t%f\033[0m\n", pair.first, score);
+    else
+      printf("0x%016jx\t%f\n", pair.first, score);
   }
 }
 
