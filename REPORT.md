@@ -29,7 +29,7 @@ The outperformed tasks can be categorized into the following areas of improvemen
 ### Makefile commands
 
 - `make` : build nucleus
-- `build_simple_test` : build the programs in the folder `./test/simple/tests`
+- `build_simple_test` : build the programs in the folder `./test/simple_tests`
 - `simple_test` : execute `cmp_symbols.sh` on the simple_test binaries
 - `test` : run `./utilities/test.sh` on the binaries in `./test/binaries`
 - `generate_raw_files` : generate a dataset of raw files starting from the binaries in `./test/binaries`
@@ -39,7 +39,11 @@ The outperformed tasks can be categorized into the following areas of improvemen
 
 ## Reorganization of the directory tree
 
-<!-- TODO -->
+- [src](./src/): This directory contains the source code files of the project.
+- [include](./include): Header files reside in this directory.
+- [obj](./obj): This directory is used to store object files generated during the compilation process.
+- [test](./test): It contains all the files used for testing (binaries, ground_truth, ...), for further information refer [here](./test/README.md).
+- [utilities](./utilities/): It contains a set of scripts used for different purposes, for further information refer [here](./utilities/README.md).
 
 ## Fixing the tool
 
