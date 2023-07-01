@@ -20,7 +20,7 @@ void print_usage(char *prog)
 
   printf(NUCLEUS_VERSION "\n");
   printf(NUCLEUS_CREDITS "\n");
-  printf("\n%s [-vwhtafbDpgi] -e <binary> -d <strategy>\n", prog);
+  printf("\n%s [-vwhtafbDpgio] -e <binary> -d <strategy>\n", prog);
   printf("  -e <binary>\n");
   printf("     : target binary\n");
   printf("  -d <strategy>\n");
