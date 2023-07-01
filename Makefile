@@ -6,7 +6,8 @@ SRC=$(wildcard src/*.cc)
 OBJ=$(patsubst src/%.cc, obj/%.o, $(SRC))
 BIN=nucleus
 
-.PHONY: all clean setup build_simple_test simple_test
+.PHONY: all clean setup build_simple_test simple_test test generate_raw_files\
+		test_raw download_all
 
 all: $(BIN)
 
@@ -20,9 +21,6 @@ obj/%.o: src/%.cc ./include/%.h
 
 $(BIN): $(OBJ)
 	$(CXX) $(CXXFLAGS) -o $(BIN) $(OBJ) $(LDFLAGS)
-
-setup:
-	sudo apt install binutils-multiarch-dev libcapstone-dev file
 
 build_simple_test:
 	$(MAKE) -C test/simple_tests
