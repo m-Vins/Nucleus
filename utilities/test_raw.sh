@@ -78,7 +78,7 @@ while IFS=',' read -r binary section_offset_raw section_offset_elf; do
 
     if [ $? != 0 ]; then
         echo "ERROR running file $binary"
-        echo "$arch,$binary,error,," >> $report_file
+        echo "$arch,$binary,error,,," >> $report_file
     else
 
         # Count the number of functions found by nucleus
