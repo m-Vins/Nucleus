@@ -45,8 +45,7 @@ download_all:
 	./utilities/test_prepare_binaries.sh
 
 clean:
-	rm -f $(OBJ)
-	rm -Rf obj
+	rm $(OBJ)
 	rm -f $(BIN)
 	$(MAKE) -C test/simple_tests clean
 
