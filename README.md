@@ -12,6 +12,7 @@ Students:
   - [Fixing the tool](#fixing-the-tool)
   - [Raw files support](#raw-files-support)
   - [Evaluating different architectures performance](#evaluating-different-architectures-performance)
+  - [Raw files support evaluation](#raw-files-support-evaluation)
 - [Makefile commands](#makefile-commands)
 - [Usage](#nucleus-usage)
 

@@ -307,7 +307,7 @@ int nucleus_disasm_bb_x86(Binary *bin, DisasmSection *dis, BB *bb)
   while (cs_disasm_iter(cs_dis, &pc, &n, &pc_addr, cs_ins))
   // cs_ins -> the disassembled instruction
   {
-    // TODO : this if is useless since invalid instruction
+    // this if is useless since invalid instruction
     // trigger cs_disasm_iter to return false
     if (cs_ins->id == X86_INS_INVALID)
     {
