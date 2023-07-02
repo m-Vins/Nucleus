@@ -162,8 +162,8 @@ After results have been generated, the script [display_results.py](./utilities/d
 First of all, it is worth noting that some combinations architecture+compiler are not yet supported by Nucleus (namely, arm32+gcc and mips64+clang). The tool performs consistently well on x64, x86, arm64 and mips32+gcc. In all the other cases, Nucleus is not reliable, providing results which varies greatly with the input file.
 
 <div style="display:flex;">
-    <img src="./images/results_compiler_x86.png" alt="x86" width="50%" />
-    <img src="./images/results_compiler_arm32.png" alt="arm32" width="50%" />
+    <img src="./images/results_compiler_x86.png" alt="x86" width="49%" />
+    <img src="./images/results_compiler_arm32.png" alt="arm32" width="49%" />
 </div>
 
 While the optimization size does not have a significant impact on the overall performance of the tool, it is worth noting that O0 consistently correlates with better performance. 
@@ -204,9 +204,16 @@ The information saved in [raw_files_offsets.csv](./test/raw_files_offsets.csv) i
 
 Notice that the ground truth contains the start address of each function in the original ELF, while in the newly generated raw files the code section is at a different offset. For this reason, in the [test](./utilities/test_raw.sh) script, we convert the output of Nucleus by doing `func_addr_elf = func_addr_raw - offset_cs_raw + offset_cs_elf`, and we compare it against the ground truth.
 
-As in the ELF case, we can use [display_results.py](./utilities/display_results.py).
-<!-- TODO conclusion about the results -->
+As in the ELF files case, we can use [display_results.py](./utilities/display_results.py).
 
+In this case, we observe a contrasting trend compared to the previous scenario, where several files are associated with accuracies close to 0, particularly for mips and arm architectures. However, the tool continues to perform effectively on x64+gcc and x86+gcc.
+
+<div style="display:flex;">
+    <img src="./images/raw_compiler_x86.png" alt="x86" width="49%" />
+    <img src="./images/raw_compiler_arm-32.png" alt="arm32" width="49%" />
+</div>
+
+The impact of optimization size on performance remains unremarkable.
 
 Again, all the distribution plots can be found in the [/images](./images/) directory, starting with the `raw_` prefix.
 ---
