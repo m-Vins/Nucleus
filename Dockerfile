@@ -18,8 +18,9 @@ RUN echo 'echo "\
 =             nucleus             =\n\
 ===================================\n\
 \n\
-Quickstart! Try running:\n\
-\033[1;35m\tmake test \033[0m\n"'\ 
+Quickstart! Run\n\
+\033[1;35m\tmake test \033[0m\n\
+to try the tool on some test binaries.\n"'\ 
 > /root/.bashrc
 
 # Set the default command to run when the container starts
