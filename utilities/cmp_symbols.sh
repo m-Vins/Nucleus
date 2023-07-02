@@ -3,13 +3,13 @@ set -e  # Stop if there is a failure
 
 # Check if the user has provided an argument
 if [ $# -eq 0 ]; then
-    echo -e "\n\033[1;35m\tbash cmp_symbols.sh <ELF file, not stripped> [raw]\033[0m"
+    echo -e "\n\033[1;35m\tbash cmp_symbols.sh <ELF file, not stripped> [--raw]\033[0m"
     echo -e "Compares the output of nucleus (run on the stripped file) with the output of nm, adding symbol names to functions."
-    echo -e "If the raw option is specified, the ELF file is interpreted as raw.\n"
+    echo -e "If the --raw option is specified, the ELF file is interpreted as raw.\n"
     exit
 fi
 
-if [ $# -eq 2 ] && [ $2 == "raw" ]; then
+if [ $# -eq 2 ] && [ $2 == "--raw" ]; then
     extra="-t raw -a x86"
 fi
 

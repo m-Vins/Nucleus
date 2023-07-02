@@ -1,7 +1,7 @@
 #!/bin/bash
 
 _source_dir_=$(dirname "$0")
-BASE_DIR=$(readlink -f "${_source_dir_}/..")
+BASE_DIR=$(readlink -f "${_source_dir_}/../..")
 
 # Set the input file path
 file_path="${BASE_DIR}/test/binaries_list.txt"
