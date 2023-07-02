@@ -47,6 +47,9 @@ test_raw: $(BIN)
 test_raw_nm: $(BIN)
 	./utilities/test_raw.sh --nm
 
+generate_plot:
+	python3 ./utilities/display_results.py
+
 download_all:
 	./utilities/test_prepare_binaries.sh
 
