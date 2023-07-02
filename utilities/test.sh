@@ -1,11 +1,18 @@
 #!/bin/bash
 
+# call with flag --nm to use the nm ground truth
+
 _source_dir_=$(dirname "$0")
 BASE_DIR=$(readlink -f "${_source_dir_}/..")
 
-binaries_dir="${BASE_DIR}/test/binaries/"
+binaries_dir="${BASE_DIR}/test/binaries"
 ground_truth_dir="${BASE_DIR}/test/ground_truth"
 results_file="${BASE_DIR}/test/results.csv"
+
+if [ $# -eq 1 ] && [ $1 == "--nm" ]; then
+    ground_truth_dir="${BASE_DIR}/test/ground_truth_nm"
+    results_file="${BASE_DIR}/test/results_nm.csv"
+fi
 
 # Create a header for the results file
 echo "arch,binary,tested,found_count,not_found_count,false_positives" > $results_file
@@ -37,7 +44,7 @@ for binary in $(ls $binaries_dir); do
     fi
 
     # Run nucleus with the binary and capture the output
-    nucleus_out=$(./nucleus -e $binary_path -d linear -f) 
+    nucleus_out=$(${BASE_DIR}/nucleus -e $binary_path -d linear -f) 
 
     # Check the return code of nucleus
     if [ $? != 0 ]; then

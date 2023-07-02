@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# call with flag --nm to use the nm ground truth
+
 _source_dir_=$(dirname "$0")
 BASE_DIR=$(readlink -f "${_source_dir_}/..")
 
@@ -6,6 +9,11 @@ raw_directory="${BASE_DIR}/test/raw_files"
 file_offsets="${BASE_DIR}/test/raw_files_offsets.csv"
 ground_truth_dir="${BASE_DIR}/test/ground_truth"
 report_file="${BASE_DIR}/test/results_raw.csv"
+
+if [ $# -eq 1 ] && [ $1 == "--nm" ]; then
+    ground_truth_dir="${BASE_DIR}/test/ground_truth_nm"
+    report_file="${BASE_DIR}/test/results_raw_nm.csv"
+fi
 
 echo "arch,binary,tested,found_count,not_found_count,false_positives" > $report_file
 
@@ -74,7 +82,7 @@ while IFS=',' read -r binary section_offset_raw section_offset_elf; do
     # The true offset of the function is the offset found by nucleus, less the 
     # offset of the random data in the raw file, plus the offset of the code section
     # in the original bin
-    nucleus_out=$(./nucleus -e $raw_path -d linear -f -t raw -a $arch)
+    nucleus_out=$(${BASE_DIR}/nucleus -e $raw_path -d linear -f -t raw -a $arch)
 
     if [ $? != 0 ]; then
         echo "ERROR running file $binary"
