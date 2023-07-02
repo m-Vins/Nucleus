@@ -221,8 +221,8 @@ The [ground truth](./test/ground_truth/) contains the start address of each func
 
 In order to avoid wasting time with various dependencies, it's possible to build a docker container using the [Dockerfile](./Dockerfile).
 
-- to build : `docker build -t nucleos .`
-- to run: `docker run -it -v .:/nucleus nucleos`
+- to build : `docker build -t nucleus .`
+- to run: `docker run -it -v .:/nucleus nucleus`
 
 Please note that this repository contains only a subset(~100) of all the binaries(~3000) that we've used to run the tests, then same for the container.
 If you want to reproduce the test on all the binaries, just run `make download_all`, and then `make test`. Be aware that this operation is **very time and memory consuming**.
