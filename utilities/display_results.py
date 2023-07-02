@@ -60,9 +60,10 @@ def hist_by_compiler(df, is_raw=False, is_nm=False):
         df_a = df[df['arch'] == a]
         df_a_clang = df_a[df_a['compiler'] == 'clang']
         df_a_gcc = df_a[df_a['compiler'] == 'gcc']
+        data=[df_a_clang['acc']*df_a_clang['weight'], df_a_gcc['acc']*df_a_gcc['weight']] if not is_raw else [df_a_clang['acc'], df_a_gcc['acc']]
         # Create a histogram
         plt.figure(figsize=(7,4))
-        plt.hist([df_a_clang['acc']*df_a_clang['weight'], df_a_gcc['acc']*df_a_gcc['weight']], bins=30, label=['clang', 'gcc'])
+        plt.hist(data, bins=30, label=['clang', 'gcc'])
         # Set labels and title
         plt.xlabel('Accuracy')
         plt.ylabel('Frequency')
@@ -81,10 +82,10 @@ def hist_by_optimization(df, is_raw=False, is_nm=False):
         df_a_12 = df_a[df_a['O'] == ('1' or '2')]
         df_a_3 = df_a[df_a['O'] == '3']
         df_a_s = df_a[df_a['O'] == 's']
-        df_a_0 = df_a_0['acc']*df_a_0['weight']
-        df_a_12 = df_a_12['acc']*df_a_12['weight']
-        df_a_3 = df_a_3['acc']*df_a_3['weight']
-        df_a_s = df_a_s['acc']*df_a_s['weight'] 
+        df_a_0 = df_a_0['acc']*df_a_0['weight'] if not is_raw else df_a_0['acc']
+        df_a_12 = df_a_12['acc']*df_a_12['weight'] if not is_raw else df_a_12['acc']
+        df_a_3 = df_a_3['acc']*df_a_3['weight'] if not is_raw else df_a_3['acc']
+        df_a_s = df_a_s['acc']*df_a_s['weight']  if not is_raw else df_a_s['acc']
         # Create a histogram
         plt.figure(figsize=(10,4))
         plt.hist([df_a_0, df_a_12, df_a_3, df_a_s], bins=30, label=['0','1-2','3','s'])
@@ -120,6 +121,7 @@ hist_by_compiler(raw, is_raw=True)
 
 hist_by_optimization(res)
 hist_by_optimization(raw, is_raw=True)
+
 
 #######################
 #                     #
