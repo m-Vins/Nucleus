@@ -157,31 +157,35 @@ The script can be executed by typing `make test`.
 
 It is also possible to run the script by using the nm-generated ground truth. This can be done by typing `make test_nm`.
 
-<!-- TODO conclusion about the results -->
+After results have been generated, the script [display_results.py](./utilities/display_results.py) can be used to print the accuracy distribution for different architectures, comparing compilers (clang vs gcc) and optimization levels (O0, O1-O2, O3 and Os). The script computes the accuracy, and weights it to take into account the ratio of false positives against the total size of the text segment.
+
+First of all, it is worth noting that some combinations architecture+compiler are not yet supported by Nucleus (namely, arm32+gcc and mips64+clang). The tool performs consistently well on x64, x86, arm64 and mips32+gcc. In all the other cases, Nucleus is not reliable, providing results which varies greatly with the input file.
+
+<div style="display:flex;">
+    <img src="./images/results_compiler_x86.png" alt="x86" width="50%" />
+    <img src="./images/results_compiler_arm32.png" alt="arm32" width="50%" />
+</div>
+
+While the optimization size does not have a significant impact on the overall performance of the tool, it is worth noting that O0 consistently correlates with better performance. 
+
+All the distribution plots can be found in the [/images](./images/) directory, starting with the `results_` prefix.
 
 ### Raw files support evaluation
 
-In order to evaluate nucleus on raw files, we've built a database of raw files with the relative ground truth, starting from the binaries presents in [test/binaries](./test/binaries/). We can summarize the process in the following steps:
+In order to evaluate Nucleus on raw files, we have built a database of raw files with the relative ground truth, starting from the binaries presents in [test/binaries](./test/binaries/). We can summarize the process in the following steps:
 
-1. [Generating a raw file from an elf](#generating-a-raw-file-from-an-elf)
+1. [Generating a raw file from an ELF](#generating-a-raw-file-from-an-elf)
 2. [Generating a database of raw files](#generating-a-database-of-raw-files)
 3. [Test nucleus against the ground truth](#test-nucleus-against-the-ground-truth)
 
-#### Generating a raw file from an elf
+#### Generating a raw file from an ELF
 
-The script [generate_raw_file.py](./utilities/generate_raw_file.py) generate a raw file starting from an elf. It basically extract the code section from the elf file, and write it in a new file at a given offset chosen by the user. The initial section of the new file that doesn't contain the code section is filled with random data. During the execution of the script, it prints the offset of the code section in the initial elf file (we'll se why).
-
-usage:
-
-```sh
-python3 extract_code_section.py <elf_file_path> <output_file_path> <offset>
-
-```
+To generate raw files starting from an ELF, we use the script [generate_raw_file.py](./utilities/generate_raw_file.py). Such a script extracts the code section from the ELF file, and write it in a new file at an offset chosen by the user. The initial section of the new file is filled with random data. During the execution of the script, it prints the offset of the code section in the initial ELF file (we will se why this is done).
 
 #### Generating a database of raw files
 
-The script [generate_raw_dataset.sh](./utilities/generate_raw_dataset.sh) generate a database of raw files in [test/raw_files](./test/raw_files/).
-It uses [generate_raw_file.py](./utilities/generate_raw_file.py) on each binary in [test/binary](./test/binaries/) to generate raw files, where the offset for the code_section in the raw file is chosen randomly. Along this process, it writes in [raw_files_offsets.csv](./test/raw_files_offsets.csv) the offset of the code section in the original elfs (using the output of the python script) and in the new raw files:
+We use the script [generate_raw_dataset.sh](./utilities/generate_raw_dataset.sh) to generate a database of raw files in [test/raw_files](./test/raw_files/).
+It uses [generate_raw_file.py](./utilities/generate_raw_file.py) on each binary in [test/binary](./test/binaries/), randomly choosing the offset for the code section. Along this process, it writes in [raw_files_offsets.csv](./test/raw_files_offsets.csv) the offset of the code section in the original ELFs and in the new raw files:
 
 | binary                            | section_offset_raw | section_offset_elf |
 | --------------------------------- | ------------------ | ------------------ |
@@ -196,18 +200,22 @@ The command `make generate_raw_files` run the script.
 
 #### Test nucleus against the ground truth
 
-The information saved in [raw_files_offsets.csv](./test/raw_files_offsets.csv) are used to test nucleus on raw files in the raw database just generated.
-The [ground truth](./test/ground_truth/) contains the start address of each function in the original elf. In the newly generated raw files, the code section is not at the same offset as the original elf file. For this reason, in the script for the [test](./utilities/test_raw.sh) we convert the output of nucleus (that contains the start address of the function in the raw file) by doing `func_addr_elf = func_addr_raw - offset_cs_raw + offset_cs_elf`, and we compare it against the ground truth.
+The information saved in [raw_files_offsets.csv](./test/raw_files_offsets.csv) is used to test Nucleus on raw files in the raw database just generated.
 
+Notice that the ground truth contains the start address of each function in the original ELF, while in the newly generated raw files the code section is at a different offset. For this reason, in the [test](./utilities/test_raw.sh) script, we convert the output of Nucleus by doing `func_addr_elf = func_addr_raw - offset_cs_raw + offset_cs_elf`, and we compare it against the ground truth.
+
+As in the ELF case, we can use [display_results.py](./utilities/display_results.py).
 <!-- TODO conclusion about the results -->
 
+
+Again, all the distribution plots can be found in the [/images](./images/) directory, starting with the `raw_` prefix.
 ---
 
 ## Makefile commands
 
 - `make` : build nucleus.
 - `build_simple_test` : build the programs in the folder `./test/simple_tests`.
-- `simple_test` : execute `cmp_symbols.sh` on the simple_test binaries.
+- `simple_test` : execute `cmp_symbols.sh` on the `simple_test` binaries.
 - `test` : run `./utilities/test.sh` on the binaries in `./test/binaries`.
 - `test_nm` : run `./utilities/test.sh --nm` on the binaries in `./test/binaries` using the ground truth generated with nm.
 - `generate_raw_files` : generate a dataset of raw files starting from the binaries in `./test/binaries`.
@@ -230,7 +238,7 @@ In order to avoid wasting time with various dependencies, it's possible to build
 
 Please note :
 
-1. that this repository contains only a subset(~100) of all the binaries(~3000) that we've used to run the tests, then same for the container. If you want to reproduce the test on all the binaries, just run `make download_all`, and then `make test`. Be aware that this operation is **very time and memory consuming**.
+1. That this repository contains only a subset(~100) of all the binaries(~3000) that we have used to run the tests. If you want to reproduce the test on all binaries, just run `make download_all`, and then `make test`. Be aware that this operation is **very time and memory consuming**.
 2. the target file that you want to test using nucleus should be in this folder, otherwise it is needed to bind another volume to the container using the option `-v` : `docker run -it -v .:/nucleus -v <target_volume>:<path_in_container> nucleus`
 
 ### Commands and Options
