@@ -114,6 +114,7 @@ The very first thing we have done was trying to understand how the tool works, e
 In order to enable the logging it's just needed to set `DBG` to `1` in [disasm-x86.cc](./src/disasm-x86.cc) and in [disasm.cc](/src/disasm.cc).
 
 To begin with, we realized that the goal of the disassembler is to identify and separate basic blocks, which will then be used to build the control flow of the program. For this reason, the disassembler will stop only in two cases:
+
 1. When it meets a control flow instruction (jump, cmp, test...)
 2. When it meets an invalid instruction
 
@@ -124,14 +125,12 @@ Overall, the tool always scans the full file, even when meeting invalid instruct
 Since the option to start disassembling at a given offset was already present, we tried to see if changing the offset enhances `nucleus` performance. Using the [script test_offset.py](./utilities/test_offset.py) we collected the number of offsets that successfully find each function.
 The script showed us that changing the offset does not affect significantly results, as almost all functions are found at every offset. These results suggest that the disassembling process realigns very fast.
 
-Nevertheless, we added the option `-o` in `nucleus` in order to automatically disassemble at different offsets and collect information about the number of offsets that find each function. Overall, we embedded the logic in the aforementioned Python script directly in `nucleus`.
-
-<!-- TODO add a screnshoot of the output -->
+Nevertheless, we added the option `-o` in `nucleus` in order to automatically disassemble at different offsets and collect information about the number of offsets that find each function. Overall, we embedded the logic in the aforementioned Python script directly in `nucleus`. (See [here](#commands-and-options))
 
 ### Evaluating different architectures performance
 
 To evaluate the performance of nucleus over different architectures, a database of binaries present at [https://github.com/Cisco-Talos/binary_function_similarity](https://github.com/Cisco-Talos/binary_function_similarity) has been exploited.
-We've tried to embed the [script](https://github.com/Cisco-Talos/binary_function_similarity/blob/main/gdrive_download.py) to download the binaries in our project to easily populate our [binaries folder](./test/binaries/) by running the command `make download`.
+We've tried to embed the [script](https://github.com/Cisco-Talos/binary_function_similarity/blob/main/gdrive_download.py) to download the binaries in our project to easily populate our [binaries folder](./test/binaries/) by running the command `make download_all`.
 A subset of the database has been used to execute the test. The list of the used binaries is present [here](./test/binaries_list.txt), it is basically the list of the binaries belonging to the training subset used in [this project](https://github.com/Cisco-Talos/binary_function_similarity). A ground truth has been extracted from the information present in the same project using the [script](./test/scripts/extract_ground_truth.sh) on the file `binary_function_similarity/DBs/Dataset-1/training_Dataset-1.csv`, we haven't made it easily reproducible since we've run this script only once, and the extracted ground truth is available [here](./test/ground_truth/).
 The extracted ground truth is basically a collection of files grouped by different architectures that contains the pairs (`function name`, `start address`).
 
@@ -154,7 +153,7 @@ these information are then stored by the script in the file [results.csv](./test
 
 the script can be execute by typing `make test`.
 
-<!-- TODO continue... -->
+<!-- TODO conclusion about the results -->
 
 ### Raw files support evaluation
 
@@ -193,7 +192,7 @@ The command `make generate_raw_files` run the script.
 
 #### Test nucleus against the ground truth
 
-The information saved in [raw_files_offsets.csv](./test/raw_files_offsets.csv) are used to test nucleus on raw files against the raw database just generated.
+The information saved in [raw_files_offsets.csv](./test/raw_files_offsets.csv) are used to test nucleus on raw files in the raw database just generated.
 The [ground truth](./test/ground_truth/) contains the start address of each function in the original elf. In the newly generated raw files, the code section is not at the same offset as the original elf file. For this reason, in the script for the [test](./utilities/test_raw.sh) we convert the output of nucleus (that contains the start address of the function in the raw file) by doing `func_addr_elf = func_addr_raw - offset_cs_raw + offset_cs_elf`, and we compare it against the ground truth.
 
 <!-- TODO conclusion about the results -->
@@ -269,6 +268,6 @@ Copyright (C) 2016, 2017 Dennis Andriesse, Vrije Universite\it Amsterdam
   -h : help
 ```
 
-The `-o <n_offset>` option has been added by us for the implementation of the [raw files support](#raw-files-support), it makes nucleus executing the whole analysis `n_offset` times, each time starting from the next offset. The first offset can be chosen using the option `-b <vma>`. Over each iteration, nucleus count the number of offsets that find each function. Afterwards, a score is assigned to the functions found over all the iterations using the following equation : $score = N\_{offsetsfunction}/N\_{offsets} $ where _N_offsetsfunction_ is the number of offsets that find the functions. In this way, it is easier to spot functions that has been found only when the disassembler doesn't realign.
+The `-o <n_offset>` option has been added by us for the implementation of the [raw files support](#raw-files-support), it makes nucleus executing the whole analysis `n_offset` times, each time starting from the next offset. The first offset can be chosen using the option `-b <vma>`. Over each iteration, nucleus count the number of offsets that find each function. Afterwards, a score is assigned to the functions found over all the iterations using the following equation : `score = N_offsets?function/N_offsets ` where _N_offsets_function_ is the number of offsets that find the functions. In this way, it is easier to spot functions that has been found only when the disassembler doesn't realign.
 
 ![](./images/screen_nucleus_raw.png)
