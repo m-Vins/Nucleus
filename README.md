@@ -268,7 +268,3 @@ Copyright (C) 2016, 2017 Dennis Andriesse, Vrije Universite\it Amsterdam
 The `-o <n_offset>` option has been added by us for the implementation of the [raw files support](#raw-files-support), it makes nucleus executing the whole analysis `n_offset` times, each time starting from the next offset. The first offset can be chosen using the option `-b <vma>`. Over each iteration, nucleus count the number of offsets that find each function. Afterwards, a score is assigned to the functions found over all the iterations using the following equation : $score = N\_{offsetsfunction}/N\_{offsets} $ where _N_offsetsfunction_ is the number of offsets that find the functions. In this way, it is easier to spot functions that has been found only when the disassembler doesn't realign.
 
 ![](./images/screen_nucleus_raw.png)
-
-```
-
-```
