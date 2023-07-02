@@ -214,7 +214,6 @@ In this case, we observe a contrasting trend compared to the previous scenario, 
 </div>
 
 The impact of optimization size on performance remains unremarkable.
-
 Again, all the distribution plots can be found in the [/images](./images/) directory, starting with the `raw_` prefix.
 ---
 
