@@ -186,15 +186,12 @@ cleanup:
  *        of the binary starting from the vma.
  *        The vma is passed as a uint64_t.
  *
- *        TODO: This function is temporary, we should find a better solution!
- *
  * @param bfd_h
  * @param vma
  * @return asection*
  */
 asection *get_section_by_vma(const bfd *bfd_h, const uint64_t vma)
 {
-  // TODO check this code
   for (asection *bfd_sec = bfd_h->sections; bfd_sec->next != bfd_h->section_last->next; bfd_sec = bfd_sec->next)
   {
     if (bfd_sec->vma <= vma && bfd_sec->vma + bfd_sec->size > vma)

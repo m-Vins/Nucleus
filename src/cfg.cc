@@ -1200,11 +1200,7 @@ void CFG::detect_bad_bbs()
       if (!cc)
         break;
       flags = cc->insns.back().flags;
-      // TODO:
-      // probably here the line should be:
-      // if ((flags & Instruction::INS_FLAG_CFLOW) && (flags && Instruction::INS_FLAG_INDIRECT))
-      // otherwise does not seem to make sense, but check if when the test script is ready
-      if ((flags & Instruction::INS_FLAG_CFLOW) && (Instruction::INS_FLAG_INDIRECT))
+      if ((flags & Instruction::INS_FLAG_CFLOW) && (flags & Instruction::INS_FLAG_INDIRECT))
       {
         invalid = false;
       }
@@ -1433,7 +1429,6 @@ int CFG::make_cfg(Binary *bin, std::list<DisasmSection> *disasm)
 
 void CFG::clear_cfg()
 {
-  // TODO: check that it properly deallocate everything
   this->binary = NULL;
   entry.clear();
   functions.clear();
