@@ -209,7 +209,7 @@ As in the ELF files case, we can use [display_results.py](./utilities/display_re
 In this case, we observe a contrasting trend compared to the previous scenario, where several files are associated with accuracies close to 0, particularly for mips and arm architectures. However, the tool continues to perform effectively on x64+gcc and x86+gcc.
 
 <div style="display:flex;">
-    <img src="./images/raw_compiler_x86.png" alt="x86" width="49%" />
+    <img src="./images/raw_compiler_x86-64.png" alt="x86" width="49%" />
     <img src="./images/raw_compiler_arm-32.png" alt="arm32" width="49%" />
 </div>
 
