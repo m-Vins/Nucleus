@@ -2,7 +2,6 @@
 import os
 import re
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 
 # ------------------- #
@@ -12,7 +11,7 @@ IMAGES_PATH = REPO_PATH + 'images/'
 
 # ------------------- #
 
-plt.style.use('seaborn-deep')
+plt.style.use('seaborn-v0_8-deep')
 
 
 #######################
