@@ -225,8 +225,10 @@ In order to avoid wasting time with various dependencies, it's possible to build
 - to build : `docker build -t nucleus .`
 - to run: `docker run -it -v .:/nucleus nucleus`
 
-Please note that this repository contains only a subset(~100) of all the binaries(~3000) that we've used to run the tests, then same for the container.
-If you want to reproduce the test on all the binaries, just run `make download_all`, and then `make test`. Be aware that this operation is **very time and memory consuming**.
+Please note :
+
+1. that this repository contains only a subset(~100) of all the binaries(~3000) that we've used to run the tests, then same for the container. If you want to reproduce the test on all the binaries, just run `make download_all`, and then `make test`. Be aware that this operation is **very time and memory consuming**.
+2. the target file that you want to test using nucleus should be in this folder, otherwise it is needed to bind another volume to the container using the option `-v` : `docker run -it -v .:/nucleus -v <target_volume>:<path_in_container> nucleus`
 
 ### Commands and Options
 
