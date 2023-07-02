@@ -2,13 +2,14 @@
 
 import subprocess
 import os
+import sys
 
 REPO_PATH = os.path.dirname(os.path.abspath(__file__+ '/..'))
 
 # Set the range of numbers
 start = 1
-end = 2048
-target = REPO_PATH+"/test/simple_tests/bin/test1"
+end = 256
+target = sys.argv[1]
 
 addresses = dict()
 
