@@ -81,7 +81,7 @@ _**Warning!**_ _This script requires 3.5 GB of disk space._
 
 ## [test_raw.sh](./test_raw.sh)
 
-This script is used to test nucleus performance on raw files against the [ground truth](./../test/ground_truth/) generated from as explained [here](./../README.md#evaluating-different-architectures-performance) or the one generated using `nm` with [this script](./../test/scripts/generate_nm_gt_parallel.sh)
+This script is used to test nucleus performance on raw files against the [ground truth](./../test/ground_truth/) generated as explained [here](./../README.md#evaluating-different-architectures-performance) or the one generated using `nm` with [this script](./../test/scripts/generate_nm_gt_parallel.sh)
 
 usage:
 
@@ -97,7 +97,7 @@ make test_raw_nm
 
 ## [test.sh](./test.sh)
 
-This script is used to test nucleus against the [ground truth](./../test/ground_truth/) generated from as explained [here](./../README.md#evaluating-different-architectures-performance) or the one generated using `nm` with [this script](./../test/scripts/generate_nm_gt_parallel.sh).
+This script is used to test nucleus against the [ground truth](./../test/ground_truth/) generated as explained [here](./../README.md#evaluating-different-architectures-performance) or the one generated using `nm` with [this script](./../test/scripts/generate_nm_gt_parallel.sh).
 
 usage:
 
