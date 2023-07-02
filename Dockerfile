@@ -9,7 +9,7 @@ RUN apt-get update && \
     less file gawk     
 
 # Instapp python libraries
-RUN pip3 install pyelftools click==8.1.3 gdown==4.6.4
+RUN pip3 install pyelftools click==8.1.3 gdown==4.6.4 pandas==2.0.1 matplotlib==3.7.1
 
 WORKDIR /nucleus
 
