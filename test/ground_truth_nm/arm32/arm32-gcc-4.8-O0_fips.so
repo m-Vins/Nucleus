@@ -111,8 +111,6 @@ aes_gcm_newctx 0x6e50
 AES_set_decrypt_key 0x17540
 AES_set_enc2dec_key 0x17560
 AES_set_encrypt_key 0x172a0
-AES_Td 0x176a0
-AES_Te 0x16b20
 aes_v8_cbc_encrypt 0x18260
 aes_v8_ctr32_encrypt_blocks 0x18680
 aes_v8_decrypt 0x18200
@@ -146,8 +144,6 @@ alloc_node 0x82428
 alloc_tmp_method_store 0x4e50c
 _armv4_AES_decrypt 0x17c00
 _armv4_AES_encrypt 0x170c0
-_armv4_AES_set_enc2dec_key 0x17560
-_armv4_AES_set_encrypt_key 0x172a0
 _armv7_neon_probe 0x54020
 _armv7_tick 0x54028
 _armv8_aes_probe 0x54030
@@ -356,12 +352,9 @@ BN_zero_ex 0x2713c
 _booth_recode_w5 0x3ed40
 _booth_recode_w7 0x3edcc
 bsaes_cbc_encrypt 0x19800
-_bsaes_const 0x19040
 bsaes_ctr32_encrypt_blocks 0x19b20
 _bsaes_decrypt8 0x18940
 _bsaes_encrypt8 0x19100
-_bsaes_encrypt8_alt 0x19110
-_bsaes_encrypt8_bitslice 0x19170
 _bsaes_key_convert 0x19760
 bsaes_xts_decrypt 0x1a2f0
 bsaes_xts_encrypt 0x19d60
@@ -1158,8 +1151,8 @@ __floatundidf 0x8fd08
 __floatunsidf 0x8fc7c
 frame_dummy 0x3abc
 free_infopair 0x5ae48
-__fstat 0x91044
 fstat 0x91044
+__fstat 0x91044
 gcm_aad_update 0x16208
 gcm_cipher 0x15790
 gcm_cipher_final 0x16394
@@ -1264,16 +1257,12 @@ inner_generic_fetch 0x4e9c0
 int_bn_mod_inverse 0x76ad8
 internal_delete 0x71958
 internal_find 0x71b04
-iotas32 0x6cd60
-iotas64 0x6df00
 is_ctr 0x67dfc
 is_digest 0x67e38
 is_equal 0x3f098
 is_one 0x3f1f4
 is_partially_overlapping 0x4b43c
 is_zero 0x3f048
-K256 0x86920
-K512 0x88680
 kbkdf_derive 0xbeb4
 kbkdf_free 0xbb54
 kbkdf_get_ctx_params 0xc688
@@ -1312,7 +1301,6 @@ kdf_tls1_prf_set_ctx_params 0xea94
 kdf_tls1_prf_settable_ctx_params 0xedc4
 keccak_dupctx 0xa53c
 KeccakF1600 0x6dac0
-KeccakF1600_enter 0x6ce30
 KeccakF1600_int 0x6ce20
 KeccakF1600_neon 0x6dfc0
 keccak_final 0xa410
@@ -1813,7 +1801,6 @@ rand_priv_bytes_ex 0x6bf6c
 RAND_seed 0x6bed4
 RAND_status 0x6c158
 register_tm_clones 0x39f8
-rem_4bit 0x62480
 rem_4bit_get 0x624a0
 right_encode 0x10f40
 sa_doall 0x81f08
@@ -1990,7 +1977,6 @@ trailingdata 0x167fc
 trampoline 0x8222c
 __udivdi3 0x909e8
 __udivsi3 0x90e38
-.udivsi3_skip_div0_test 0x90e38
 unpadblock 0x1697c
 verify_integrity 0x52a4
 wait_random_seeded 0x6c220

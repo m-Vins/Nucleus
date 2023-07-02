@@ -16,13 +16,11 @@ filelist 0x40944c
 _fini 0x411150
 frame_dummy 0x401d24
 freshdbdir 0x408be8
-_ftext 0x401b90
 getdest 0x408210
 get_hostid 0x41083c
 _getopt_internal 0x404178
 get_version 0x408bc0
 help 0x40a8e4
-hlt 0x401be0
 _init 0x401b08
 isdir 0x408938
 is_valid_hostid 0x410704

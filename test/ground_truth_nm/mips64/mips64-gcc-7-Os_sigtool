@@ -321,8 +321,8 @@ aria_gcm_cipher 0x120190418
 aria_gcm_cleanup 0x1201906dc
 aria_gcm_ctrl 0x12018f6f4
 aria_gcm_freectx 0x12009e35c
-aria_gcm_init_key 0x12018f484
 aria_gcm_initkey 0x12009e630
+aria_gcm_init_key 0x12018f484
 aria_gcm_newctx 0x12009e2a0
 aria_gcm_tls_cipher 0x120190104
 aria_init_key 0x12018c850
@@ -1380,8 +1380,8 @@ chacha20_poly1305_get_ctx_params 0x1200a3154
 chacha20_poly1305_get_params 0x1200a30e8
 chacha20_poly1305_gettable_ctx_params 0x1200a3624
 chacha20_poly1305_initiv 0x1200a45a0
-chacha20_poly1305_init_key 0x1201941bc
 chacha20_poly1305_initkey 0x1200a4498
+chacha20_poly1305_init_key 0x1201941bc
 chacha20_poly1305_newctx 0x1200a2f70
 chacha20_poly1305_set_ctx_params 0x1200a3658
 chacha20_poly1305_tls_cipher 0x1200a4754
@@ -4141,9 +4141,8 @@ free_evp_pbe_ctl 0x1201a2894
 free_infopair 0x1200647f0
 free_string 0x1202074a0
 freshdbdir 0x12003a418
-__fstat 0x1202f4440
 fstat 0x1202f4440
-_ftext 0x12002f540
+__fstat 0x1202f4440
 funmap 0x12003e000
 gcm_aad_update 0x1200d9500
 gcm_cipher 0x1200d87b8
@@ -4284,7 +4283,6 @@ HKDF 0x1200c08e4
 HKDF_Expand 0x1200c0b74
 HKDF_Extract 0x1200c0a48
 hkdf_pkey_method 0x1201ac394
-hlt 0x120037070
 HMAC 0x1201afddc
 hmac_ctx_alloc_mds 0x1201afa90
 hmac_ctx_cleanup 0x1201af8ec
@@ -4594,11 +4592,11 @@ impl_cache_flush_one_alg 0x12006e0e0
 impl_cache_free 0x12006cd94
 impl_free 0x12006ccf4
 inc_128 0x1202abd40
-_init 0x12002f4a8
 init 0x1200877d0
 init 0x1201a7e80
 init 0x1201a7f40
 init 0x1201a80d0
+_init 0x12002f4a8
 init_added 0x120068ea0
 init_get_thread_local 0x12005b430
 init_thread_deregister 0x12005bdcc
@@ -4878,8 +4876,8 @@ logg_facility 0x1200380b8
 look_str_cb 0x12017b0c8
 lookup_cert_match 0x1202277bc
 lookup_certs_sk 0x12022862c
-__lstat 0x1202f4480
 lstat 0x1202f4480
+__lstat 0x1202f4480
 main 0x1200357ec
 make_addressPrefix 0x1202baae0
 make_addressRange 0x1202bad28
@@ -7635,8 +7633,8 @@ ssl_module_init 0x120277340
 stable_get 0x120249c80
 stack_to_property_list 0x12006ff34
 __start 0x120037020
-__stat 0x1202f4400
 stat 0x1202f4400
+__stat 0x1202f4400
 stbl_module_finish 0x1202d6fd8
 stbl_module_init 0x1202d6dfc
 st_free 0x12024a0b4

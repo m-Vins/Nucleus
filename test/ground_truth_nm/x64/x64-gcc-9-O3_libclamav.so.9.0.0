@@ -1329,8 +1329,8 @@ string_assign_dup 0xad780
 string_assign_null.part.0 0xad810
 string_free 0xad730
 str_make_lowercase 0xad450
-str_strip 0xad620
 strstrip 0x4da30
+str_strip 0xad620
 str_strip.constprop.0 0xad840
 submit_post 0x110170
 SzAlloc 0xb6f30

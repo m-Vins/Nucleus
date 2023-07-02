@@ -1053,11 +1053,11 @@ smtp_state_starttls_resp 0x8fec8
 SocketIsDead 0x698ec
 _start 0x4c000
 stat64 0xa10f4
-_state 0x78950
 state 0x8b0b0
 state 0x8d62c
 state 0x8fbf0
 state 0x9456c
+_state 0x78950
 stdin_upload 0x5cf24
 store_a 0x9b5b0
 store_aaaa 0x9b5e4

@@ -4,10 +4,8 @@ __do_global_dtors_aux 0x405954
 _fini 0x469480
 frame_dummy 0x405a04
 fstat64 0x468d30
-_ftext 0x405870
 _GLOBAL__sub_I_ErrHandler 0x40c58c
 _GLOBAL__sub_I__Z9InitCRC32Pj 0x421334
-hlt 0x4058c0
 _init 0x4057f4
 __libc_csu_fini 0x468d04
 __libc_csu_init 0x468c60

@@ -196,8 +196,6 @@ aes_siv_cipher 0x12911c
 aes_siv_cleanup 0x1291d8
 aes_siv_ctrl 0x12920c
 aes_siv_init_key 0x129038
-AES_Td 0x96600
-AES_Te 0x95a80
 AES_unwrap_key 0x22aa38
 aes_v8_cbc_encrypt 0x971c0
 aes_v8_ctr32_encrypt_blocks 0x975e0
@@ -354,8 +352,8 @@ aria_gcm_cipher 0x12becc
 aria_gcm_cleanup 0x12c0d0
 aria_gcm_ctrl 0x12b4b4
 aria_gcm_freectx 0x66984
-aria_gcm_init_key 0x12b2e0
 aria_gcm_initkey 0x66b20
+aria_gcm_init_key 0x12b2e0
 aria_gcm_newctx 0x66908
 aria_gcm_tls_cipher 0x12bca0
 aria_init_key 0x129484
@@ -364,8 +362,6 @@ aria_set_decrypt_key 0x9bc14
 aria_set_encrypt_key 0x9a580
 _armv4_AES_decrypt 0x96b60
 _armv4_AES_encrypt 0x96020
-_armv4_AES_set_enc2dec_key 0x964c0
-_armv4_AES_set_encrypt_key 0x96200
 _armv7_neon_probe 0x314e0
 _armv7_tick 0x314e8
 _armv8_aes_probe 0x314f0
@@ -1233,12 +1229,9 @@ _booth_recode_w5 0x10bd7c
 _booth_recode_w7 0x10be08
 bread_conv 0xb2740
 bsaes_cbc_encrypt 0x98740
-_bsaes_const 0x97f80
 bsaes_ctr32_encrypt_blocks 0x98a60
 _bsaes_decrypt8 0x97880
 _bsaes_encrypt8 0x98040
-_bsaes_encrypt8_alt 0x98050
-_bsaes_encrypt8_bitslice 0x980b0
 _bsaes_key_convert 0x986a0
 bsaes_xts_decrypt 0x99230
 bsaes_xts_encrypt 0x98ca0
@@ -1428,8 +1421,8 @@ chacha20_poly1305_get_ctx_params 0x6a274
 chacha20_poly1305_get_params 0x6a22c
 chacha20_poly1305_gettable_ctx_params 0x6a624
 chacha20_poly1305_initiv 0x6b28c
-chacha20_poly1305_init_key 0x12eb1c
 chacha20_poly1305_initkey 0x6b1a0
+chacha20_poly1305_init_key 0x12eb1c
 chacha20_poly1305_newctx 0x6a124
 chacha20_poly1305_set_ctx_params 0x6a648
 chacha20_poly1305_tls_cipher 0x6b3f8
@@ -4691,11 +4684,11 @@ impl_cache_flush_one_alg 0x43d4c
 impl_cache_free 0x43070
 impl_free 0x43004
 inc_128 0x20c600
-_init 0x12bd4
 init 0x568fc
 init 0x13d6a0
 init 0x13d73c
 init 0x13d814
+_init 0x12bd4
 init_added 0x401f8
 init_get_thread_local 0x35c0c
 init_thread_deregister 0x3623c
@@ -4749,8 +4742,6 @@ io_destroy 0x5e438
 io_getevents 0x5e4a0
 io_read 0x5e464
 io_setup 0x5e3d4
-iotas32 0x17b380
-iotas64 0x17c520
 IPAddrBlocks_it 0x218bac
 IPAddressChoice_free 0x218e10
 IPAddressChoice_it 0x218b64
@@ -4785,8 +4776,6 @@ is_utc 0x1b8914
 is_zero 0x10c088
 julian_adj 0x2050b0
 julian_to_date 0x205388
-K256 0x2105a0
-K512 0x212300
 kbkdf_derive 0x82c54
 kbkdf_free 0x828b8
 kbkdf_get_ctx_params 0x8344c
@@ -4842,7 +4831,6 @@ kdf_tls1_prf_set_ctx_params 0x87cd4
 kdf_tls1_prf_settable_ctx_params 0x88014
 keccak_dupctx 0x80b18
 KeccakF1600 0x17c0e0
-KeccakF1600_enter 0x17b450
 KeccakF1600_int 0x17b440
 KeccakF1600_neon 0x17c5e0
 keccak_final 0x809f0
@@ -6516,7 +6504,6 @@ recode_wnaf 0x1dd3a8
 recsig 0x18cae0
 reduce_params 0x13be30
 register_tm_clones 0x1a0c0
-rem_4bit 0x155240
 rem_4bit_get 0x155260
 req_cb 0x1b0820
 ri_cb 0x20afb4

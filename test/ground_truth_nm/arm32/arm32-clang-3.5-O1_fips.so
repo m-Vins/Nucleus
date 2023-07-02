@@ -1096,8 +1096,8 @@ __floatundidf 0x5f8e0
 __floatunsidf 0x5f84c
 frame_dummy 0xb120
 free_infopair 0x495b4
-__fstat 0x6026c
 fstat 0x6026c
+__fstat 0x6026c
 gcm_aad_update 0x17ea8
 gcm_cipher 0x17b4c
 gcm_cipher_final 0x17f60

@@ -4696,11 +4696,11 @@ smtp_state_starttls_resp 0x8bc50
 SocketIsDead 0x6a988
 _start 0x9cb8
 stat64 0xa8934
-_state 0x9c4ec
 state 0x84bbc
 state 0x88888
 state 0x8b104
 state 0x9179c
+_state 0x9c4ec
 stdin_upload 0x266dc
 store_a 0x953e8
 store_aaaa 0x9548c
@@ -4790,7 +4790,6 @@ tvnow 0x2e034
 type2name 0x96568
 __udivdi3 0xa8270
 __udivsi3 0xa86c0
-.udivsi3_skip_div0_test 0xa86c0
 unescape_word 0x710e8
 unslashquote 0x28a58
 up_free 0x69790

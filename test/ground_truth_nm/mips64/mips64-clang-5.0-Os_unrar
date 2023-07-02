@@ -9,7 +9,6 @@ frame_dummy 0x301b8
 fstat64 0x67ff0
 _GLOBAL__sub_I_crc.cpp 0x3fe20
 _GLOBAL__sub_I_global.cpp 0x34338
-hlt 0x30050
 _init 0x680e0
 __libc_csu_fini 0x67fa8
 __libc_csu_init 0x67f00

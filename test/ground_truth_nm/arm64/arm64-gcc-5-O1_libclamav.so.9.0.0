@@ -350,8 +350,8 @@ aria_gcm_cipher 0x25e384
 aria_gcm_cleanup 0x25e560
 aria_gcm_ctrl 0x25da18
 aria_gcm_freectx 0x3026a8
-aria_gcm_init_key 0x25d850
 aria_gcm_initkey 0x3027e0
+aria_gcm_init_key 0x25d850
 aria_gcm_newctx 0x302638
 aria_gcm_tls_cipher 0x25e170
 aria_init_key 0x25bd30
@@ -1470,8 +1470,8 @@ chacha20_poly1305_get_ctx_params 0x305534
 chacha20_poly1305_get_params 0x305500
 chacha20_poly1305_gettable_ctx_params 0x305868
 chacha20_poly1305_initiv 0x30638c
-chacha20_poly1305_init_key 0x26007c
 chacha20_poly1305_initkey 0x3062d8
+chacha20_poly1305_init_key 0x26007c
 chacha20_poly1305_newctx 0x305418
 chacha20_poly1305_set_ctx_params 0x305874
 chacha20_poly1305_tls_cipher 0x2601e8
@@ -3995,7 +3995,6 @@ ecp_nistz256_point_add_affine 0x3bad80
 ecp_nistz256_point_double 0x3ba820
 ecp_nistz256_points_mul 0x246540
 ecp_nistz256_pre_comp_new 0x2470ac
-ecp_nistz256_precomputed 0x395000
 ecp_nistz256_scatter_w5 0x3bb540
 ecp_nistz256_scatter_w7 0x3bb710
 ecp_nistz256_set_from_affine 0x246488
@@ -5323,8 +5322,8 @@ freeset 0x196420
 free_string 0x3e6ddc
 free_symlists 0x18bd2c
 free_token 0x105b6c
-__fstat 0x418c30
 fstat 0x418c30
+__fstat 0x418c30
 ftw_compare 0x193200
 gcm_aad_update 0x32a178
 gcm_cipher 0x3297a0
@@ -5865,11 +5864,11 @@ inflate64End 0xcfb18
 inflate64Init2 0xcea20
 inflate_flush 0xda90c
 inflate_table 0xce4fc
-_init 0x6f6a8
 init 0x270cac
 init 0x2c9cb0
 init 0x3c5944
 init 0x3c59cc
+_init 0x6f6a8
 init_added 0x298a58
 init_alpn 0x1c5b04
 init_certificate_authorities 0x1c5e10
@@ -5945,7 +5944,6 @@ io_destroy 0x2fb59c
 io_getevents 0x2fb5ec
 io_read 0x2fb5bc
 io_setup 0x2fb550
-iotas 0x3d9440
 IPAddrBlocks_it 0x3ed034
 IPAddressChoice_free 0x3ed1f8
 IPAddressChoice_it 0x3ed01c
@@ -10665,8 +10663,8 @@ ssl_x509_store_ctx_init_ossl_ 0x1fac04
 sstep 0x198d2c
 stable_get 0x3387cc
 stack_to_property_list 0x2aa62c
-__stat 0x418c20
 stat 0x418c20
+__stat 0x418c20
 state_machine 0x1d3ff8
 statem_do_write 0x1d4c04
 statem_flush 0x1d52bc
@@ -10698,8 +10696,8 @@ strip_eol 0x3fea3c
 strip_spaces 0x2e29dc
 strip_start 0x3fe114
 str_make_lowercase 0xee984
-str_strip 0xee9cc
 strstrip 0x96ea4
+str_strip 0xee9cc
 submit_post 0x14afd8
 sub_niels_from_pt 0x37ed08
 sub_pniels_from_pt 0x37f044
@@ -11333,7 +11331,6 @@ vm_sym 0x18bd9c
 vm_sym 0x18f678
 vpaes_cbc_decrypt 0x32ee40
 vpaes_cbc_encrypt 0x32ede0
-_vpaes_consts 0x32e180
 vpaes_decrypt 0x32e870
 _vpaes_decrypt_2x 0x32e8a0
 _vpaes_decrypt_core 0x32e770
@@ -11347,7 +11344,6 @@ _vpaes_encrypt_preheat 0x32e4c0
 _vpaes_key_preheat 0x32ea40
 _vpaes_schedule_192_smear 0x32ebe0
 _vpaes_schedule_core 0x32ea80
-_vpaes_schedule_low_round 0x32ec28
 _vpaes_schedule_mangle 0x32ecb0
 _vpaes_schedule_round 0x32ec10
 _vpaes_schedule_transform 0x32ec90

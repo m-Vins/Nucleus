@@ -3,10 +3,8 @@ __do_global_ctors_aux 0x120042b30
 __do_global_dtors_aux 0x12000a6c8
 _fini 0x120043250
 frame_dummy 0x12000a798
-_ftext 0x12000a5e0
 _GLOBAL__sub_I_ErrHandler 0x12000e510
 _GLOBAL__sub_I__Z9InitCRC32Pj 0x1200190d8
-hlt 0x12000a630
 _init 0x12000a550
 __libc_csu_fini 0x120042b28
 __libc_csu_init 0x120042a80

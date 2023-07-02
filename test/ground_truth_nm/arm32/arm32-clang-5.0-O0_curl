@@ -1064,11 +1064,11 @@ smtp_state_starttls_resp 0xc8014
 SocketIsDead 0x7eea4
 _start 0x4c000
 stat64 0xe7b9c
-_state 0x9a5cc
 state 0xbdcb8
 state 0xc2008
 state 0xc7a04
 state 0xcfef8
+_state 0x9a5cc
 stdin_upload 0x67d48
 store_a 0xdd6e4
 store_aaaa 0xdd77c

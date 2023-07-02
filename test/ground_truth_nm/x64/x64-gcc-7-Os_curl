@@ -555,8 +555,8 @@ freecookie 0x3367a
 freedirs 0x50d14
 freednsentry 0x31e25
 free_urlhandle 0x2ea61
-__fstat 0x564d0
 fstat 0x564d0
+__fstat 0x564d0
 ftpcccmethod 0x1a31a
 ftp_connect 0x50f94
 ftp_disconnect 0x50e13
@@ -791,8 +791,8 @@ smtp_perform_rcpt_to 0x48e08
 smtp_setup_connection 0x49163
 smtp_statemach_act 0x49374
 _start 0xc1d0
-__stat 0x564c0
 stat 0x564c0
+__stat 0x564c0
 stdin_upload 0x19932
 storebuffer 0x1d950
 str2num 0x19ec9

@@ -4227,7 +4227,6 @@ free_globalconfig 0x41e198
 free_idnconverted_hostname 0x4863a4
 free_urlhandle 0x464128
 fstat64 0x4d7790
-_ftext 0x4029c0
 ftp_block_statemach 0x4ce5b0
 ftpcccmethod 0x42c0ac
 ftp_connect 0x4ce658
@@ -4328,7 +4327,6 @@ hash_fd 0x444b80
 hashkey 0x458c90
 header_append 0x47eb80
 helpf 0x41f0dc
-hlt 0x402a10
 homedir 0x418a48
 hostcache_prune 0x46d940
 hostcache_timestamp_remove 0x46d8c0
@@ -4656,11 +4654,11 @@ smtp_state_starttls_resp 0x4b0e14
 SocketIsDead 0x484ca8
 __start 0x4029c0
 stat64 0x4d7770
-_state 0x4c7c14
 state 0x4a77e4
 state 0x4ac750
 state 0x4afec8
 state 0x4b8d9c
+_state 0x4c7c14
 stdin_upload 0x429edc
 store_a 0x4bdd90
 store_aaaa 0x4bde60

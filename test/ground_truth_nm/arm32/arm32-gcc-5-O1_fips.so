@@ -109,8 +109,6 @@ aes_gcm_newctx 0x6060
 AES_set_decrypt_key 0x111a0
 AES_set_enc2dec_key 0x111c0
 AES_set_encrypt_key 0x10f00
-AES_Td 0x11300
-AES_Te 0x10780
 aes_v8_cbc_encrypt 0x11e80
 aes_v8_ctr32_encrypt_blocks 0x122a0
 aes_v8_decrypt 0x11e20
@@ -140,8 +138,6 @@ algorithm_do_this 0x34ca0
 alloc_tmp_method_store 0x312dc
 _armv4_AES_decrypt 0x11860
 _armv4_AES_encrypt 0x10d20
-_armv4_AES_set_enc2dec_key 0x111c0
-_armv4_AES_set_encrypt_key 0x10f00
 _armv7_neon_probe 0x34760
 _armv7_tick 0x34768
 _armv8_aes_probe 0x34770
@@ -334,12 +330,9 @@ BN_zero_ex 0x16ce8
 _booth_recode_w5 0x26844
 _booth_recode_w7 0x26870
 bsaes_cbc_encrypt 0x13400
-_bsaes_const 0x12c40
 bsaes_ctr32_encrypt_blocks 0x13720
 _bsaes_decrypt8 0x12540
 _bsaes_encrypt8 0x12d00
-_bsaes_encrypt8_alt 0x12d10
-_bsaes_encrypt8_bitslice 0x12d70
 _bsaes_key_convert 0x13360
 bsaes_xts_decrypt 0x13ef0
 bsaes_xts_encrypt 0x13960
@@ -1157,13 +1150,9 @@ _init 0x3690
 inner_generic_fetch 0x312f4
 int_bn_mod_inverse 0x4b314
 internal_find 0x47108
-iotas32 0x44240
-iotas64 0x453e0
 is_equal 0x2696c
 is_one 0x26e78
 is_partially_overlapping 0x2e2ec
-K256 0x56a60
-K512 0x587c0
 kbkdf_derive 0x9434
 kbkdf_free 0x940c
 kbkdf_get_ctx_params 0x8f6c
@@ -1201,7 +1190,6 @@ kdf_tls1_prf_set_ctx_params 0xb050
 kdf_tls1_prf_settable_ctx_params 0xaff8
 keccak_dupctx 0x80b4
 KeccakF1600 0x44fa0
-KeccakF1600_enter 0x44310
 KeccakF1600_int 0x44300
 KeccakF1600_neon 0x454a0
 keccak_final 0x7fac
@@ -1560,7 +1548,6 @@ rand_priv_bytes_ex 0x437f4
 RAND_seed 0x4378c
 RAND_status 0x4392c
 register_tm_clones 0x39f0
-rem_4bit 0x3d1c0
 rem_4bit_get 0x3d1e0
 sa_doall 0x53558
 sa_free_leaf 0x536dc

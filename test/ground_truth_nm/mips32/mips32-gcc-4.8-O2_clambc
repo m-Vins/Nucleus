@@ -10,10 +10,8 @@ filelist 0x405460
 _fini 0x406290
 frame_dummy 0x4024d0
 freshdbdir 0x404e4c
-_ftext 0x4013b0
 _getopt_internal 0x4046a4
 get_version 0x404e40
-hlt 0x402388
 _init 0x40130c
 __libc_csu_fini 0x405d4c
 __libc_csu_init 0x405ca0

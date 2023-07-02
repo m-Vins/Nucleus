@@ -327,8 +327,8 @@ aria_gcm_cipher 0x15f30c
 aria_gcm_cleanup 0x15f4e8
 aria_gcm_ctrl 0x15e9a0
 aria_gcm_freectx 0xa6924
-aria_gcm_init_key 0x15e7d8
 aria_gcm_initkey 0xa6a5c
+aria_gcm_init_key 0x15e7d8
 aria_gcm_newctx 0xa68b4
 aria_gcm_tls_cipher 0x15f0f8
 aria_init_key 0x15ccb8
@@ -1391,8 +1391,8 @@ chacha20_poly1305_get_ctx_params 0xa97b0
 chacha20_poly1305_get_params 0xa977c
 chacha20_poly1305_gettable_ctx_params 0xa9ae4
 chacha20_poly1305_initiv 0xaa608
-chacha20_poly1305_init_key 0x161a1c
 chacha20_poly1305_initkey 0xaa554
+chacha20_poly1305_init_key 0x161a1c
 chacha20_poly1305_newctx 0xa9694
 chacha20_poly1305_set_ctx_params 0xa9af0
 chacha20_poly1305_tls_cipher 0xaa754
@@ -3032,7 +3032,6 @@ ecp_nistz256_point_add_affine 0x237d80
 ecp_nistz256_point_double 0x237820
 ecp_nistz256_points_mul 0x143c78
 ecp_nistz256_pre_comp_new 0x1447e4
-ecp_nistz256_precomputed 0x212000
 ecp_nistz256_scatter_w5 0x238540
 ecp_nistz256_scatter_w7 0x238710
 ecp_nistz256_set_from_affine 0x143bc0
@@ -4207,8 +4206,8 @@ free_evp_pbe_ctl 0x16c2d8
 free_infopair 0x81ab0
 free_string 0x1b3c18
 freshdbdir 0x595dc
-__fstat 0x275f60
 fstat 0x275f60
+__fstat 0x275f60
 funmap 0x5c83c
 funmap 0x5e2cc
 gcm_aad_update 0xcf3f4
@@ -4668,11 +4667,11 @@ impl_cache_flush_one_alg 0x87a80
 impl_cache_free 0x86ee8
 impl_free 0x86e88
 inc_128 0x245678
-_init 0x53078
 init 0x98388
 init 0x16fbc8
 init 0x16fc1c
 init 0x16fca4
+_init 0x53078
 init_added 0x84680
 init_get_thread_local 0x7b8c8
 init_thread_deregister 0x7be34
@@ -4726,7 +4725,6 @@ io_destroy 0x9f818
 io_getevents 0x9f868
 io_read 0x9f838
 io_setup 0x9f7cc
-iotas 0x1a8940
 IPAddrBlocks_it 0x250c2c
 IPAddressChoice_free 0x250df0
 IPAddressChoice_it 0x250c14
@@ -4961,8 +4959,8 @@ logg_open 0x5496c
 look_str_cb 0x151404
 lookup_cert_match 0x1c7518
 lookup_certs_sk 0x1c7e00
-__lstat 0x275f70
 lstat 0x275f70
+__lstat 0x275f70
 main 0x682fc
 make_addressPrefix 0x251d4c
 make_addressRange 0x251f08
@@ -7727,8 +7725,8 @@ ssl_module_init 0x1fa418
 stable_get 0x1dc814
 stack_to_property_list 0x88eac
 _start 0x54000
-__stat 0x275f50
 stat 0x275f50
+__stat 0x275f50
 stbl_module_finish 0x2636b8
 stbl_module_init 0x2635a4
 st_free 0x1dcb0c
@@ -7996,7 +7994,6 @@ verify_chain 0x1c77d0
 verifydiff 0x640b4
 vpaes_cbc_decrypt 0xd40c0
 vpaes_cbc_encrypt 0xd4060
-_vpaes_consts 0xd3400
 vpaes_decrypt 0xd3af0
 _vpaes_decrypt_2x 0xd3b20
 _vpaes_decrypt_core 0xd39f0
@@ -8010,7 +8007,6 @@ _vpaes_encrypt_preheat 0xd3740
 _vpaes_key_preheat 0xd3cc0
 _vpaes_schedule_192_smear 0xd3e60
 _vpaes_schedule_core 0xd3d00
-_vpaes_schedule_low_round 0xd3ea8
 _vpaes_schedule_mangle 0xd3f30
 _vpaes_schedule_round 0xd3e90
 _vpaes_schedule_transform 0xd3f10

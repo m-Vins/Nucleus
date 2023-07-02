@@ -45,7 +45,6 @@ ERR_load_DASYNC_strings 0x1dd0
 ERR_unload_DASYNC_strings 0x1e7c
 _fini 0x4d40
 frame_dummy 0x1d70
-_ftext 0x1bf0
 _init 0x1b60
 _MIPS_STUBS_ 0x47c0
 register_tm_clones 0x1c38

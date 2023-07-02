@@ -1061,11 +1061,11 @@ smtp_state_starttls_resp 0x90170
 SocketIsDead 0x69868
 _start 0x4c000
 stat64 0xa1914
-_state 0x789f0
 state 0x8b35c
 state 0x8d8d0
 state 0x8fe9c
 state 0x94914
+_state 0x789f0
 stdin_upload 0x5cd48
 store_a 0x9bac4
 store_aaaa 0x9baf8

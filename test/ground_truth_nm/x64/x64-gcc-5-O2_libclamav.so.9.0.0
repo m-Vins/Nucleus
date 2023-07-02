@@ -1313,8 +1313,8 @@ str_hex_to_char 0xa64b0
 string_assign_dup 0xa6670
 string_free 0xa6620
 str_make_lowercase 0xa6340
-str_strip 0xa6380
 strstrip 0x554a0
+str_strip 0xa6380
 submit_post 0xfe010
 SzAlloc 0xaf2a0
 SzAllocTemp 0xaf280

@@ -33,7 +33,6 @@ ERR_unload_OSSLTEST_strings 0x1260
 fill_known_data 0x2d10
 _fini 0x3ef0
 frame_dummy 0x1194
-_ftext 0x1030
 _init 0xfac
 _MIPS_STUBS_ 0x3af0
 ossltest_aes_128_cbc 0x1fec

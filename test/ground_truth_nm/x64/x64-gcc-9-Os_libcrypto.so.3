@@ -193,8 +193,8 @@ _aesni_encrypt6 0x96e00
 _aesni_encrypt8 0x96fc0
 aesni_gcm_decrypt 0x17b2c0
 aesni_gcm_encrypt 0x17b580
-aesni_gcm_init_key 0x156cea
 aesni_gcm_initkey 0x2045cf
+aesni_gcm_init_key 0x156cea
 aesni_init_key 0x1558fc
 aesni_multi_cbc_decrypt 0x8e9a0
 aesni_multi_cbc_decrypt_avx 0x8f4a0
@@ -204,7 +204,6 @@ aesni_ocb_decrypt 0x99820
 aesni_ocb_encrypt 0x99220
 aesni_ocb_init_key 0x157f29
 aesni_set_decrypt_key 0x9a7b0
-__aesni_set_encrypt_key 0x9a820
 aesni_set_encrypt_key 0x9a820
 aesni_xts_decrypt 0x98a40
 aesni_xts_encrypt 0x982d0
@@ -354,8 +353,8 @@ aria_gcm_cipher 0x15b84d
 aria_gcm_cleanup 0x15b398
 aria_gcm_ctrl 0x15b3e7
 aria_gcm_freectx 0x206bdd
-aria_gcm_init_key 0x15baa0
 aria_gcm_initkey 0x206c59
+aria_gcm_init_key 0x15baa0
 aria_gcm_newctx 0x206bf3
 aria_init_key 0x15af23
 aria_set_decrypt_key 0x9f9c0
@@ -375,9 +374,6 @@ ASIdOrRange_free 0x1ebd3b
 ASIdOrRange_it 0x1eb63b
 ASIdOrRange_new 0x1ebd2c
 asid_validate_path_internal 0x1ec3ae
-asm_AES_cbc_encrypt 0x8c050
-asm_AES_decrypt 0x8bab0
-asm_AES_encrypt 0x8b520
 ASN1_add_oid_module 0xaa5cb
 ASN1_add_stable_module 0xaa940
 ASN1_ANY_it 0xb1d30
@@ -700,14 +696,6 @@ AUTHORITY_KEYID_free 0x1ea605
 AUTHORITY_KEYID_it 0x1ea594
 AUTHORITY_KEYID_new 0x1ea5f6
 aux_get 0x203539
-_avx2_shortcut 0x1b6d60
-_avx2_shortcut 0x1bc0f0
-_avx2_shortcut 0x1c30a0
-_avx_cbc_dec_shortcut 0x8f4a0
-_avx_cbc_enc_shortcut 0x8ed80
-_avx_shortcut 0x1b4c00
-_avx_shortcut 0x1bb360
-_avx_shortcut 0x1c0fa0
 b2i_dss 0x18c23e
 b2i_PrivateKey 0x18d4a5
 b2i_PrivateKey_bio 0x18d7e3
@@ -1214,7 +1202,6 @@ BN_num_bits 0xc6ccb
 BN_num_bits_word 0xc6842
 BN_options 0xcb3e7
 __bn_post4x_internal 0xd4d60
-__bn_postx4x_internal 0xd63a0
 bn_power5 0xd4340
 bn_powerx5 0xd58e0
 bn_print 0xb2e83
@@ -1257,10 +1244,8 @@ bn_set_static_words 0xc64ff
 BN_set_word 0xc70f5
 bn_set_words 0xc6518
 BN_sqr 0xcce38
-__bn_sqr8x_internal 0xd44a0
 bn_sqr8x_internal 0xd44a0
 bn_sqr8x_mont 0xd2c60
-__bn_sqr8x_reduction 0xd4a19
 bn_sqr_comba4 0xbfae9
 bn_sqr_comba8 0xbf6cb
 bn_sqr_fixed_top 0xccc9b
@@ -1268,9 +1253,7 @@ bn_sqr_normal 0xcc9fc
 bn_sqr_recursive 0xccaeb
 bn_sqr_recursive.localalias 0xccaeb
 bn_sqr_words 0xbef6a
-__bn_sqrx8x_internal 0xd5a40
 bn_sqrx8x_internal 0xd5a40
-__bn_sqrx8x_reduction 0xd6077
 BN_sub 0xbfe1e
 bn_sub_part_words 0xc8693
 BN_sub_word 0xcd71d
@@ -1296,11 +1279,9 @@ _booth_recode_w5 0x143316
 _booth_recode_w7 0x143341
 bread_conv 0xbafeb
 bsaes_cbc_encrypt 0x9c160
-_bsaes_const 0x9d980
 bsaes_ctr32_encrypt_blocks 0x9c610
 _bsaes_decrypt8 0x9b700
 _bsaes_encrypt8 0x9ae80
-_bsaes_encrypt8_bitslice 0x9aee7
 _bsaes_key_convert 0x9c000
 bsaes_xts_decrypt 0x9d130
 bsaes_xts_encrypt 0x9c960
@@ -1485,8 +1466,8 @@ chacha20_poly1305_get_ctx_params 0x208aef
 chacha20_poly1305_get_params 0x208ce7
 chacha20_poly1305_gettable_ctx_params 0x2087b6
 chacha20_poly1305_initiv 0x208e69
-chacha20_poly1305_init_key 0x15da39
 chacha20_poly1305_initkey 0x2095f3
+chacha20_poly1305_init_key 0x15da39
 chacha20_poly1305_newctx 0x208d04
 chacha20_poly1305_set_ctx_params 0x2087e6
 chacha20_poly1305_tls_cipher 0x15db0e
@@ -3110,7 +3091,6 @@ ecp_nistz256_point_addx 0x142660
 ecp_nistz256_point_double 0x1411a0
 ecp_nistz256_point_doublex 0x142340
 ecp_nistz256_points_mul 0x143cfd
-ecp_nistz256_precomputed 0x11a000
 ecp_nistz256_scatter_w5 0x140c20
 ecp_nistz256_scatter_w7 0x140d60
 ecp_nistz256_sqr_mont 0x1404c0
@@ -4253,8 +4233,8 @@ free_dir 0x1e4086
 free_evp_pbe_ctl 0x165924
 free_infopair 0x177e6b
 free_string 0x1e00f6
-__fstat 0x21a780
 fstat 0x21a780
+__fstat 0x21a780
 gcm_aad_update 0x219f6a
 gcm_cipher 0x219ef1
 gcm_cipher_final 0x219fd1
@@ -4728,11 +4708,11 @@ impl_cache_flush_one_alg 0x199be1
 impl_cache_free 0x199b6a
 impl_free 0x199bf4
 inc_128 0x19b7b1
-_init 0x8a008
 init 0x167a62
 init 0x167ab8
 init 0x1684b3
 init 0x1d31cc
+_init 0x8a008
 init_info_strings_ossl_ 0x172fb8
 init_thread_deregister 0x1738f3
 init_thread_destructor 0x1738c8
@@ -4773,7 +4753,6 @@ int_x509_param_set1 0x1fe431
 int_x509_param_set_hosts.isra.0 0x1fe54f
 in_utf8 0xa19c1
 inverse 0x1703ae
-iotas 0x1b1940
 IPAddrBlocks_it 0x1e75b6
 IPAddressChoice_free 0x1e8016
 IPAddressChoice_it 0x1e75a6
@@ -4798,11 +4777,6 @@ ISSUING_DIST_POINT_free 0x1efb54
 ISSUING_DIST_POINT_it 0x1ef003
 ISSUING_DIST_POINT_new 0x1efb45
 julian_adj 0x1753ee
-K256 0x92640
-K256 0x1c5500
-K256 0x1c7080
-K256_shaext 0x1c5d20
-K512 0x1cc100
 kbkdf_derive 0x211541
 kbkdf_free 0x2111be
 kbkdf_get_ctx_params 0x211116
@@ -4855,8 +4829,8 @@ kdf_tls1_prf_reset 0x2143c6
 kdf_tls1_prf_set_ctx_params 0x213dc5
 kdf_tls1_prf_settable_ctx_params 0x213d8c
 keccak_dupctx 0x2101bf
-__KeccakF1600 0x1b1400
 KeccakF1600 0x1b16e0
+__KeccakF1600 0x1b1400
 keccak_final 0x2100e8
 keccak_freectx 0x2101e8
 keccak_init 0x2102b5
@@ -4881,9 +4855,6 @@ kmac_new 0x216a37
 kmac_set_ctx_params 0x216d19
 kmac_settable_ctx_params 0x21693b
 kmac_update 0x21696f
-K_XX_XX 0x91fc0
-K_XX_XX 0x1b9120
-K_XX_XX 0x1bda40
 length_from_afi 0x1e75be
 level_add_node 0x1e5293
 level_find_node 0x1e5226
@@ -7127,10 +7098,6 @@ SHA512_Transform 0x1d0469
 SHA512_Update 0x1d0378
 sh_actual_size 0x1744e7
 sh_add_to_list 0x173f3b
-_shaext_shortcut 0x1b45c0
-_shaext_shortcut 0x1ba2a0
-_shaext_shortcut 0x1c0700
-_shaext_shortcut 0x1c7340
 shake_128_get_params 0x21016f
 shake_128_newctx 0x2103e2
 shake_256_get_params 0x210183
@@ -7295,10 +7262,9 @@ sskdf_set_ctx_params 0x2133d1
 sskdf_settable_ctx_params 0x2131e2
 ssl_module_free 0xecb48
 ssl_module_init 0xecc11
-_ssse3_shortcut 0x1ba520
 stack_to_property_list 0x19ad8e
-__stat 0x21a770
 stat 0x21a770
+__stat 0x21a770
 stbl_module_finish 0xaa5e5
 stbl_module_init 0xaa5ea
 st_free 0xa42cb
@@ -7705,7 +7671,6 @@ verify_cb_cert 0x1fa715
 verify_cb_crl 0x1fa704
 verify_chain 0x1fc45b
 vpaes_cbc_encrypt 0x9e2a0
-_vpaes_consts 0x9e380
 vpaes_decrypt 0x9e280
 _vpaes_decrypt_core 0x9dce0
 vpaes_encrypt 0x9e260
@@ -7713,7 +7678,6 @@ _vpaes_encrypt_core 0x9db80
 _vpaes_preheat 0x9e320
 _vpaes_schedule_192_smear 0x9dfe0
 _vpaes_schedule_core 0x9de80
-_vpaes_schedule_low_round 0x9e021
 _vpaes_schedule_mangle 0x9e0f0
 _vpaes_schedule_round 0x9e000
 _vpaes_schedule_transform 0x9e0c0

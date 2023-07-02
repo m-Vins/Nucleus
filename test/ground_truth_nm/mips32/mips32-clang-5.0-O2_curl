@@ -696,7 +696,6 @@ hash_fd 0x93558
 hashkey 0xa63d4
 header_append 0x7c610
 helpf 0x5c1c0
-hlt 0x50050
 homedir 0x598d0
 hostcache_prune 0x809d4
 hostcache_timestamp_remove 0x81a38
@@ -759,8 +758,6 @@ imap_state_select_resp 0x9aec0
 imap_state_servergreet_resp 0x9a964
 imap_state_starttls_resp 0x9ac9c
 _init 0xb4ec0
-__init_array_end 0x50000
-__init_array_start 0x50000
 init_dohentry 0xace88
 InitiateTransfer 0x871dc
 init_resolve_thread 0xa4c60
@@ -1027,11 +1024,11 @@ smtp_state_starttls_resp 0xa078c
 SocketIsDead 0x71954
 __start 0x50000
 stat64 0xb4e10
-_state 0x83714
 state 0x9a95c
 state 0x9d474
 state 0xa03ec
 state 0xa5954
+_state 0x83714
 stdin_upload 0x62294
 store_a 0xadb0c
 store_aaaa 0xadb5c

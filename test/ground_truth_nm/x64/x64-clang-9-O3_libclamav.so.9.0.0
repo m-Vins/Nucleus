@@ -1827,8 +1827,8 @@ strip 0x4a460
 stripsnug 0x168e10
 str_make_lowercase 0xa6030
 str_replace 0xa6ff0
-str_strip 0xa7020
 strstrip 0x4a440
+str_strip 0xa7020
 submit_post 0xf92e0
 summit 0xa0620
 swapfunc 0x1678c0

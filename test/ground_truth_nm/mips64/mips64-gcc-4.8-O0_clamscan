@@ -16,13 +16,11 @@ filelist 0x120009960
 _fini 0x120010ba0
 frame_dummy 0x1200028b8
 freshdbdir 0x1200091b4
-_ftext 0x120002700
 getdest 0x120008890
 get_hostid 0x120010298
 _getopt_internal 0x120004b44
 get_version 0x120009180
 help 0x12000ad10
-hlt 0x120002750
 _init 0x120002670
 isdir 0x120008f20
 is_valid_hostid 0x12001015c

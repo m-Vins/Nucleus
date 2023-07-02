@@ -15,7 +15,6 @@ __do_global_dtors_aux 0x14d8
 ERR_AFALG_error 0x1664
 _fini 0x2e10
 frame_dummy 0x15c0
-_ftext 0x1440
 _init 0x13b0
 _MIPS_STUBS_ 0x2aa0
 register_tm_clones 0x1488

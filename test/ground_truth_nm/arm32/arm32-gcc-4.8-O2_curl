@@ -895,7 +895,6 @@ tvdiff 0x1db88
 tvnow 0x1db18
 __udivdi3 0x5c2f8
 __udivsi3 0x5c748
-.udivsi3_skip_div0_test 0x5c748
 unescape_word 0x40854
 up_free 0x3c918
 urlchar_needs_escaping 0x2f7a4

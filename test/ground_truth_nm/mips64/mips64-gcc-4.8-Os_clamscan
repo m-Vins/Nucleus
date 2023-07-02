@@ -16,13 +16,11 @@ filelist 0x120006bf8
 _fini 0x12000abd0
 frame_dummy 0x120002f48
 freshdbdir 0x1200066d8
-_ftext 0x1200026e0
 getdest 0x120006110
 get_hostid 0x12000a344
 _getopt_internal 0x12000425c
 get_version 0x1200066c0
 help 0x120007140
-hlt 0x120002de0
 _init 0x120002650
 is_valid_hostid 0x12000a294
 __libc_csu_fini 0x12000a488

@@ -327,8 +327,8 @@ aria_gcm_cipher 0x50df8c
 aria_gcm_cleanup 0x50e168
 aria_gcm_ctrl 0x50d620
 aria_gcm_freectx 0x4585c4
-aria_gcm_init_key 0x50d458
 aria_gcm_initkey 0x4586fc
+aria_gcm_init_key 0x50d458
 aria_gcm_newctx 0x458554
 aria_gcm_tls_cipher 0x50dd78
 aria_init_key 0x50b938
@@ -1390,8 +1390,8 @@ chacha20_poly1305_get_ctx_params 0x45b450
 chacha20_poly1305_get_params 0x45b41c
 chacha20_poly1305_gettable_ctx_params 0x45b784
 chacha20_poly1305_initiv 0x45c2a8
-chacha20_poly1305_init_key 0x51069c
 chacha20_poly1305_initkey 0x45c1f4
+chacha20_poly1305_init_key 0x51069c
 chacha20_poly1305_newctx 0x45b334
 chacha20_poly1305_set_ctx_params 0x45b790
 chacha20_poly1305_tls_cipher 0x45c3f4
@@ -3016,7 +3016,6 @@ ecp_nistz256_point_add_affine 0x5e4d80
 ecp_nistz256_point_double 0x5e4820
 ecp_nistz256_points_mul 0x4f38f8
 ecp_nistz256_pre_comp_new 0x4f4464
-ecp_nistz256_precomputed 0x5bf000
 ecp_nistz256_scatter_w5 0x5e5540
 ecp_nistz256_scatter_w7 0x5e5710
 ecp_nistz256_set_from_affine 0x4f3840
@@ -4648,11 +4647,11 @@ impl_cache_flush_one_alg 0x439720
 impl_cache_free 0x438b88
 impl_free 0x438b28
 inc_128 0x5f2678
-_init 0x403568
 init 0x44a028
 init 0x51d848
 init 0x51d89c
 init 0x51d924
+_init 0x403568
 init_added 0x436320
 init_get_thread_local 0x42d568
 init_thread_deregister 0x42dad4
@@ -4706,7 +4705,6 @@ io_destroy 0x4514b8
 io_getevents 0x451508
 io_read 0x4514d8
 io_setup 0x45146c
-iotas 0x556640
 IPAddrBlocks_it 0x5fdc2c
 IPAddressChoice_free 0x5fddf0
 IPAddressChoice_it 0x5fdc14
@@ -7978,7 +7976,6 @@ verify_cb_crl 0x57538c
 verify_chain 0x5754d0
 vpaes_cbc_decrypt 0x484d40
 vpaes_cbc_encrypt 0x484ce0
-_vpaes_consts 0x484080
 vpaes_decrypt 0x484770
 _vpaes_decrypt_2x 0x4847a0
 _vpaes_decrypt_core 0x484670
@@ -7992,7 +7989,6 @@ _vpaes_encrypt_preheat 0x4843c0
 _vpaes_key_preheat 0x484940
 _vpaes_schedule_192_smear 0x484ae0
 _vpaes_schedule_core 0x484980
-_vpaes_schedule_low_round 0x484b28
 _vpaes_schedule_mangle 0x484bb0
 _vpaes_schedule_round 0x484b10
 _vpaes_schedule_transform 0x484b90

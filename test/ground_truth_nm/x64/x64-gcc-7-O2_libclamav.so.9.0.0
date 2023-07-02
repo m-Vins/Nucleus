@@ -1310,8 +1310,8 @@ string_assign_dup 0xa7ca0
 string_assign_null.part.1 0xa7d30
 string_free 0xa7c50
 str_make_lowercase 0xa7960
-str_strip 0xa79b0
 strstrip 0x55940
+str_strip 0xa79b0
 submit_post 0x100460
 SzAlloc 0xb0d80
 SzAlloc.localalias.0 0xb0d80

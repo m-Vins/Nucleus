@@ -1060,8 +1060,8 @@ __floatdidf 0xba130
 __floatundidf 0xba170
 frame_dummy 0x3564
 free_infopair 0x5fda4
-__fstat 0xbaa50
 fstat 0xbaa50
+__fstat 0xbaa50
 gcm_aad_update 0x1d910
 gcm_cipher 0x1cb38
 gcm_cipher_final 0x1db24

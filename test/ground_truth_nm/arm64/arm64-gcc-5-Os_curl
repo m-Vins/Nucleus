@@ -558,8 +558,8 @@ freecookie 0x33df4
 freedirs 0x534cc
 freednsentry 0x325d8
 free_urlhandle 0x2eeb0
-__fstat 0x58f90
 fstat 0x58f90
+__fstat 0x58f90
 ftpcccmethod 0x19648
 ftp_connect 0x537b8
 ftp_disconnect 0x53620
@@ -790,8 +790,8 @@ smtp_perform_rcpt_to 0x4adfc
 smtp_setup_connection 0x4b160
 smtp_statemach_act 0x4b49c
 _start 0xc000
-__stat 0x58f80
 stat 0x58f80
+__stat 0x58f80
 stdin_upload 0x18adc
 storebuffer 0x1d1d0
 str2num 0x190e8

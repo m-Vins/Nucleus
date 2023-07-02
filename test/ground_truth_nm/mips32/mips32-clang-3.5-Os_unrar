@@ -9,7 +9,6 @@ frame_dummy 0x20194
 fstat64 0x509f0
 _GLOBAL__sub_I_crc.cpp 0x2d7f0
 _GLOBAL__sub_I_global.cpp 0x23770
-hlt 0x20050
 _init 0x50aa0
 __LA25Thunk_fstat64 0x509e0
 __LA25Thunk_lstat64 0x50a10

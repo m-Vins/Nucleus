@@ -830,7 +830,6 @@ ecp_nistz256_point_add_affine 0x6fd80
 ecp_nistz256_point_double 0x6f820
 ecp_nistz256_points_mul 0x4784c
 ecp_nistz256_pre_comp_new 0x49138
-ecp_nistz256_precomputed 0x4a000
 ecp_nistz256_scatter_w5 0x70540
 ecp_nistz256_scatter_w7 0x70710
 ecp_nistz256_set_from_affine 0x48740
@@ -1102,8 +1101,8 @@ fips_prov_ossl_ctx_new 0x20b68
 fips_query 0x20c24
 frame_dummy 0x200c8
 free_infopair 0x802e4
-__fstat 0x92d08
 fstat 0x92d08
+__fstat 0x92d08
 gcm_aad_update 0x2a6a8
 gcm_cipher 0x2a3bc
 gcm_cipher_final 0x2a768
@@ -1202,7 +1201,6 @@ inner_generic_fetch 0x78220
 int_bn_mod_inverse 0x3150c
 internal_delete 0x92338
 internal_find 0x923c4
-iotas 0x8b440
 is_ctr 0x87040
 is_digest 0x87050
 is_equal 0x490d8
@@ -1914,7 +1912,6 @@ unpadblock 0x2936c
 verify_integrity 0x20e1c
 vpaes_cbc_decrypt 0x2d240
 vpaes_cbc_encrypt 0x2d1e0
-_vpaes_consts 0x2c580
 vpaes_decrypt 0x2cc70
 _vpaes_decrypt_2x 0x2cca0
 _vpaes_decrypt_core 0x2cb70
@@ -1928,7 +1925,6 @@ _vpaes_encrypt_preheat 0x2c8c0
 _vpaes_key_preheat 0x2ce40
 _vpaes_schedule_192_smear 0x2cfe0
 _vpaes_schedule_core 0x2ce80
-_vpaes_schedule_low_round 0x2d028
 _vpaes_schedule_mangle 0x2d0b0
 _vpaes_schedule_round 0x2d010
 _vpaes_schedule_transform 0x2d090

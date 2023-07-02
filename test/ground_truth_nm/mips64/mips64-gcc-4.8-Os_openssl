@@ -159,7 +159,6 @@ frame_dummy 0x120018a98
 freeandcopy 0x12003c180
 free_index 0x120060098
 __fstat 0x1200695d0
-_ftext 0x120015a90
 function_cmp 0x12002f0d0
 function_hash 0x12002f0f0
 gendsa_main 0x1200286b0
@@ -183,7 +182,6 @@ help_main 0x12002f3f4
 hexdecode 0x12003cd44
 hexencode 0x120066198
 hex_prin 0x120031918
-hlt 0x120018930
 HMAC_loop 0x12004d6b8
 indent_printf 0x1200576b0
 index_index 0x12005fa70

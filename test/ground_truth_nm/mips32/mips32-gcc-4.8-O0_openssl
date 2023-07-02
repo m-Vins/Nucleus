@@ -188,7 +188,6 @@ free_config_and_unload 0x42f308
 free_index 0x49877c
 free_sessions 0x46e970
 __fstat 0x4a67a0
-_ftext 0x410fe0
 function_cmp 0x43dba4
 function_hash 0x43dc10
 gendsa_main 0x430140
@@ -217,7 +216,6 @@ help_main 0x43d458
 hexdecode 0x457e0c
 hexencode 0x4a3910
 hex_prin 0x444d2c
-hlt 0x411038
 HMAC_loop 0x47336c
 indent_printf 0x487104
 index_changed 0x439a28

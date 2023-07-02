@@ -560,7 +560,6 @@ freedirs 0x4593f0
 freednsentry 0x431f58
 free_urlhandle 0x42da70
 fstat64 0x4618b0
-_ftext 0x402a80
 ftpcccmethod 0x4155f8
 ftp_connect 0x459794
 ftp_disconnect 0x459574
@@ -622,7 +621,6 @@ hash_element_dtor 0x447c30
 hash_fd 0x41ed0c
 header_append 0x436fa4
 helpf 0x40e4fc
-hlt 0x403630
 homedir 0x40be44
 hostcache_timestamp_remove 0x431f30
 hostname_check.isra.0 0x42de6c

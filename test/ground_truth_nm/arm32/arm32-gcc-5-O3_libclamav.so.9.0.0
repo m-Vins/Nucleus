@@ -217,8 +217,6 @@ aes_siv_cipher 0x26b6ec
 aes_siv_cleanup 0x26b7a8
 aes_siv_ctrl 0x26b7dc
 aes_siv_init_key 0x26b608
-AES_Td 0x358cc0
-AES_Te 0x358140
 AES_unwrap_key 0x419144
 aes_v8_cbc_encrypt 0x359880
 aes_v8_ctr32_encrypt_blocks 0x359ca0
@@ -380,8 +378,8 @@ aria_gcm_cipher 0x26e49c
 aria_gcm_cleanup 0x26e6a0
 aria_gcm_ctrl 0x26da84
 aria_gcm_freectx 0x329038
-aria_gcm_init_key 0x26d8b0
 aria_gcm_initkey 0x3291d4
+aria_gcm_init_key 0x26d8b0
 aria_gcm_newctx 0x328fbc
 aria_gcm_tls_cipher 0x26e270
 aria_init_key 0x26ba54
@@ -392,8 +390,6 @@ ARM_Convert 0xc425c
 ARMT_Convert 0xc4358
 _armv4_AES_decrypt 0x359220
 _armv4_AES_encrypt 0x3586e0
-_armv4_AES_set_enc2dec_key 0x358b80
-_armv4_AES_set_encrypt_key 0x3588c0
 _armv7_neon_probe 0x293440
 _armv7_tick 0x293448
 _armv8_aes_probe 0x293450
@@ -1306,12 +1302,9 @@ BraState_SetFromMethod 0xc99a8
 BraState_SetProps 0xc94a0
 bread_conv 0x220ba4
 bsaes_cbc_encrypt 0x35ae00
-_bsaes_const 0x35a640
 bsaes_ctr32_encrypt_blocks 0x35b120
 _bsaes_decrypt8 0x359f40
 _bsaes_encrypt8 0x35a700
-_bsaes_encrypt8_alt 0x35a710
-_bsaes_encrypt8_bitslice 0x35a770
 _bsaes_key_convert 0x35ad60
 bsaes_xts_decrypt 0x35b8f0
 bsaes_xts_encrypt 0x35b360
@@ -1511,8 +1504,8 @@ chacha20_poly1305_get_ctx_params 0x32c928
 chacha20_poly1305_get_params 0x32c8e0
 chacha20_poly1305_gettable_ctx_params 0x32ccd8
 chacha20_poly1305_initiv 0x32d940
-chacha20_poly1305_init_key 0x2705f4
 chacha20_poly1305_initkey 0x32d854
+chacha20_poly1305_init_key 0x2705f4
 chacha20_poly1305_newctx 0x32c7d8
 chacha20_poly1305_set_ctx_params 0x32ccfc
 chacha20_poly1305_tls_cipher 0x270784
@@ -5351,8 +5344,8 @@ free_infopair 0x2a1144
 free_sample 0x11690c
 freeset.isra.0 0x18d72c
 free_string 0x401954
-__fstat 0x4399a0
 fstat 0x4399a0
+__fstat 0x4399a0
 ftw_compare 0x1894d4
 gcm_aad_update 0x3571fc
 gcm_cipher 0x35678c
@@ -5897,11 +5890,11 @@ inflate64End 0x969c4
 inflate64Init2 0x953cc
 inflate_flush 0xa3cf0
 inflate_table 0x94868
-_init 0x27c38
 init 0x283184
 init 0x2e7cb8
 init 0x3dc2f8
 init 0x3dc3d0
+_init 0x27c38
 init_added 0x2b0478
 init_alpn 0x1c2734
 init_certificate_authorities 0x1c2ac8
@@ -5977,8 +5970,6 @@ io_destroy 0x320aec
 io_getevents 0x320b54
 io_read 0x320b18
 io_setup 0x320a88
-iotas32 0x3f1800
-iotas64 0x3f29a0
 IPAddrBlocks_it 0x408b44
 IPAddressChoice_free 0x408da8
 IPAddressChoice_it 0x408afc
@@ -6030,8 +6021,6 @@ is_zero 0x252238
 js_process 0x809a4
 julian_adj 0x3df7fc
 julian_to_date 0x3dfad4
-K256 0x3f4580
-K512 0x3f66c0
 kbkdf_derive 0x345304
 kbkdf_free 0x344f68
 kbkdf_get_ctx_params 0x345afc
@@ -6087,7 +6076,6 @@ kdf_tls1_prf_set_ctx_params 0x34a384
 kdf_tls1_prf_settable_ctx_params 0x34a6c4
 keccak_dupctx 0x3431c8
 KeccakF1600 0x3f2560
-KeccakF1600_enter 0x3f18d0
 KeccakF1600_int 0x3f18c0
 KeccakF1600_neon 0x3f2a60
 keccak_final 0x3430a0
@@ -8511,7 +8499,6 @@ regex_list_done 0xbaed4
 regex_list_match 0xba450
 register_events 0xd6098
 register_tm_clones 0x3ac38
-rem_4bit 0x2aa720
 rem_4bit_get 0x2aa740
 remove_session_lock 0x1a9d28
 repeat 0x18dbd4
@@ -10706,8 +10693,8 @@ ssl_x509_store_ctx_init_ossl_ 0x1fe228
 sstep.isra.0 0x1912a0
 stable_get 0x366334
 stack_to_property_list 0x2c56c0
-__stat 0x439990
 stat 0x439990
+__stat 0x439990
 state_machine 0x1d1cf4
 statem_do_write 0x1d2a4c
 statem_flush 0x1d31b4
@@ -10738,8 +10725,8 @@ strip_eol 0x41d034
 strip_spaces 0x303b44
 strip_start 0x41c5c4
 str_make_lowercase 0xb79ac
-str_strip 0xb79e0
 strstrip 0x5ef24
+str_strip 0xb79e0
 __subdf3 0x438c80
 submit_post 0x1175bc
 sub_niels_from_pt 0x3acae8

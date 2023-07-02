@@ -1051,8 +1051,8 @@ fips_prov_ossl_ctx_new 0x11260
 fips_query 0x113f8
 frame_dummy 0x10170
 free_infopair 0x612d0
-__fstat 0x79710
 fstat 0x79710
+__fstat 0x79710
 gcm_aad_update 0x20c58
 gcm_cipher 0x20840
 gcm_cipher_final 0x20d60

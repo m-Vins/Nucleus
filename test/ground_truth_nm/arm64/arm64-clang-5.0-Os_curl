@@ -591,8 +591,8 @@ freedirs 0x279800
 freednsentry 0x274d90
 free_globalconfig 0x2593f8
 free_urlhandle 0x298dd8
-__fstat 0x29d240
 fstat 0x29d240
+__fstat 0x29d240
 ftp_block_statemach 0x27a2e8
 ftpcccmethod 0x25e9c8
 ftp_connect 0x27636c
@@ -1011,13 +1011,13 @@ smtp_state_servergreet_resp 0x28c448
 smtp_state_starttls_resp 0x28c730
 SocketIsDead 0x2696b0
 _start 0x250000
-__stat 0x29d230
 stat 0x29d230
-_state 0x276880
+__stat 0x29d230
 state 0x287db4
 state 0x289f58
 state 0x28c440
 state 0x290838
+_state 0x276880
 stdin_upload 0x25e034
 store_a 0x298a90
 store_aaaa 0x298ac4

@@ -1018,11 +1018,11 @@ smtp_state_starttls_resp 0x442a37
 SocketIsDead 0x436a4f
 _start 0x4030a0
 __stat 0x44fdc0
-_state 0x44b101
 state 0x43f69e
 state 0x44144d
 state 0x4427d3
 state 0x44600f
+_state 0x44b101
 stdin_upload 0x411f28
 store_a 0x447f3c
 store_aaaa 0x447f60

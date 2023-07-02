@@ -4691,11 +4691,11 @@ smtp_state_starttls_resp 0x9a264
 SocketIsDead 0x77720
 _start 0x11e00
 stat64 0xb7d7c
-_state 0xab9b8
 state 0x92f90
 state 0x96d30
 state 0x99728
 state 0xa02d8
+_state 0xab9b8
 stdin_upload 0x2f484
 store_a 0xa41bc
 store_aaaa 0xa4254

@@ -980,9 +980,8 @@ fips_prov_ossl_ctx_new 0x90d0
 fips_query 0x8238
 frame_dummy 0x81c0
 free_infopair 0x39294
-__fstat 0x63fa0
 fstat 0x63fa0
-_ftext 0x8040
+__fstat 0x63fa0
 gcm_aad_update 0x16898
 gcm_cipher 0x167a8
 gcm_cipher_final 0x16950

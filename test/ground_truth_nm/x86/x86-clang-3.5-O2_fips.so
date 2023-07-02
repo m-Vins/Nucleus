@@ -568,7 +568,6 @@ DES_set_key 0x23150
 DES_set_key_checked 0x23170
 DES_set_key_unchecked 0x231d0
 DES_set_odd_parity 0x23020
-DES_SPtrans 0x22740
 destruct_method 0x377d0
 digest_default_get_params 0x128b0
 digest_default_gettable_params 0x129f0
@@ -842,7 +841,6 @@ ecp_nistz256_point_add_affine 0x80ef0
 ecp_nistz256_point_double 0x80540
 ecp_nistz256_points_mul 0x2b9b0
 ecp_nistz256_pre_comp_new 0x2c800
-ecp_nistz256_precomputed 0x5a000
 ecp_nistz256_scatter_w5 0x80080
 ecp_nistz256_scatter_w7 0x801e0
 ecp_nistz256_set_from_affine 0x2c930
@@ -1113,8 +1111,8 @@ fips_query 0x4d10
 __fixunsdfdi 0x94bd0
 frame_dummy 0x40f0
 free_infopair 0x3f270
-__fstat 0x94d70
 fstat 0x94d70
+__fstat 0x94d70
 gcm_aad_update 0x126c0
 gcm_cipher 0x12380
 gcm_cipher_final 0x127b0

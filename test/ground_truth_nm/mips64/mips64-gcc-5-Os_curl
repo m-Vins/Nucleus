@@ -555,9 +555,8 @@ freecookie 0x1200341a0
 freedirs 0x120058300
 freednsentry 0x1200321ec
 free_urlhandle 0x12002df30
-__fstat 0x12005f290
 fstat 0x12005f290
-_ftext 0x120004950
+__fstat 0x12005f290
 ftpcccmethod 0x120015e30
 ftp_connect 0x1200586f0
 ftp_disconnect 0x1200584a4
@@ -620,7 +619,6 @@ hash_element_dtor 0x120046cf0
 hash_fd 0x12001f260
 header_append 0x120036a54
 helpf 0x12000f788
-hlt 0x120005620
 homedir 0x12000d630
 hostcache_timestamp_remove 0x1200321c0
 hostname_check.isra.0 0x12002e354
@@ -788,8 +786,8 @@ smtp_perform_rcpt_to 0x12004f358
 smtp_setup_connection 0x12004f7a8
 smtp_statemach_act 0x12004fb34
 __start 0x1200055d0
-__stat 0x12005f250
 stat 0x12005f250
+__stat 0x12005f250
 stdin_upload 0x120014f28
 storebuffer 0x12001a9c4
 str2num 0x1200156fc

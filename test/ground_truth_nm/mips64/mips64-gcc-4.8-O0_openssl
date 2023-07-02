@@ -188,7 +188,6 @@ free_config_and_unload 0x120032b44
 free_index 0x120098e6c
 free_sessions 0x120070008
 __fstat 0x1200a6650
-_ftext 0x120015a80
 function_cmp 0x120040e4c
 function_hash 0x120040ebc
 gendsa_main 0x1200338f0
@@ -217,7 +216,6 @@ help_main 0x12004072c
 hexdecode 0x12005a828
 hexencode 0x1200a3a14
 hex_prin 0x120048074
-hlt 0x120015ad0
 HMAC_loop 0x1200747d8
 indent_printf 0x1200882e8
 index_changed 0x12003ce4c

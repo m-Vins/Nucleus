@@ -1853,8 +1853,8 @@ strip 0x6d351
 stripsnug 0x24255b
 str_make_lowercase 0xf1087
 str_replace 0xf1049
-str_strip 0xf0e88
 strstrip 0x6d3f7
+str_strip 0xf0e88
 submit_post 0x17e4a7
 summit 0xe3cc4
 swapfunc 0x23cd08

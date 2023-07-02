@@ -10,10 +10,8 @@ filelist 0x120005910
 _fini 0x120006880
 frame_dummy 0x120002a98
 freshdbdir 0x120005318
-_ftext 0x120001af0
 _getopt_internal 0x120004b88
 get_version 0x120005300
-hlt 0x120002930
 _init 0x120001a68
 __libc_csu_fini 0x120006328
 __libc_csu_init 0x120006280

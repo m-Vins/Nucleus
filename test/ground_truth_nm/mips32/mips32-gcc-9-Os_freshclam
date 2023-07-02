@@ -321,8 +321,8 @@ aria_gcm_cipher 0x590eac
 aria_gcm_cleanup 0x591198
 aria_gcm_ctrl 0x5900cc
 aria_gcm_freectx 0x491dcc
-aria_gcm_init_key 0x58fe40
 aria_gcm_initkey 0x4920b0
+aria_gcm_init_key 0x58fe40
 aria_gcm_newctx 0x491d00
 aria_gcm_tls_cipher 0x590b64
 aria_init_key 0x58d110
@@ -1380,8 +1380,8 @@ chacha20_poly1305_get_ctx_params 0x496f54
 chacha20_poly1305_get_params 0x496ee0
 chacha20_poly1305_gettable_ctx_params 0x497498
 chacha20_poly1305_initiv 0x498494
-chacha20_poly1305_init_key 0x594df4
 chacha20_poly1305_initkey 0x498374
+chacha20_poly1305_init_key 0x594df4
 chacha20_poly1305_newctx 0x496d50
 chacha20_poly1305_set_ctx_params 0x4974cc
 chacha20_poly1305_tls_cipher 0x49865c
@@ -4130,10 +4130,9 @@ free_evp_pbe_ctl 0x5a3e60
 free_infopair 0x458df8
 free_string 0x61d7b4
 freshdbdir 0x426e0c
-__fstat 0x71fb80
 fstat 0x71fb80
+__fstat 0x71fb80
 fstat64 0x71fbc0
-_ftext 0x4225c0
 gcm_aad_update 0x4d7190
 gcm_cipher 0x4d63fc
 gcm_cipher_final 0x4d73a0
@@ -4272,7 +4271,6 @@ HKDF 0x4bcd28
 HKDF_Expand 0x4bcfe4
 HKDF_Extract 0x4bceac
 hkdf_pkey_method 0x5adedc
-hlt 0x423900
 HMAC 0x5b1ba0
 hmac_ctx_alloc_mds 0x5b1830
 hmac_ctx_cleanup 0x5b1670
@@ -4582,11 +4580,11 @@ impl_cache_flush_one_alg 0x4629f8
 impl_cache_free 0x4615e0
 impl_free 0x46153c
 inc_128 0x6d5350
-_init 0x422538
 init 0x47d8d0
 init 0x5a9720
 init 0x5a97e0
 init 0x5a9970
+_init 0x422538
 init_added 0x45d5c4
 init_get_thread_local 0x44f6ec
 init_thread_deregister 0x4500d8
@@ -7629,8 +7627,8 @@ ssl_module_init 0x68f3f4
 stable_get 0x6613ac
 stack_to_property_list 0x464ae0
 __start 0x4238b0
-__stat 0x71fb60
 stat 0x71fb60
+__stat 0x71fb60
 stat64 0x71fba0
 stbl_module_finish 0x700e30
 stbl_module_init 0x700c30

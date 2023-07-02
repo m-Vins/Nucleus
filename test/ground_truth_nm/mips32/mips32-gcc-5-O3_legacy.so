@@ -5,7 +5,6 @@ __do_global_ctors_aux 0x1640
 __do_global_dtors_aux 0xaf0
 _fini 0x17b0
 frame_dummy 0xbd4
-_ftext 0xa60
 _init 0x9cc
 legacy_get_params 0xc74
 legacy_gettable_params 0xc30

@@ -553,7 +553,6 @@ freecookie 0x120039ec0
 freedirs 0x120061a60
 freednsentry 0x120037bec
 free_urlhandle 0x120032dc0
-_ftext 0x1200048f0
 ftpcccmethod 0x120017890
 ftp_connect 0x120064d74
 ftp_disconnect 0x120064e30
@@ -616,7 +615,6 @@ hash_element_dtor 0x12004ef30
 hash_fd 0x1200223b0
 header_append 0x12003cd1c
 helpf 0x120010bac
-hlt 0x120004940
 homedir 0x12000dc20
 hostcache_timestamp_remove 0x120037940
 hostname_check 0x12003323c

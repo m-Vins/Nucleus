@@ -101,7 +101,6 @@ aesni_gcm_initkey 0xbee0
 aesni_ocb_decrypt 0x1ac40
 aesni_ocb_encrypt 0x1a660
 aesni_set_decrypt_key 0x1bbd0
-__aesni_set_encrypt_key 0x1bc40
 aesni_set_encrypt_key 0x1bc40
 aesni_xts_decrypt 0x19e80
 aesni_xts_encrypt 0x19710
@@ -133,11 +132,6 @@ algorithm_do_this 0x3fb20
 alloc_node 0x85f10
 alloc_tmp_method_store 0x3c970
 ascii_isdigit 0x40500
-asm_AES_cbc_encrypt 0x16050
-asm_AES_decrypt 0x15ab0
-asm_AES_encrypt 0x15520
-_avx2_shortcut 0x8a870
-_avx_shortcut 0x89ae0
 be32 0xf060
 bn2binpad 0x20c90
 BN_abs_is_word 0x21370
@@ -295,7 +289,6 @@ BN_POOL_get 0x20260
 BN_POOL_init 0x1fec0
 BN_POOL_release 0x20180
 __bn_post4x_internal 0x26ca0
-__bn_postx4x_internal 0x282e0
 bn_power5 0x26280
 bn_powerx5 0x27820
 BN_priv_rand_ex 0x23220
@@ -324,19 +317,15 @@ bn_set_static_words 0x54c80
 BN_set_word 0x20ac0
 bn_set_words 0x54ca0
 BN_sqr 0x23ba0
-__bn_sqr8x_internal 0x263e0
 bn_sqr8x_internal 0x263e0
 bn_sqr8x_mont 0x24bc0
-__bn_sqr8x_reduction 0x26959
 bn_sqr_comba4 0x510a0
 bn_sqr_comba8 0x50ca0
 bn_sqr_fixed_top 0x23bc0
 bn_sqr_normal 0x23d40
 bn_sqr_recursive 0x23e40
 bn_sqr_words 0x50510
-__bn_sqrx8x_internal 0x27980
 bn_sqrx8x_internal 0x27980
-__bn_sqrx8x_reduction 0x27fb7
 BN_STACK_finish 0x1ff40
 BN_STACK_init 0x1fed0
 BN_STACK_pop 0x20170
@@ -358,11 +347,9 @@ BN_zero_ex 0x21360
 _booth_recode_w5 0x34c50
 _booth_recode_w7 0x34210
 bsaes_cbc_encrypt 0x1d5a0
-_bsaes_const 0x1edc0
 bsaes_ctr32_encrypt_blocks 0x1da50
 _bsaes_decrypt8 0x1cb40
 _bsaes_encrypt8 0x1c2c0
-_bsaes_encrypt8_bitslice 0x1c327
 _bsaes_key_convert 0x1d440
 bsaes_xts_decrypt 0x1e570
 bsaes_xts_encrypt 0x1dda0
@@ -888,7 +875,6 @@ ecp_nistz256_point_double 0x821a0
 ecp_nistz256_point_doublex 0x83340
 ecp_nistz256_points_mul 0x32fc0
 ecp_nistz256_pre_comp_new 0x34c80
-ecp_nistz256_precomputed 0x5b000
 ecp_nistz256_scatter_w5 0x81c20
 ecp_nistz256_scatter_w7 0x81d60
 ecp_nistz256_set_from_affine 0x34120
@@ -1163,8 +1149,8 @@ fips_prov_ossl_ctx_new 0xab90
 fips_query 0xac70
 frame_dummy 0xa0b0
 free_infopair 0x42d60
-__fstat 0x9b480
 fstat 0x9b480
+__fstat 0x9b480
 gcm_aad_update 0x14c90
 gcm_cipher 0x149d0
 gcm_cipher_final 0x14d10
@@ -1264,15 +1250,12 @@ inner_generic_fetch 0x3c5d0
 int_bn_mod_inverse 0x53b00
 internal_delete 0x4fa30
 internal_find 0x4fab0
-iotas 0x4e240
 is_ctr 0x4b280
 is_digest 0x4b290
 is_equal 0x34c20
 is_one 0x34bc0
 is_partially_overlapping 0x3b9b0
 is_zero 0x342a0
-K256 0x8d4c0
-K512 0x91f40
 kbkdf_derive 0xebe0
 kbkdf_free 0xeb20
 kbkdf_get_ctx_params 0xf030
@@ -1310,8 +1293,8 @@ kdf_tls1_prf_reset 0x10960
 kdf_tls1_prf_set_ctx_params 0x10a90
 kdf_tls1_prf_settable_ctx_params 0x10a80
 keccak_dupctx 0xdda0
-__KeccakF1600 0x4dd00
 KeccakF1600 0x4dfe0
+__KeccakF1600 0x4dd00
 keccak_final 0xdd40
 keccak_freectx 0xdd80
 keccak_init 0xdc50
@@ -1337,7 +1320,6 @@ kmac_set_ctx_params 0x11db0
 kmac_settable_ctx_params 0x11da0
 kmac_size 0x12130
 kmac_update 0x11c90
-K_XX_XX 0x8c1c0
 lh_NAMENUM_ENTRY_doall 0x3fe00
 lh_NAMENUM_ENTRY_doall_DOALL_NAMES_DATA 0x3fea0
 lh_NAMENUM_ENTRY_error 0x40110
@@ -1940,8 +1922,6 @@ sha512_internal_final 0xd980
 sha512_newctx 0xd960
 SHA512_Transform 0x4f430
 SHA512_Update 0x4f330
-_shaext_shortcut 0x88a20
-_shaext_shortcut 0x8d780
 shake_128_get_params 0xdfa0
 shake_128_newctx 0xdf50
 shake_256_get_params 0xe0b0
@@ -1997,7 +1977,6 @@ sskdf_set_buffer 0x10810
 sskdf_set_ctx_params 0xfe80
 sskdf_settable_ctx_params 0xfe70
 sskdf_size 0x10870
-_ssse3_shortcut 0x88ca0
 stack_to_property_list 0x4a0e0
 stored_namemap_free 0x40170
 stored_namemap_new 0x40160
@@ -2024,7 +2003,6 @@ trampoline 0x85d30
 unpadblock 0x14fe0
 verify_integrity 0xae60
 vpaes_cbc_encrypt 0x1f6e0
-_vpaes_consts 0x1f7c0
 vpaes_decrypt 0x1f6c0
 _vpaes_decrypt_core 0x1f120
 vpaes_encrypt 0x1f6a0
@@ -2032,7 +2010,6 @@ _vpaes_encrypt_core 0x1efc0
 _vpaes_preheat 0x1f760
 _vpaes_schedule_192_smear 0x1f420
 _vpaes_schedule_core 0x1f2c0
-_vpaes_schedule_low_round 0x1f461
 _vpaes_schedule_mangle 0x1f530
 _vpaes_schedule_round 0x1f440
 _vpaes_schedule_transform 0x1f500

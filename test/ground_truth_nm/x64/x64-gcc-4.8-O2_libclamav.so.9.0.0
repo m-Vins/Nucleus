@@ -1316,8 +1316,8 @@ str_hex_to_char 0xa5260
 string_assign_dup 0xa53f0
 string_free 0xa53a0
 str_make_lowercase 0xa50f0
-str_strip 0xa5130
 strstrip 0x54fd0
+str_strip 0xa5130
 submit_post 0xfc3f0
 SzAlloc 0xae180
 SzAllocTemp 0xae1b0

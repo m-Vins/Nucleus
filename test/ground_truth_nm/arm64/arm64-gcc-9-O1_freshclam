@@ -327,8 +327,8 @@ aria_gcm_cipher 0x1553ac
 aria_gcm_cleanup 0x155588
 aria_gcm_ctrl 0x154a40
 aria_gcm_freectx 0x9d96c
-aria_gcm_init_key 0x154878
 aria_gcm_initkey 0x9daa4
+aria_gcm_init_key 0x154878
 aria_gcm_newctx 0x9d8fc
 aria_gcm_tls_cipher 0x155198
 aria_init_key 0x152d58
@@ -1389,8 +1389,8 @@ chacha20_poly1305_get_ctx_params 0xa07f8
 chacha20_poly1305_get_params 0xa07c4
 chacha20_poly1305_gettable_ctx_params 0xa0b2c
 chacha20_poly1305_initiv 0xa1650
-chacha20_poly1305_init_key 0x157abc
 chacha20_poly1305_initkey 0xa159c
+chacha20_poly1305_init_key 0x157abc
 chacha20_poly1305_newctx 0xa06dc
 chacha20_poly1305_set_ctx_params 0xa0b38
 chacha20_poly1305_tls_cipher 0xa179c
@@ -3021,7 +3021,6 @@ ecp_nistz256_point_add_affine 0x230d80
 ecp_nistz256_point_double 0x230820
 ecp_nistz256_points_mul 0x139d18
 ecp_nistz256_pre_comp_new 0x13a884
-ecp_nistz256_precomputed 0x20b000
 ecp_nistz256_scatter_w5 0x231540
 ecp_nistz256_scatter_w7 0x231710
 ecp_nistz256_set_from_affine 0x139c60
@@ -4196,8 +4195,8 @@ free_evp_pbe_ctl 0x161378
 free_infopair 0x78af8
 free_string 0x1acd1c
 freshdbdir 0x5377c
-__fstat 0x26ef60
 fstat 0x26ef60
+__fstat 0x26ef60
 gcm_aad_update 0xc543c
 gcm_cipher 0xc4a64
 gcm_cipher_final 0xc5594
@@ -4650,11 +4649,11 @@ impl_cache_flush_one_alg 0x7eac8
 impl_cache_free 0x7df30
 impl_free 0x7ded0
 inc_128 0x23e678
-_init 0x4e700
 init 0x8f3d0
 init 0x165c6c
 init 0x165cc0
 init 0x165d48
+_init 0x4e700
 init_added 0x7b6c8
 init_get_thread_local 0x7290c
 init_thread_deregister 0x72e78
@@ -4708,7 +4707,6 @@ io_destroy 0x96860
 io_getevents 0x968b0
 io_read 0x96880
 io_setup 0x96814
-iotas 0x1a0a40
 IPAddrBlocks_it 0x249c2c
 IPAddressChoice_free 0x249df0
 IPAddressChoice_it 0x249c14
@@ -7708,8 +7706,8 @@ ssl_module_init 0x1f3518
 stable_get 0x1d5918
 stack_to_property_list 0x7fef4
 _start 0x50000
-__stat 0x26ef50
 stat 0x26ef50
+__stat 0x26ef50
 stbl_module_finish 0x25c6b8
 stbl_module_init 0x25c5a4
 st_free 0x1d5c10
@@ -7975,7 +7973,6 @@ verify_cb_crl 0x1c0790
 verify_chain 0x1c08d4
 vpaes_cbc_decrypt 0xca140
 vpaes_cbc_encrypt 0xca0e0
-_vpaes_consts 0xc9480
 vpaes_decrypt 0xc9b70
 _vpaes_decrypt_2x 0xc9ba0
 _vpaes_decrypt_core 0xc9a70
@@ -7989,7 +7986,6 @@ _vpaes_encrypt_preheat 0xc97c0
 _vpaes_key_preheat 0xc9d40
 _vpaes_schedule_192_smear 0xc9ee0
 _vpaes_schedule_core 0xc9d80
-_vpaes_schedule_low_round 0xc9f28
 _vpaes_schedule_mangle 0xc9fb0
 _vpaes_schedule_round 0xc9f10
 _vpaes_schedule_transform 0xc9f90

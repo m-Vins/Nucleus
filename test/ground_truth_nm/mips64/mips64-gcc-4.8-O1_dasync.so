@@ -35,7 +35,6 @@ engine_load_dasync_int 0x3544
 ERR_DASYNC_error 0x2abc
 _fini 0x3ba0
 frame_dummy 0x1b80
-_ftext 0x1a10
 _init 0x1988
 _MIPS_STUBS_ 0x3640
 register_tm_clones 0x1a58

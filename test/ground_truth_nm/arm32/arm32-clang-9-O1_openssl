@@ -214,8 +214,8 @@ freeandcopy 0x66b18
 free_config_and_unload 0x4eda8
 free_index 0x8556c
 free_sessions 0x6eb34
-__fstat 0x8d268
 fstat 0x8d268
+__fstat 0x8d268
 function_cmp 0x55ce4
 function_hash 0x55cdc
 __gedf2 0x8d0b0
@@ -326,8 +326,8 @@ lookup 0x8a4fc
 lookup_conf 0x41510
 lookup_conf 0x7b8f0
 lookup_serial 0x55270
-__lstat 0x8d278
 lstat 0x8d278
+__lstat 0x8d278
 __ltdf2 0x8d0b8
 mac_cmp 0x51580
 mac_main 0x51740
@@ -818,8 +818,8 @@ ssl_srp_server_param_cb 0x6c4dc
 ssl_srp_verify_param_cb 0x671f0
 sstrsep 0x7a510
 _start 0x3e000
-__stat 0x8d258
 stat 0x8d258
+__stat 0x8d258
 s_time_main 0x6f950
 store_setup_crl_download 0x85d8c
 storeutl_main 0x7be88

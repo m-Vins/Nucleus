@@ -1013,11 +1013,11 @@ smtp_state_starttls_resp 0x8096820
 SocketIsDead 0x8086a10
 _start 0x8049f10
 stat64 0x80a55c0
-_state 0x809f4f0
 state 0x8091bc0
 state 0x80941f0
 state 0x8095ae0
 state 0x8099370
+_state 0x809f4f0
 stdin_upload 0x805cab0
 store_a 0x809b710
 store_aaaa 0x809b740

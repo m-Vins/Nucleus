@@ -10,12 +10,10 @@ filelist 0x120006d28
 _fini 0x1200098f0
 frame_dummy 0x120001da8
 freshdbdir 0x120006544
-_ftext 0x120001bf0
 funmap 0x1200076c0
 _getopt_internal 0x120005748
 get_version 0x120006510
 help 0x120007708
-hlt 0x120001c40
 _init 0x120001b60
 __libc_csu_fini 0x120009388
 __libc_csu_init 0x1200092e0

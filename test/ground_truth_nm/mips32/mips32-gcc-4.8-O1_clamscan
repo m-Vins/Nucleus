@@ -16,13 +16,11 @@ filelist 0x406c34
 _fini 0x40cb60
 frame_dummy 0x401c40
 freshdbdir 0x40658c
-_ftext 0x401aa0
 getdest 0x405f3c
 get_hostid 0x40c294
 _getopt_internal 0x403460
 get_version 0x406580
 help 0x4072b0
-hlt 0x401af8
 _init 0x401a08
 is_valid_hostid 0x40c1d0
 __libc_csu_fini 0x40c43c

@@ -3,10 +3,8 @@ __do_global_ctors_aux 0x442f20
 __do_global_dtors_aux 0x4059f4
 _fini 0x443680
 frame_dummy 0x405aa4
-_ftext 0x405910
 _GLOBAL__sub_I_ErrHandler 0x409c80
 _GLOBAL__sub_I__Z9InitCRC32Pj 0x4163f0
-hlt 0x405960
 _init 0x405888
 __libc_csu_fini 0x442f14
 __libc_csu_init 0x442e70

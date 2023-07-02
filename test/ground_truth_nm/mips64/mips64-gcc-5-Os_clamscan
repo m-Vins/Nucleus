@@ -16,13 +16,11 @@ filelist 0x120006fe4
 _fini 0x12000b300
 frame_dummy 0x1200030f8
 freshdbdir 0x120006a78
-_ftext 0x120002840
 getdest 0x120006410
 get_hostid 0x12000a9e4
 _getopt_internal 0x120004508
 get_version 0x120006a60
 help 0x120007600
-hlt 0x120002f80
 _init 0x1200027b8
 is_valid_hostid 0x12000a930
 __libc_csu_fini 0x12000ab18
@@ -30,8 +28,8 @@ __libc_csu_init 0x12000aa70
 logg 0x120003860
 logg_close 0x1200034f0
 logg_facility 0x120004050
-__lstat 0x12000ab60
 lstat 0x12000ab60
+__lstat 0x12000ab60
 main 0x120002840
 match_regex 0x1200073dc
 mdprintf 0x120003160
@@ -57,5 +55,5 @@ scandirs 0x1200084d8
 scanfile 0x120007f60
 scanmanager 0x120008ce8
 __start 0x120002f30
-__stat 0x12000ab20
 stat 0x12000ab20
+__stat 0x12000ab20

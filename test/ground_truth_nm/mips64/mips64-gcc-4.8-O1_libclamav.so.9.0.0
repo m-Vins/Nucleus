@@ -344,8 +344,8 @@ aria_gcm_cipher 0x2f5498
 aria_gcm_cleanup 0x2f575c
 aria_gcm_ctrl 0x2f4774
 aria_gcm_freectx 0x3f28dc
-aria_gcm_init_key 0x2f4504
 aria_gcm_initkey 0x3f2bb0
+aria_gcm_init_key 0x2f4504
 aria_gcm_newctx 0x3f2820
 aria_gcm_tls_cipher 0x2f5184
 aria_init_key 0x2f18d0
@@ -1460,8 +1460,8 @@ chacha20_poly1305_get_ctx_params 0x3f76d4
 chacha20_poly1305_get_params 0x3f7668
 chacha20_poly1305_gettable_ctx_params 0x3f7ba4
 chacha20_poly1305_initiv 0x3f8b20
-chacha20_poly1305_init_key 0x2f813c
 chacha20_poly1305_initkey 0x3f8a18
+chacha20_poly1305_init_key 0x2f813c
 chacha20_poly1305_newctx 0x3f74f0
 chacha20_poly1305_set_ctx_params 0x3f7bd8
 chacha20_poly1305_tls_cipher 0x2f8314
@@ -5258,9 +5258,8 @@ freeset 0x1d5ee0
 free_string 0x4ed780
 free_symlists 0x1c8d08
 free_token 0x11d540
-__fstat 0x539fc0
 fstat 0x539fc0
-_ftext 0x6cee0
+__fstat 0x539fc0
 ftw_compare 0x1d2820
 gcm_aad_update 0x42da80
 gcm_cipher 0x42cd38
@@ -5797,11 +5796,11 @@ inflate64End 0xdf6dc
 inflate64Init2 0xde264
 inflate_flush 0xebb4c
 inflate_table 0xddc50
-_init 0x6ce48
 init 0x3114b0
 init 0x3959e0
 init 0x4c0d60
 init 0x4c0ef0
+_init 0x6ce48
 init_added 0x34b230
 init_alpn 0x219070
 init_certificate_authorities 0x219544
@@ -10590,8 +10589,8 @@ ssl_x509_store_ctx_init_ossl_ 0x263c14
 sstep 0x1d9220
 stable_get 0x43d100
 stack_to_property_list 0x3691d4
-__stat 0x539f90
 stat 0x539f90
+__stat 0x539f90
 state_machine 0x22c6c4
 statem_do_write 0x22d6d4
 statem_flush 0x22dfbc
@@ -10623,8 +10622,8 @@ strip_eol 0x513ee8
 strip_spaces 0x3bdb68
 strip_start 0x5131a0
 str_make_lowercase 0x102420
-str_strip 0x102494
 strstrip 0x9b5f4
+str_strip 0x102494
 submit_post 0x16f960
 sub_niels_from_pt 0x490450
 sub_pniels_from_pt 0x490980

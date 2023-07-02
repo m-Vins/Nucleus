@@ -187,8 +187,8 @@ freeandcopy 0x264738
 free_config_and_unload 0x24e99c
 free_index 0x27ea04
 free_sessions 0x26ab78
-__fstat 0x285088
 fstat 0x285088
+__fstat 0x285088
 function_cmp 0x255054
 function_hash 0x25504c
 gendsa_main 0x24eac4
@@ -296,8 +296,8 @@ lookup 0x282ed4
 lookup_conf 0x242bd0
 lookup_conf 0x2761f8
 lookup_serial 0x254668
-__lstat 0x285098
 lstat 0x285098
+__lstat 0x285098
 mac_cmp 0x251084
 mac_main 0x2512b0
 main 0x2547dc
@@ -785,8 +785,8 @@ ssl_srp_server_param_cb 0x268824
 ssl_srp_verify_param_cb 0x264dd4
 sstrsep 0x2750b4
 _start 0x240000
-__stat 0x285078
 stat 0x285078
+__stat 0x285078
 s_time_main 0x26b8cc
 store_setup_crl_download 0x27f1c4
 storeutl_main 0x276840

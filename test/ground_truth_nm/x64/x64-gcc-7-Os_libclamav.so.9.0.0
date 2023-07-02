@@ -1415,8 +1415,8 @@ string_assign_dup 0x888d5
 string_assign_null 0x8861f
 string_free 0x8855e
 str_make_lowercase 0x88433
-str_strip 0x88460
 strstrip 0x4ab72
+str_strip 0x88460
 submit_post 0xc6b0c
 swapfunc 0xffad8
 SzAlloc 0x8f01c

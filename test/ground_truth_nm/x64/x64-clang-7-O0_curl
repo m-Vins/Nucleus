@@ -1025,11 +1025,11 @@ smtp_state_starttls_resp 0x482fc0
 SocketIsDead 0x46aa80
 _start 0x403070
 __stat 0x49ce10
-_state 0x4932f0
 state 0x47c2e0
 state 0x480090
 state 0x4829e0
 state 0x4894b0
+_state 0x4932f0
 stdin_upload 0x41cd20
 store_a 0x48d190
 store_aaaa 0x48d200

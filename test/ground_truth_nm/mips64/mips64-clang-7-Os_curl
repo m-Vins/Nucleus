@@ -591,8 +591,8 @@ freedirs 0x8a760
 freednsentry 0x83998
 free_globalconfig 0x5c8a0
 free_urlhandle 0xb5488
-__fstat 0xbb5d0
 fstat 0xbb5d0
+__fstat 0xbb5d0
 ftp_block_statemach 0x8b700
 ftpcccmethod 0x63d50
 ftp_connect 0x85848
@@ -693,7 +693,6 @@ hash_fd 0x97518
 hashkey 0xacb18
 header_append 0x7ef70
 helpf 0x5cbc0
-hlt 0x50050
 homedir 0x5a690
 hostcache_prune 0x82eb0
 hostcache_timestamp_remove 0x84108
@@ -756,8 +755,6 @@ imap_state_select_resp 0x9fd58
 imap_state_servergreet_resp 0x9f6e8
 imap_state_starttls_resp 0x9faa0
 _init 0xbb680
-__init_array_end 0x50000
-__init_array_start 0x50000
 init_dohentry 0xb4048
 InitiateTransfer 0x8a248
 init_resolve_thread 0xab0c8
@@ -1014,13 +1011,13 @@ smtp_state_servergreet_resp 0xa5fd0
 smtp_state_starttls_resp 0xa6418
 SocketIsDead 0x73ab0
 __start 0x50000
-__stat 0xbb590
 stat 0xbb590
-_state 0x86000
+__stat 0xbb590
 state 0x9f6e0
 state 0xa2958
 state 0xa5fc8
 state 0xabf10
+_state 0x86000
 stdin_upload 0x62f28
 store_a 0xb4ef8
 store_aaaa 0xb4f50

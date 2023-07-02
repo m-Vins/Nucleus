@@ -34,7 +34,6 @@ engine_load_dasync_int 0x35d8
 ERR_DASYNC_error.isra.0.constprop.2 0x2ce8
 _fini 0x3bf0
 frame_dummy 0x1c70
-_ftext 0x1b00
 _init 0x1a78
 _MIPS_STUBS_ 0x3700
 register_tm_clones 0x1b48

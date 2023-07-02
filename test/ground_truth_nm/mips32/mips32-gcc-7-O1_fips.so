@@ -979,7 +979,6 @@ __floatdidf 0x77190
 __floatundidf 0x771d0
 frame_dummy 0x35c4
 free_infopair 0x401cc
-_ftext 0x3460
 gcm_aad_update 0x1575c
 gcm_cipher 0x15648
 gcm_cipher_final 0x15864

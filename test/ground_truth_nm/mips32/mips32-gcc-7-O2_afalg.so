@@ -15,7 +15,6 @@ __do_global_dtors_aux 0xfd4
 ERR_AFALG_error.isra.0.constprop.7 0x1474
 _fini 0x2930
 frame_dummy 0x10b4
-_ftext 0xf50
 _init 0xec0
 _MIPS_STUBS_ 0x25c0
 register_tm_clones 0xf88

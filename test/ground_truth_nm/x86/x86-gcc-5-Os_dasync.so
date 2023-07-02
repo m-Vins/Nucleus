@@ -35,12 +35,6 @@ ERR_DASYNC_error.isra.0.constprop.1 0x230a
 _fini 0x2ad4
 frame_dummy 0x19b0
 _init 0x1318
-.L17 0x1b10
-.L19 0x1ac3
-.L20 0x1a9a
-.L21 0x1aa5
-.L22 0x1ab0
-.L25 0x1b8a
 register_tm_clones 0x1910
 __stack_chk_fail_local 0x2ac0
 v_check 0x29e4

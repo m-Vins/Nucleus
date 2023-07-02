@@ -1828,8 +1828,8 @@ strip 0x48540
 stripsnug 0x155f80
 str_make_lowercase 0x9a1b0
 str_replace 0x9b340
-str_strip 0x9b370
 strstrip 0x48520
+str_strip 0x9b370
 submit_post 0xe9760
 summit 0x94710
 swapfunc 0x154df0

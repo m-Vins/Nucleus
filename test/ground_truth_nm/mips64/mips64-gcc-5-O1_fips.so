@@ -975,7 +975,6 @@ fips_prov_ossl_ctx_new 0x9550
 fips_query 0x85d8
 frame_dummy 0x8560
 free_infopair 0x3e8e4
-_ftext 0x83e0
 gcm_aad_update 0x18498
 gcm_cipher 0x183a4
 gcm_cipher_final 0x1857c

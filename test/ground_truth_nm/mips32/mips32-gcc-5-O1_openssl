@@ -158,7 +158,6 @@ FMT_istext 0x47bf00
 frame_dummy 0x41139c
 freeandcopy 0x445ea0
 free_index 0x477140
-_ftext 0x411200
 function_cmp 0x432c08
 function_hash 0x432c44
 gendsa_main 0x429780
@@ -182,7 +181,6 @@ help_main 0x433668
 hexdecode 0x4471f0
 hexencode 0x47ed54
 hex_prin 0x436770
-hlt 0x411250
 HMAC_loop 0x45ea94
 indent_printf 0x46aef0
 index_index 0x47691c

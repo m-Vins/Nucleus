@@ -26,7 +26,6 @@ ENGINE_load_ossltest 0x2ec0
 fill_known_data 0x1670
 _fini 0x33c0
 frame_dummy 0x1640
-_ftext 0x14d0
 _init 0x1448
 _MIPS_STUBS_ 0x2fc0
 ossltest_aes128_cbc_cipher 0x2b8c
