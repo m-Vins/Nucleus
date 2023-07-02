@@ -1,11 +1,12 @@
 #!/bin/bash
-binaries_file=$1
 
 _source_dir_=$(dirname "$0")
 BASE_DIR=$(readlink -f "${_source_dir_}/../..")
 
 destination="${BASE_DIR}/test/ground_truth_nm"
 source="${BASE_DIR}/test/ground_truth"
+
+threads=24
 
 # Create the destination directory if it doesn't exist
 mkdir -p "$destination"
@@ -19,19 +20,26 @@ for subdirectory in "$source"/*/; do
     mkdir -p "$destination/$subdirectory_name"
 done
 
-while IFS= read -r binary; do
+index=0
+# Iterate over all files in the directory
+for binary in "${BASE_DIR}/test/binaries"/*; do
     base=$(basename "$binary")
     subdirectory=$(basename "$binary" | cut -d '-' -f 1)
     file_name="$destination"/"$subdirectory"/"$base"
-    FUNC_LIST=$(readelf -s --wide $binary | grep "FUNC ")
-    touch $file_name
-    
-    # Iterate over each line in the output
-    while IFS= read -r line; do
-        function_name=$(echo "$line" | awk '{print $NF}')
-        if echo $FUNC_LIST | grep -qw "$function_name"; then
-            address_hex=$(echo "$line" | awk '{print $1}' | sed 's/^0*//')
-            echo "$function_name 0x$address_hex" >> $file_name
-        fi
-    done < <(nm $binary | grep -i "t ")
-done < "$binaries_file"
+    # Check if the corresponding file does not exist
+    if [[ ! -f $file_name ]]; then
+        # Determine the tmp file index
+        tmp_file="$((index % threads)).tmp"
+        # Append the file name to the tmp file
+        echo "$binary" >> "$tmp_file"
+        ((index++))
+    fi 
+done
+
+for ((t = 0; t < threads; t++)); do
+    bash ${BASE_DIR}/test/scripts/generate_nm_gt.sh ${t}.tmp &
+done
+
+wait
+
+rm *.tmp
