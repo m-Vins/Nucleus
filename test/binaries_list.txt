@@ -2952,7 +2952,7 @@ clamav/x86-gcc-9-O3_clambc
 clamav/x86-gcc-9-O3_clamconf
 clamav/x86-gcc-9-O3_clamscan
 curl/x86-gcc-9-O3_curl
-openssl/x86-gcc-9-O3_fips.soS
+openssl/x86-gcc-9-O3_fips.so
 clamav/x86-gcc-9-O3_freshclam
 clamav/x86-gcc-9-O3_libclamav.so.9.0.0
 openssl/x86-gcc-9-O3_libcrypto.so.3

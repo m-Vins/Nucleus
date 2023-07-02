@@ -49,7 +49,7 @@ The outperformed tasks can be categorized into the following areas of improvemen
 
 ### Fixing the tool
 
-The [source code](https://bitbucket.org/vusec/nucleus/src/master/) was broken due to change in the API of the library `Binary File Descriptor`.
+The [source code](https://bitbucket.org/vusec/nucleus/src/master/) was broken due to changes in the API of the library `Binary File Descriptor`.
 
 #### Issue 1
 
@@ -94,7 +94,7 @@ In [loader.cc](./src/loader.cc) function `load_sections_bfd` doesn't need the fi
 
 #### Issue 3
 
-In [loader.cc](./src/loader.cc) function `load_sections_bfd` the following functions doesn't need the first parameter:
+In [loader.cc](./src/loader.cc) function `load_sections_bfd` the following functions don't need the first parameter:
 
 ```diff
 - vma = bfd_section_vma(bfd_h, bfd_sec);
@@ -107,27 +107,31 @@ In [loader.cc](./src/loader.cc) function `load_sections_bfd` the following funct
 
 ### Raw files support
 
-The support for raw file was already present in `nucleus`, even though it uses a very simple approach since it just disassemles from the start of the file (or at a given offset chosen by the user).
-Our goal was to try to improve this technique to make `nucleus` able to find the best offset to start disassebling the file.
+The support for raw file was already present in `nucleus`, even though it uses a very simple approach, disassembling from the start of the file (or at a given offset chosen by the user).
+Our goal was to try to improve this technique to make `nucleus` able to find the best offset to start disassembling the file.
 
-The very first thing we've done was to try to understand how the tool works, especially focusing on the disassemblying phase. To do so, we've instrumented the program in order to log information to see the flow of the program using the format `[DBG..] blablabla` so that grepping on `DBG` show us only the info that we need.
-In order to enable the loggin it's just needed to set `DBG` to `1` in [disasm-x86.cc](./src/disasm-x86.cc) and in [disasm.cc](/src/disasm.cc).
+The very first thing we have done was trying to understand how the tool works, especially focusing on the disassembling phase. To do so, we've instrumented the program in order to log information to see the flow of the program using the format `[DBG..] <message>` so that grepping on `DBG` shows us only the info that we need.
+In order to enable the logging it's just needed to set `DBG` to `1` in [disasm-x86.cc](./src/disasm-x86.cc) and in [disasm.cc](/src/disasm.cc).
 
-<!-- TODO explain a bit how the disassembling works -->
+To begin with, we realized that the goal of the disassembler is to identify and separate basic blocks, which will then be used to build the control flow of the program. For this reason, the disassembler will stop only in two cases:
+1. When it meets a control flow instruction (jump, cmp, test...)
+2. When it meets an invalid instruction
 
-Since the option to start disassembling at a given offset was already present, we tried to see if changing the offset makes `nucleus` to perform better. Using the [script test_offset.py](./utilities/test_offset.py) we collected the number of offsets that succesfully find each function.
-The script showed us that changing the offset almost doesn't affect the result of `nucleus` because almost all the functions have been found running `nucleus` at every offset. This suggests us that the disassembling process probably realignes very fast.
+In particular, we focused on the second case, since we were interested in analyzing the behavior of `nucleus` when the disassembler breaks. We discovered that, as soon as the tool finds an invalid instruction, it stops the basic block it was building and marks it as valid. Then, it treats the invalid instruction as a stand-alone basic block, and it flags it as invalid.
 
-<!-- TODO explain better -->
+Overall, the tool always scans the full file, even when meeting invalid instructions. This implies that it is using the provided offset as "ground truth", assuming that every instruction that does not exist is simply data (or garbage).
 
-Nevertheless, we added the option `-o` in `nucleus` in order to make it trying to disassemble at a different number of offset and collect information about the number of offset that find each function. Exactly the same ad the previous python script, but now embedded in `nucleus`.
+Since the option to start disassembling at a given offset was already present, we tried to see if changing the offset enhances `nucleus` performance. Using the [script test_offset.py](./utilities/test_offset.py) we collected the number of offsets that successfully find each function.
+The script showed us that changing the offset does not affect significantly results, as almost all functions are found at every offset. These results suggest that the disassembling process realigns very fast.
+
+Nevertheless, we added the option `-o` in `nucleus` in order to automatically disassemble at different offsets and collect information about the number of offsets that find each function. Overall, we embedded the logic in the aforementioned Python script directly in `nucleus`.
 
 <!-- TODO add a screnshoot of the output -->
 
 ### Evaluating different architectures performance
 
 To evaluate the performance of nucleus over different architectures, a database of binaries present at [https://github.com/Cisco-Talos/binary_function_similarity](https://github.com/Cisco-Talos/binary_function_similarity) has been exploited.
-We've tried to embedd the [script](https://github.com/Cisco-Talos/binary_function_similarity/blob/main/gdrive_download.py) to download the binaries in our project to easily populate our [binaries folder](./test/binaries/) by running the command `make download`.
+We've tried to embed the [script](https://github.com/Cisco-Talos/binary_function_similarity/blob/main/gdrive_download.py) to download the binaries in our project to easily populate our [binaries folder](./test/binaries/) by running the command `make download`.
 A subset of the database has been used to execute the test. The list of the used binaries is present [here](./test/binaries_list.txt), it is basically the list of the binaries belonging to the training subset used in [this project](https://github.com/Cisco-Talos/binary_function_similarity). A ground truth has been extracted from the information present in the same project using the [script](./test/scripts/extract_ground_truth.sh) on the file `binary_function_similarity/DBs/Dataset-1/training_Dataset-1.csv`, we haven't made it easily reproducible since we've run this script only once, and the extracted ground truth is available [here](./test/ground_truth/).
 The extracted ground truth is basically a collection of files grouped by different architectures that contains the pairs (`function name`, `start address`).
 
@@ -136,7 +140,7 @@ The extracted ground truth is basically a collection of files grouped by differe
 At this point, we have all the information we need to test nucleus using the binaries and the relative ground truth. The script [test.sh](./utilities/test.sh) compares the result of `nucleus` and the ground truth, it counts:
 
 - the number of functions found by nucleus that are present in the ground truth
-- the number of functions present in the grount truth but not found by nucleus
+- the number of functions present in the ground truth but not found by nucleus
 - the number of functions found by nucleus that are not present in the ground truth
 
 these information are then stored by the script in the file [results.csv](./test/results.csv) with the following format:
