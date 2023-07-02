@@ -13,6 +13,14 @@ RUN pip3 install pyelftools click==8.1.3 gdown==4.6.4 pandas==2.0.1 matplotlib==
 
 WORKDIR /nucleus
 
+RUN echo 'echo "\
+===================================\n\
+=             nucleus             =\n\
+===================================\n\
+\n\
+Quickstart! Try running:\n\
+\033[1;35m\tmake test \033[0m\n"'\ 
+> /root/.bashrc
 
 # Set the default command to run when the container starts
 CMD ["/bin/bash"]
