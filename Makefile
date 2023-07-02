@@ -35,11 +35,17 @@ simple_test: $(BIN)
 test: $(BIN)
 	./utilities/test.sh
 
+test_nm: $(BIN)
+	./utilities/test.sh --nm
+
 generate_raw_files:
 	./utilities/generate_raw_dataset.sh
 
-test_raw: generate_raw_files
+test_raw: $(BIN)
 	./utilities/test_raw.sh
+
+test_raw_nm: $(BIN)
+	./utilities/test_raw.sh --nm
 
 download_all:
 	./utilities/test_prepare_binaries.sh
